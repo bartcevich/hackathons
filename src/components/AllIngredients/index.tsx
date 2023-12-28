@@ -15,7 +15,6 @@ export default function AllIngredients() {
     const [userInput1, setUserInput1] = useState<UserInput1>({});
 
     useEffect(() => {
-        console.log('checkTasks=', localStorage.getItem('userInputs'));
         const savedInputs: UserInput = JSON.parse(localStorage.getItem('userInputs') || '');
         setUserInput(savedInputs);
         const savedInput1: UserInput1 = JSON.parse(localStorage.getItem('userInputs') || '');
@@ -33,7 +32,6 @@ export default function AllIngredients() {
             };
             setUserInput1(newInputs1);
             localStorage.setItem('userInputs', JSON.stringify(newInputs1));
-            console.log('checkTasks=', localStorage.getItem('userInputs'));
         } else {
             const newInputs: UserInput = {
                 ...userInput,
@@ -41,7 +39,6 @@ export default function AllIngredients() {
             };
             setUserInput(newInputs);
             localStorage.setItem('userInputs', JSON.stringify(userInput));
-            console.log('checkTasks=', localStorage.getItem('userInputs'));
         }
     };
 

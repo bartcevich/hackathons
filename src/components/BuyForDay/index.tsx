@@ -27,7 +27,6 @@ const BuyForDay: React.FC<BuyForDayProps> = (props) => {
             numberHuman: props.label[1],
             isOpen: false,
         };
-        console.log(newIngredient);
         setIngredientHistory((prevHistory) => {
             if (props.label[0] !== labelPrev[0]) {
                 //проверяю ? для нового блюда ингредиенты

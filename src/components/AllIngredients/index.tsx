@@ -15,10 +15,17 @@ export default function AllIngredients() {
     const [userInput1, setUserInput1] = useState<UserInput1>({});
 
     useEffect(() => {
-        const savedInputs: UserInput = JSON.parse(localStorage.getItem('userInputs') || '');
-        setUserInput(savedInputs);
-        const savedInput1: UserInput1 = JSON.parse(localStorage.getItem('userInputs') || '');
-        setUserInput1(savedInput1);
+        const savedInputs: string | null = localStorage.getItem('userInputs');
+        if (savedInputs) {
+            const parsedInputs: UserInput = JSON.parse(savedInputs);
+            setUserInput(parsedInputs);
+        }
+
+        const savedInput1: string | null = localStorage.getItem('userInputs');
+        if (savedInput1) {
+            const parsedInput1: UserInput1 = JSON.parse(savedInput1);
+            setUserInput1(parsedInput1);
+        }
     }, []);
 
     const handleInputChange = (

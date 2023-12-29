@@ -10,9 +10,9 @@ export default function Home() {
     return (
         <>
             {/* <Form/> */}
-            {/* <AllIngredients /> */}
-            <MenuGroupsOpen />
-            <MenuGroups />
+            <AllIngredients />
+            {/* <MenuGroupsOpen /> */}
+            {/* <MenuGroups /> */}
             {/* <Dinner/> */}
         </>
     );

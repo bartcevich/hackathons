@@ -1,0 +1,58 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack-d420c9a600344fed.js",
+      "static/chunks/bce60fc1-14bfaf3ce1eb9ca0.js",
+      "static/chunks/769-963a5333556e646a.js",
+      "static/chunks/main-app-a5c47efad34f0276.js",
+      "static/chunks/59925f94-2c0ddfe5304df1a3.js",
+      "static/chunks/599-dfd3db1f26519282.js",
+      "static/css/d1f5cbd4028cbf40.css",
+      "static/chunks/app/page-521141fccb8d615d.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-d420c9a600344fed.js",
+      "static/chunks/bce60fc1-14bfaf3ce1eb9ca0.js",
+      "static/chunks/769-963a5333556e646a.js",
+      "static/chunks/main-app-a5c47efad34f0276.js",
+      "static/chunks/ce69f5c4-5540a059afc5c29a.js",
+      "static/css/695341f6a14ce2f6.css",
+      "static/chunks/599-dfd3db1f26519282.js",
+      "static/chunks/137-346812ae4906fd42.js",
+      "static/css/f8ab698d04be7377.css",
+      "static/chunks/app/layout-41a70af587549bfd.js"
+    ],
+    "/Test/page": [
+      "static/chunks/webpack-d420c9a600344fed.js",
+      "static/chunks/bce60fc1-14bfaf3ce1eb9ca0.js",
+      "static/chunks/769-963a5333556e646a.js",
+      "static/chunks/main-app-a5c47efad34f0276.js",
+      "static/css/ef46db3751d8e999.css",
+      "static/chunks/app/Test/page-4c51c35c3aa32707.js"
+    ],
+    "/kids/page": [
+      "static/chunks/webpack-d420c9a600344fed.js",
+      "static/chunks/bce60fc1-14bfaf3ce1eb9ca0.js",
+      "static/chunks/769-963a5333556e646a.js",
+      "static/chunks/main-app-a5c47efad34f0276.js",
+      "static/css/ef46db3751d8e999.css",
+      "static/chunks/app/kids/page-6c694c85ec31373e.js"
+    ],
+    "/programs/page": [
+      "static/chunks/webpack-d420c9a600344fed.js",
+      "static/chunks/bce60fc1-14bfaf3ce1eb9ca0.js",
+      "static/chunks/769-963a5333556e646a.js",
+      "static/chunks/main-app-a5c47efad34f0276.js",
+      "static/css/ef46db3751d8e999.css",
+      "static/chunks/app/programs/page-00d2abd8e727a230.js"
+    ],
+    "/teenagers/page": [
+      "static/chunks/webpack-d420c9a600344fed.js",
+      "static/chunks/bce60fc1-14bfaf3ce1eb9ca0.js",
+      "static/chunks/769-963a5333556e646a.js",
+      "static/chunks/main-app-a5c47efad34f0276.js",
+      "static/css/ef46db3751d8e999.css",
+      "static/chunks/app/teenagers/page-f72f16bc8af05168.js"
+    ]
+  }
+}

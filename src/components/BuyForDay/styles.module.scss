@@ -15,6 +15,9 @@
     @include font(#212121, Inter, 20px, normal, 600, 20px, 0);
     font-size: clamp(12px, 3vw, 20px);
 }
+.dropdownIcon:hover{
+    cursor: pointer;
+}
 .ingredientCourse{
     @include font(#212121, Inter, 17px, normal, 400, 17px, 0);
     font-size: clamp(12px, 3vw, 17px);
@@ -37,4 +40,7 @@
     width: 100%;
     @include font(#212121, Inter, 25px, normal, 400, 30px, 0);
     font-size: clamp(15px, 3vw, 25px);
+}
+.handleIngredients{
+    margin: 0 10px;
 }

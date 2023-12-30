@@ -2,9 +2,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
-//import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faCopy } from "@fortawesome/free-solid-svg-icons";
+
 interface IIngredient {
   label: string;
   image: string[];
@@ -18,10 +16,11 @@ interface BuyForDayProps {
   image: any[];
   numberHuman: any[];
   isOpen: boolean;
-  test?: string;
+  setMenuUser?: React.Dispatch<React.SetStateAction<any[]>> | undefined;
 }
 
 const BuyForDay: React.FC<BuyForDayProps> = (props) => {
+  //let [countObjectInArr, setCountObjectInArr] = useState(0);
   const [labelPrev, setLabelPrev] = useState<any[]>([]);
   const [prevPrevHistory, setPrevPrevHistory] = useState<any[]>([]);
 
@@ -48,13 +47,18 @@ const BuyForDay: React.FC<BuyForDayProps> = (props) => {
       if (updatedHistory.length > 5) {
         return updatedHistory.slice(1);
       }
+
       return updatedHistory;
     });
   }, [props.ingredients, props.label, props.image]);
-  const [openMenu, setOpenMenu] = useState(false);
-  const handleClick = () => {
-    setOpenMenu((prevValue) => !prevValue);
-  };
+
+  useEffect(() => {
+    if (props.setMenuUser) {
+      props.setMenuUser(ingredientHistory);
+      console.log(ingredientHistory);
+    }
+  }, [ingredientHistory, props.setMenuUser]);
+
   const handleRemove = (indexToRemove: number) => {
     setIngredientHistory((prev) =>
       prev.filter((_, index) => index !== indexToRemove)
@@ -71,58 +75,15 @@ const BuyForDay: React.FC<BuyForDayProps> = (props) => {
       return updatedHistory;
     });
   };
-  const allIngredients: any[] = [];
-  let oneArrIngredients: any[] = []; //один массив всех ингридиентов
-  const sumArrPrint: any[] = []; //массив с суммированными значениями
-  ingredientHistory.map((ingredient, index) => {
-    sumArrPrint.length = 0;
-    allIngredients.length = 0;
-    allIngredients.push(ingredient.ingredients); //массив с массивами всех ингридиентов
-    allIngredients.forEach(
-      (el) => (oneArrIngredients = oneArrIngredients.concat(el))
-    );
-    //console.log(oneArrIngredients);
-    const uniqueIngredients = new Set(oneArrIngredients); //уникальные элементы
-    const uniqueIngredientsArr = Array.from(uniqueIngredients); // массив уникальных элементов
-    //console.log(uniqueIngredientsArr);
-    for (let i = 0; i < uniqueIngredientsArr.length; i++) {
-      typeof uniqueIngredientsArr[i] === "string"
-        ? search(uniqueIngredientsArr[i])
-        : i;
-    }
-  });
-  function search(ingredients: any) {
-    let tempNumber = 0;
-    let tempString = "";
-    for (let r = 0; r < oneArrIngredients.length; r++) {
-      typeof oneArrIngredients[r] === "string"
-        ? (tempString = oneArrIngredients[r])
-        : (tempString = oneArrIngredients[r]);
-      if (ingredients === tempString) {
-        tempNumber = tempNumber + oneArrIngredients[r + 1];
-      }
-    }
-    sumArrPrint.push(ingredients);
-    sumArrPrint.push(tempNumber);
-  }
+
+  // console.log(countObjectInArr, ingredientHistory.length);
+  // if (ingredientHistory.length === countObjectInArr) {
+  //   countObjectInArr = ingredientHistory.length;
+  // }
+
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const handleToggle = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
-  };
-  const [sumIngredients, setSumIngredients] = useState(false);
-  const handleIngredients = () => {
-    setSumIngredients((prevValue) => !prevValue);
-  };
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
-
-  const handleCopy = () => {
-    if (textareaRef.current) {
-      textareaRef.current.value = sumArrPrint.join(", ");
-      textareaRef.current.select();
-      document.execCommand("copy");
-      // You can also provide a visual indication to the user that the text has been copied
-      // For example, you can show a tooltip or a message indicating that the text has been copied
-    }
   };
 
   return (
@@ -172,27 +133,6 @@ const BuyForDay: React.FC<BuyForDayProps> = (props) => {
           </div>
         </div>
       ))}
-      <div>
-        <button
-          className={styles.handleIngredients}
-          onClick={handleIngredients}
-        >
-          <FontAwesomeIcon icon={faCartShopping} />
-        </button>
-        <button className={styles.handleCopy} onClick={handleCopy}>
-          <FontAwesomeIcon icon={faCopy} /> {/* Copy button */}
-        </button>
-        {sumIngredients && (
-          <div>
-            {sumArrPrint.join(",  ")}
-            <textarea
-              ref={textareaRef}
-              style={{ position: "absolute", left: "-9999px" }} // Hide the textarea off-screen
-              readOnly
-            />
-          </div>
-        )}
-      </div>
     </>
   );
 };

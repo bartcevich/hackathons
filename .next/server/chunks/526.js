@@ -55,23 +55,11 @@ function Footer() {
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: "icon",
-                            href: "#",
+                            href: "https://t.me/elektrikcss",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                 className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_2___default().faGithub),
                                 "aria-hidden": "true",
-                                title: "Prime99, Telegram",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-                                    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_3__/* .faGithub */ .zhw
-                                })
-                            })
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                            className: "icon",
-                            href: "#",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_2___default().faGithub),
-                                "aria-hidden": "true",
-                                title: "Prime99, Telegram",
+                                title: "Andrei Bartsevich, Telegram",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
                                     icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_3__/* .faTelegram */ .Uv8
                                 })
@@ -79,11 +67,11 @@ function Footer() {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: "icon",
-                            href: "#",
+                            href: "https://www.linkedin.com/in/андрей-барцевич-935588260",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                 className: "fa-brands fa-linkedin",
                                 "aria-hidden": "true",
-                                title: "Prime99, LinkedIn Profile",
+                                title: "Andrei Bartsevich, LinkedIn Profile",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
                                     icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_3__/* .faLinkedin */ .D9H
                                 })
@@ -98,6 +86,18 @@ function Footer() {
                                 title: "Prime99, WhatApp",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
                                     icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_3__/* .faInstagram */ .Zzi
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            className: "icon",
+                            href: "https://t.me/elektrikcss",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_2___default().faGithub),
+                                "aria-hidden": "true",
+                                title: "Prime99, Telegram",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+                                    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_3__/* .faGithub */ .zhw
                                 })
                             })
                         })

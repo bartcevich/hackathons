@@ -273,18 +273,12 @@ var MenuGroups_styles_module_default = /*#__PURE__*/__webpack_require__.n(MenuGr
 // EXTERNAL MODULE: ./src/components/BuyForDay/styles.module.scss
 var BuyForDay_styles_module = __webpack_require__(7481);
 var BuyForDay_styles_module_default = /*#__PURE__*/__webpack_require__.n(BuyForDay_styles_module);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.js
-var react_fontawesome = __webpack_require__(8195);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
-var free_solid_svg_icons = __webpack_require__(7877);
 ;// CONCATENATED MODULE: ./src/components/BuyForDay/index.tsx
 /* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
-//import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-
-
 const BuyForDay = (props)=>{
+    //let [countObjectInArr, setCountObjectInArr] = useState(0);
     const [labelPrev, setLabelPrev] = (0,react_.useState)([]);
     const [prevPrevHistory, setPrevPrevHistory] = (0,react_.useState)([]);
     const [ingredientHistory, setIngredientHistory] = (0,react_.useState)([]);
@@ -323,10 +317,15 @@ const BuyForDay = (props)=>{
         props.label,
         props.image
     ]);
-    const [openMenu, setOpenMenu] = (0,react_.useState)(false);
-    const handleClick = ()=>{
-        setOpenMenu((prevValue)=>!prevValue);
-    };
+    (0,react_.useEffect)(()=>{
+        if (props.setMenuUser) {
+            props.setMenuUser(ingredientHistory);
+            console.log(ingredientHistory);
+        }
+    }, [
+        ingredientHistory,
+        props.setMenuUser
+    ]);
     const handleRemove = (indexToRemove)=>{
         setIngredientHistory((prev)=>prev.filter((_, index)=>index !== indexToRemove));
     };
@@ -344,143 +343,69 @@ const BuyForDay = (props)=>{
             return updatedHistory;
         });
     };
-    const allIngredients = [];
-    let oneArrIngredients = []; //один массив всех ингридиентов
-    const sumArrPrint = []; //массив с суммированными значениями
-    ingredientHistory.map((ingredient, index)=>{
-        sumArrPrint.length = 0;
-        allIngredients.length = 0;
-        allIngredients.push(ingredient.ingredients); //массив с массивами всех ингридиентов
-        allIngredients.forEach((el)=>oneArrIngredients = oneArrIngredients.concat(el));
-        //console.log(oneArrIngredients);
-        const uniqueIngredients = new Set(oneArrIngredients); //уникальные элементы
-        const uniqueIngredientsArr = Array.from(uniqueIngredients); // массив уникальных элементов
-        //console.log(uniqueIngredientsArr);
-        for(let i = 0; i < uniqueIngredientsArr.length; i++){
-            typeof uniqueIngredientsArr[i] === "string" ? search(uniqueIngredientsArr[i]) : i;
-        }
-    });
-    function search(ingredients) {
-        let tempNumber = 0;
-        let tempString = "";
-        for(let r = 0; r < oneArrIngredients.length; r++){
-            typeof oneArrIngredients[r] === "string" ? tempString = oneArrIngredients[r] : tempString = oneArrIngredients[r];
-            if (ingredients === tempString) {
-                tempNumber = tempNumber + oneArrIngredients[r + 1];
-            }
-        }
-        sumArrPrint.push(ingredients);
-        sumArrPrint.push(tempNumber);
-    }
+    // console.log(countObjectInArr, ingredientHistory.length);
+    // if (ingredientHistory.length === countObjectInArr) {
+    //   countObjectInArr = ingredientHistory.length;
+    // }
     const [activeIndex, setActiveIndex] = (0,react_.useState)(null);
     const handleToggle = (index)=>{
         setActiveIndex(activeIndex === index ? null : index);
     };
-    const [sumIngredients, setSumIngredients] = (0,react_.useState)(false);
-    const handleIngredients = ()=>{
-        setSumIngredients((prevValue)=>!prevValue);
-    };
-    const textareaRef = (0,react_.useRef)(null);
-    const handleCopy = ()=>{
-        if (textareaRef.current) {
-            textareaRef.current.value = sumArrPrint.join(", ");
-            textareaRef.current.select();
-            document.execCommand("copy");
-        // You can also provide a visual indication to the user that the text has been copied
-        // For example, you can show a tooltip or a message indicating that the text has been copied
-        }
-    };
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-        children: [
-            ingredientHistory.map((ingredient, index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (BuyForDay_styles_module_default()).container,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (BuyForDay_styles_module_default()).image,
-                                children: ingredient.image.join("") !== "" && /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                    src: ingredient.image.join(""),
-                                    alt: "Image"
-                                })
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (BuyForDay_styles_module_default()).label,
+    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+        children: ingredientHistory.map((ingredient, index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (BuyForDay_styles_module_default()).container,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (BuyForDay_styles_module_default()).image,
+                            children: ingredient.image.join("") !== "" && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                src: ingredient.image.join(""),
+                                alt: "Image"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (BuyForDay_styles_module_default()).label,
+                                    children: [
+                                        ingredient.numberHuman,
+                                        ingredient.label
+                                    ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (BuyForDay_styles_module_default()).button,
+                                    children: activeIndex === index && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (BuyForDay_styles_module_default()).dropdownContent,
                                         children: [
-                                            ingredient.numberHuman,
-                                            ingredient.label
+                                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                type: "button",
+                                                onClick: ()=>handleViewIngredients(index),
+                                                children: ingredient.isOpen ? "Cвернуть.  " : "Смотреть состав.  "
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                type: "button",
+                                                onClick: ()=>handleRemove(index),
+                                                children: "Удалить."
+                                            })
                                         ]
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (BuyForDay_styles_module_default()).button,
-                                        children: activeIndex === index && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: (BuyForDay_styles_module_default()).dropdownContent,
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                                    type: "button",
-                                                    onClick: ()=>handleViewIngredients(index),
-                                                    children: ingredient.isOpen ? "Cвернуть.  " : "Смотреть состав.  "
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                                    type: "button",
-                                                    onClick: ()=>handleRemove(index),
-                                                    children: "Удалить."
-                                                })
-                                            ]
-                                        })
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (BuyForDay_styles_module_default()).dropdownIcon,
-                                        onClick: ()=>handleToggle(index),
-                                        children: "⋮"
-                                    }),
-                                    ingredient.isOpen && /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (BuyForDay_styles_module_default()).ingredientCourse,
-                                        children: ingredient.ingredients.map((item, idx)=>/*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                children: item
-                                            }, idx))
                                     })
-                                ]
-                            })
-                        ]
-                    })
-                }, index)),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                        className: (BuyForDay_styles_module_default()).handleIngredients,
-                        onClick: handleIngredients,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(react_fontawesome.FontAwesomeIcon, {
-                            icon: free_solid_svg_icons/* faCartShopping */.yYj
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (BuyForDay_styles_module_default()).dropdownIcon,
+                                    onClick: ()=>handleToggle(index),
+                                    children: "⋮"
+                                }),
+                                ingredient.isOpen && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (BuyForDay_styles_module_default()).ingredientCourse,
+                                    children: ingredient.ingredients.map((item, idx)=>/*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            children: item
+                                        }, idx))
+                                })
+                            ]
                         })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
-                        className: (BuyForDay_styles_module_default()).handleCopy,
-                        onClick: handleCopy,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(react_fontawesome.FontAwesomeIcon, {
-                                icon: free_solid_svg_icons/* faCopy */.kZ_
-                            }),
-                            " "
-                        ]
-                    }),
-                    sumIngredients && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        children: [
-                            sumArrPrint.join(",  "),
-                            /*#__PURE__*/ jsx_runtime_.jsx("textarea", {
-                                ref: textareaRef,
-                                style: {
-                                    position: "absolute",
-                                    left: "-9999px"
-                                },
-                                readOnly: true
-                            })
-                        ]
-                    })
-                ]
-            })
-        ]
+                    ]
+                })
+            }, index))
     });
 };
 /* harmony default export */ const components_BuyForDay = (BuyForDay);
@@ -775,8 +700,6 @@ const Monday = (props)=>{
     const [count, setCount] = (0,react_.useState)(1);
     const [prevCount, setPrevCount] = (0,react_.useState)(0);
     const [prevLabel, setPrevLabel] = (0,react_.useState)("");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    //let savePrevCountLabel: any[] = [0, ''];
     const handleSelectChange = (event)=>{
         const selectedLabel = event.target.value;
         const selectedOption = Starters_dessert.find((option)=>option.label === selectedLabel);
@@ -793,7 +716,6 @@ const Monday = (props)=>{
         if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
             setPrevLabel(sundayLabel);
             setPrevCount(count);
-            //console.log(prevLabel, sundayLabel, prevCount, count);
             let sundayLabelArr = [];
             sundayLabelArr.push(sundayLabel);
             let sundayImageArr = [];
@@ -890,13 +812,19 @@ const Monday = (props)=>{
 };
 /* harmony default export */ const Starters = (Monday);
 
+// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.js
+var react_fontawesome = __webpack_require__(8195);
+// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
+var free_solid_svg_icons = __webpack_require__(7877);
 ;// CONCATENATED MODULE: ./src/components/MenuGroups/index.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
 
 
-function Temp() {
+
+
+function MenuGroups() {
     const [ingredients, setIngredients] = (0,react_.useState)([]);
     const [label, setLabel] = (0,react_.useState)([]);
     const [image, setImage] = (0,react_.useState)([]);
@@ -904,6 +832,54 @@ function Temp() {
     const [openMenu, setOpenMenu] = (0,react_.useState)(false);
     const handleClick = ()=>{
         setOpenMenu((prevValue)=>!prevValue);
+    };
+    const [menuUser, setMenuUser] = (0,react_.useState)([]);
+    console.log(menuUser);
+    const allIngredients = [];
+    let oneArrIngredients = []; //один массив всех ингридиентов
+    const sumArrPrint = []; //массив с суммированными значениями
+    menuUser.map((ingredient, index)=>{
+        sumArrPrint.length = 0;
+        allIngredients.length = 0;
+        allIngredients.push(ingredient.ingredients); //массив с массивами всех ингридиентов
+        allIngredients.forEach((el)=>oneArrIngredients = oneArrIngredients.concat(el));
+        //console.log(oneArrIngredients);
+        const uniqueIngredients = new Set(oneArrIngredients); //уникальные элементы
+        const uniqueIngredientsArr = Array.from(uniqueIngredients); // массив уникальных элементов
+        //console.log(uniqueIngredientsArr);
+        for(let i = 0; i < uniqueIngredientsArr.length; i++){
+            typeof uniqueIngredientsArr[i] === "string" ? search(uniqueIngredientsArr[i]) : i;
+        }
+    });
+    function search(ingredients) {
+        let tempNumber = 0;
+        let tempString = "";
+        for(let r = 0; r < oneArrIngredients.length; r++){
+            typeof oneArrIngredients[r] === "string" ? tempString = oneArrIngredients[r] : tempString = oneArrIngredients[r];
+            if (ingredients === tempString) {
+                tempNumber = tempNumber + oneArrIngredients[r + 1];
+            }
+        }
+        sumArrPrint.push(ingredients);
+        sumArrPrint.push(tempNumber);
+    }
+    const [showTooltip, setShowTooltip] = (0,react_.useState)(false);
+    const textareaRef = (0,react_.useRef)(null);
+    const handleCopy = ()=>{
+        if (textareaRef.current) {
+            textareaRef.current.value = sumArrPrint.join(", ");
+            textareaRef.current.select();
+            document.execCommand("copy");
+            setShowTooltip(true);
+            // Hide the tooltip after a duration (e.g., 2 seconds)
+            setTimeout(()=>{
+                setShowTooltip(false);
+            }, 5000);
+        }
+    };
+    const [sumIngredients, setSumIngredients] = (0,react_.useState)(false);
+    const handleIngredients = ()=>{
+        setSumIngredients((prevValue)=>!prevValue);
     };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
@@ -943,12 +919,53 @@ function Temp() {
                     })
                 ]
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(components_BuyForDay, {
-                ingredients: ingredients,
-                label: label,
-                image: image,
-                numberHuman: numberHuman,
-                isOpen: false
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx(components_BuyForDay, {
+                    setMenuUser: setMenuUser,
+                    ingredients: ingredients,
+                    label: label,
+                    image: image,
+                    numberHuman: numberHuman,
+                    isOpen: false
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                children: [
+                    sumIngredients && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            sumArrPrint.join(",  "),
+                            /*#__PURE__*/ jsx_runtime_.jsx("textarea", {
+                                ref: textareaRef,
+                                style: {
+                                    position: "absolute",
+                                    left: "-9999px"
+                                },
+                                readOnly: true
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                        className: (MenuGroups_styles_module_default()).handleIngredients,
+                        onClick: handleIngredients,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(react_fontawesome.FontAwesomeIcon, {
+                            icon: free_solid_svg_icons/* faCartShopping */.yYj
+                        })
+                    }),
+                    sumIngredients && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+                        className: (MenuGroups_styles_module_default()).handleCopy,
+                        onClick: handleCopy,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(react_fontawesome.FontAwesomeIcon, {
+                                icon: free_solid_svg_icons/* faCopy */.kZ_
+                            }),
+                            " "
+                        ]
+                    }),
+                    showTooltip && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (MenuGroups_styles_module_default()).tooltip,
+                        children: "Cписок скопирован!"
+                    })
+                ]
             })
         ]
     });
@@ -963,7 +980,9 @@ var MenuGroupsOpen_styles_module_default = /*#__PURE__*/__webpack_require__.n(Me
 
 
 
-function MenuGroupsOpen_Temp() {
+
+
+function MenuGroupsOpen_MenuGroups() {
     const [ingredients, setIngredients] = (0,react_.useState)([]);
     const [label, setLabel] = (0,react_.useState)([]);
     const [image, setImage] = (0,react_.useState)([]);
@@ -971,6 +990,54 @@ function MenuGroupsOpen_Temp() {
     const [openMenu, setOpenMenu] = (0,react_.useState)(true);
     const handleClick = ()=>{
         setOpenMenu((prevValue)=>!prevValue);
+    };
+    const [menuUser, setMenuUser] = (0,react_.useState)([]);
+    console.log(menuUser);
+    const allIngredients = [];
+    let oneArrIngredients = []; //один массив всех ингридиентов
+    const sumArrPrint = []; //массив с суммированными значениями
+    menuUser.map((ingredient, index)=>{
+        sumArrPrint.length = 0;
+        allIngredients.length = 0;
+        allIngredients.push(ingredient.ingredients); //массив с массивами всех ингридиентов
+        allIngredients.forEach((el)=>oneArrIngredients = oneArrIngredients.concat(el));
+        //console.log(oneArrIngredients);
+        const uniqueIngredients = new Set(oneArrIngredients); //уникальные элементы
+        const uniqueIngredientsArr = Array.from(uniqueIngredients); // массив уникальных элементов
+        //console.log(uniqueIngredientsArr);
+        for(let i = 0; i < uniqueIngredientsArr.length; i++){
+            typeof uniqueIngredientsArr[i] === "string" ? search(uniqueIngredientsArr[i]) : i;
+        }
+    });
+    function search(ingredients) {
+        let tempNumber = 0;
+        let tempString = "";
+        for(let r = 0; r < oneArrIngredients.length; r++){
+            typeof oneArrIngredients[r] === "string" ? tempString = oneArrIngredients[r] : tempString = oneArrIngredients[r];
+            if (ingredients === tempString) {
+                tempNumber = tempNumber + oneArrIngredients[r + 1];
+            }
+        }
+        sumArrPrint.push(ingredients);
+        sumArrPrint.push(tempNumber);
+    }
+    const [showTooltip, setShowTooltip] = (0,react_.useState)(false);
+    const textareaRef = (0,react_.useRef)(null);
+    const handleCopy = ()=>{
+        if (textareaRef.current) {
+            textareaRef.current.value = sumArrPrint.join(", ");
+            textareaRef.current.select();
+            document.execCommand("copy");
+            setShowTooltip(true);
+            // Hide the tooltip after a duration (e.g., 2 seconds)
+            setTimeout(()=>{
+                setShowTooltip(false);
+            }, 5000);
+        }
+    };
+    const [sumIngredients, setSumIngredients] = (0,react_.useState)(false);
+    const handleIngredients = ()=>{
+        setSumIngredients((prevValue)=>!prevValue);
     };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
@@ -1010,12 +1077,53 @@ function MenuGroupsOpen_Temp() {
                     })
                 ]
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(components_BuyForDay, {
-                ingredients: ingredients,
-                label: label,
-                image: image,
-                numberHuman: numberHuman,
-                isOpen: false
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx(components_BuyForDay, {
+                    setMenuUser: setMenuUser,
+                    ingredients: ingredients,
+                    label: label,
+                    image: image,
+                    numberHuman: numberHuman,
+                    isOpen: false
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                children: [
+                    sumIngredients && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            sumArrPrint.join(",  "),
+                            /*#__PURE__*/ jsx_runtime_.jsx("textarea", {
+                                ref: textareaRef,
+                                style: {
+                                    position: "absolute",
+                                    left: "-9999px"
+                                },
+                                readOnly: true
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                        className: (MenuGroupsOpen_styles_module_default()).handleIngredients,
+                        onClick: handleIngredients,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(react_fontawesome.FontAwesomeIcon, {
+                            icon: free_solid_svg_icons/* faCartShopping */.yYj
+                        })
+                    }),
+                    sumIngredients && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+                        className: (MenuGroupsOpen_styles_module_default()).handleCopy,
+                        onClick: handleCopy,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(react_fontawesome.FontAwesomeIcon, {
+                                icon: free_solid_svg_icons/* faCopy */.kZ_
+                            }),
+                            " "
+                        ]
+                    }),
+                    showTooltip && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (MenuGroupsOpen_styles_module_default()).tooltip,
+                        children: "Cписок скопирован!"
+                    })
+                ]
             })
         ]
     });
@@ -1075,7 +1183,7 @@ function AllIngredients() {
                     className: (styles_module_default()).container_text,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_Temp, {})
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_MenuGroups, {})
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("input", {
                             className: (styles_module_default()).container_input,
@@ -1091,7 +1199,7 @@ function AllIngredients() {
                         className: (styles_module_default()).container_text,
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(Temp, {})
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(MenuGroups, {})
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                 className: (styles_module_default()).container_input,
@@ -1165,11 +1273,10 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_top": "styles_container_top__obLDS",
 	"menuGroup": "styles_menuGroup__LJkb9",
-	"logo": "styles_logo__4UTjk",
-	"container_text": "styles_container_text__YUgYS",
 	"container_popup": "styles_container_popup__yS0Da",
 	"container_popup2": "styles_container_popup2__HdBzi",
-	"container_Summarized": "styles_container_Summarized__ZYrJF"
+	"handleIngredients": "styles_handleIngredients__VXhXi",
+	"tooltip": "styles_tooltip__z2IP3"
 };
 
 
@@ -1186,11 +1293,10 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_top": "styles_container_top__NYIZS",
 	"menuGroup": "styles_menuGroup__LS7t7",
-	"logo": "styles_logo__hYJCZ",
-	"container_text": "styles_container_text__iwhDO",
 	"container_popup": "styles_container_popup__jLfpf",
 	"container_popup2": "styles_container_popup2__StMe3",
-	"container_Summarized": "styles_container_Summarized__Ho3Rk"
+	"handleIngredients": "styles_handleIngredients__8kZ4n",
+	"tooltip": "styles_tooltip__QA83h"
 };
 
 

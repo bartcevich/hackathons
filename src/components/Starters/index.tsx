@@ -30,8 +30,6 @@ const Monday: React.FC<MondayProps> = (props) => {
   const [count, setCount] = useState(1);
   const [prevCount, setPrevCount] = useState(0);
   const [prevLabel, setPrevLabel] = useState("");
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  //let savePrevCountLabel: any[] = [0, ''];
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLabel = event.target.value;
@@ -47,12 +45,12 @@ const Monday: React.FC<MondayProps> = (props) => {
       //props.setIngredients(Object.entries(selectedOption.value));
     }
   };
+
   useEffect(() => {
     //как применить здесь useContext
     if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
       setPrevLabel(sundayLabel);
       setPrevCount(count);
-      //console.log(prevLabel, sundayLabel, prevCount, count);
       let sundayLabelArr: any[] = [];
       sundayLabelArr.push(sundayLabel);
       let sundayImageArr: any[] = [];

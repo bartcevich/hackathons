@@ -26,10 +26,14 @@
 }
 .handleIngredients{
     margin: 0 10px;
+    color: #0421fd;
+}
+.handleCopy{
+    color: #0421fd;
 }
 .tooltip {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
     background: #333;

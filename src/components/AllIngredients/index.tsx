@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import MenuGroups from "@/components/MenuGroups";
@@ -55,6 +54,8 @@ export default function AllIngredients() {
       localStorage.setItem("userInputs", JSON.stringify(userInput));
     }
   };
+  //const [selectionUser, setSelectionUser] = useState<any[]>([]);
+  //console.log(selectionUser);
 
   return (
     <>

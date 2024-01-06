@@ -205,7 +205,7 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1397)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2429)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2819))).default(props))],
     apple: [],
@@ -241,9 +241,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 700:
+/***/ 4794:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4324))
 
 /***/ }),
@@ -278,10 +279,10 @@ var BuyForDay_styles_module_default = /*#__PURE__*/__webpack_require__.n(BuyForD
 
 
 const BuyForDay = (props)=>{
-    //let [countObjectInArr, setCountObjectInArr] = useState(0);
     const [labelPrev, setLabelPrev] = (0,react_.useState)([]);
     const [prevPrevHistory, setPrevPrevHistory] = (0,react_.useState)([]);
     const [ingredientHistory, setIngredientHistory] = (0,react_.useState)([]);
+    //const { ingredientHistory, setIngredientHistory } = useContext(IngredientsContext);
     let updatedHistory = [];
     (0,react_.useEffect)(()=>{
         const newIngredient = {
@@ -320,7 +321,7 @@ const BuyForDay = (props)=>{
     (0,react_.useEffect)(()=>{
         if (props.setMenuUser) {
             props.setMenuUser(ingredientHistory);
-            console.log(ingredientHistory);
+        //console.log(ingredientHistory);
         }
     }, [
         ingredientHistory,
@@ -343,10 +344,6 @@ const BuyForDay = (props)=>{
             return updatedHistory;
         });
     };
-    // console.log(countObjectInArr, ingredientHistory.length);
-    // if (ingredientHistory.length === countObjectInArr) {
-    //   countObjectInArr = ingredientHistory.length;
-    // }
     const [activeIndex, setActiveIndex] = (0,react_.useState)(null);
     const handleToggle = (index)=>{
         setActiveIndex(activeIndex === index ? null : index);
@@ -779,7 +776,7 @@ const Monday = (props)=>{
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (Starters_styles_module_default()).container_text,
-                                        children: "колличество порций"
+                                        children: "количество порций"
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (Starters_styles_module_default()).button,
@@ -834,6 +831,9 @@ function MenuGroups() {
         setOpenMenu((prevValue)=>!prevValue);
     };
     const [menuUser, setMenuUser] = (0,react_.useState)([]);
+    //useEffect(() => {
+    //props.setSelectionUser(menuUser);
+    //}, [props]);
     console.log(menuUser);
     const allIngredients = [];
     let oneArrIngredients = []; //один массив всех ингридиентов
@@ -1175,6 +1175,8 @@ function AllIngredients() {
             localStorage.setItem("userInputs", JSON.stringify(userInput));
         }
     };
+    //const [selectionUser, setSelectionUser] = useState<any[]>([]);
+    //console.log(selectionUser);
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: (styles_module_default()).container_top,
@@ -1215,6 +1217,43 @@ function AllIngredients() {
         })
     });
 }
+
+
+/***/ }),
+
+/***/ 4700:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   IngredientsContext: () => (/* binding */ IngredientsContext),
+/* harmony export */   MenuProvider: () => (/* binding */ MenuProvider)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* __next_internal_client_entry_do_not_use__ IngredientsContext,MenuProvider auto */ 
+
+const IngredientsContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createContext)({
+    ingredientHistory: [],
+    setIngredientHistory: ()=>{}
+});
+const MenuProvider = ({ children })=>{
+    const [ingredientHistory, setIngredientHistory] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+    const value = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(()=>({
+            ingredientHistory,
+            setIngredientHistory
+        }), [
+        ingredientHistory,
+        setIngredientHistory
+    ]);
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(IngredientsContext.Provider, {
+        value: value,
+        children: children
+    });
+};
 
 
 /***/ }),
@@ -1276,6 +1315,7 @@ module.exports = {
 	"container_popup": "styles_container_popup__yS0Da",
 	"container_popup2": "styles_container_popup2__HdBzi",
 	"handleIngredients": "styles_handleIngredients__VXhXi",
+	"handleCopy": "styles_handleCopy__E4QiS",
 	"tooltip": "styles_tooltip__z2IP3"
 };
 
@@ -1296,6 +1336,7 @@ module.exports = {
 	"container_popup": "styles_container_popup__jLfpf",
 	"container_popup2": "styles_container_popup2__StMe3",
 	"handleIngredients": "styles_handleIngredients__8kZ4n",
+	"handleCopy": "styles_handleCopy__Qio6C",
 	"tooltip": "styles_tooltip__QA83h"
 };
 
@@ -1325,7 +1366,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1397:
+/***/ 2429:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1356,14 +1397,29 @@ const __default__ = proxy.default;
 
 
 /* harmony default export */ const AllIngredients = (__default__);
+;// CONCATENATED MODULE: ./src/context/IngredientsContext.tsx
+
+const IngredientsContext_proxy = (0,module_proxy.createProxy)(String.raw`D:\andrei\work\codewars\shoppingCart\hackathons\src\context\IngredientsContext.tsx`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule: IngredientsContext_esModule, $$typeof: IngredientsContext_$$typeof } = IngredientsContext_proxy;
+const IngredientsContext_default_ = IngredientsContext_proxy.default;
+
+const e0 = IngredientsContext_proxy["IngredientsContext"];
+
+const e1 = IngredientsContext_proxy["MenuProvider"];
+
 ;// CONCATENATED MODULE: ./src/app/page.tsx
 //'use client';
 
 
 
-//import Form from '@/components/Form';
+
 function Home() {
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(e1, {
         children: /*#__PURE__*/ jsx_runtime_.jsx(AllIngredients, {})
     });
 }

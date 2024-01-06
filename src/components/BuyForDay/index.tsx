@@ -1,15 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import styles from "./styles.module.scss";
+import { IIngredients } from "@/types/common";
+import { IngredientsContext } from "@/context/IngredientsContext";
 
-interface IIngredient {
-  label: string;
-  image: string[];
-  numberHuman: number;
-  isOpen: boolean;
-  ingredients: string[] | number[];
-}
 interface BuyForDayProps {
   ingredients: any[];
   label: any[];
@@ -20,14 +15,15 @@ interface BuyForDayProps {
 }
 
 const BuyForDay: React.FC<BuyForDayProps> = (props) => {
-  //let [countObjectInArr, setCountObjectInArr] = useState(0);
   const [labelPrev, setLabelPrev] = useState<any[]>([]);
   const [prevPrevHistory, setPrevPrevHistory] = useState<any[]>([]);
-
-  const [ingredientHistory, setIngredientHistory] = useState<IIngredient[]>([]);
+  const [ingredientHistory, setIngredientHistory] = useState<IIngredients[]>(
+    []
+  );
+  //const { ingredientHistory, setIngredientHistory } = useContext(IngredientsContext);
   let updatedHistory: any[] = [];
   useEffect(() => {
-    const newIngredient: BuyForDayProps = {
+    const newIngredient: IIngredients = {
       ingredients: props.ingredients,
       label: props.label[0],
       image: props.label[2] === props.label[0] ? [] : props.label[2],
@@ -47,7 +43,6 @@ const BuyForDay: React.FC<BuyForDayProps> = (props) => {
       if (updatedHistory.length > 5) {
         return updatedHistory.slice(1);
       }
-
       return updatedHistory;
     });
   }, [props.ingredients, props.label, props.image]);
@@ -55,7 +50,7 @@ const BuyForDay: React.FC<BuyForDayProps> = (props) => {
   useEffect(() => {
     if (props.setMenuUser) {
       props.setMenuUser(ingredientHistory);
-      console.log(ingredientHistory);
+      //console.log(ingredientHistory);
     }
   }, [ingredientHistory, props.setMenuUser]);
 
@@ -75,11 +70,6 @@ const BuyForDay: React.FC<BuyForDayProps> = (props) => {
       return updatedHistory;
     });
   };
-
-  // console.log(countObjectInArr, ingredientHistory.length);
-  // if (ingredientHistory.length === countObjectInArr) {
-  //   countObjectInArr = ingredientHistory.length;
-  // }
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const handleToggle = (index: number) => {

@@ -18,6 +18,9 @@ export default function MenuGroups() {
   };
 
   const [menuUser, setMenuUser] = useState<any[]>([]);
+  //useEffect(() => {
+  //props.setSelectionUser(menuUser);
+  //}, [props]);
   console.log(menuUser);
   const allIngredients: any[] = [];
   let oneArrIngredients: any[] = []; //один массив всех ингридиентов

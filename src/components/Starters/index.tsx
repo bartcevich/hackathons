@@ -99,7 +99,7 @@ const Monday: React.FC<MondayProps> = (props) => {
             </select>
           </div>
           <div className={styles.container_button}>
-            <div className={styles.container_text}>колличество порций</div>
+            <div className={styles.container_text}>количество порций</div>
             <div
               className={styles.button}
               onClick={() => setCount(count < 2 ? 1 : count - 1)}

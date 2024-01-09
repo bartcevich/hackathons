@@ -7,7 +7,7 @@ import Starters from "@/components/Starters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faCopy } from "@fortawesome/free-solid-svg-icons";
 
-export default function MenuGroups() {
+export default function MenuGroups(props: any) {
   const [ingredients, setIngredients] = useState<any[]>([]);
   const [label, setLabel] = useState<any[]>([]);
   const [image, setImage] = useState<any[]>([]);
@@ -18,6 +18,14 @@ export default function MenuGroups() {
   };
 
   const [menuUser, setMenuUser] = useState<any[]>([]);
+  useEffect(() => {
+    if (typeof menuUser[1] === "object") {
+      const arrForProps = [];
+      arrForProps.push(...menuUser.slice(1));
+      props.setSelectionUser2(arrForProps);
+      console.log(arrForProps);
+    }
+  }, [menuUser]);
   console.log(menuUser);
   const allIngredients: any[] = [];
   let oneArrIngredients: any[] = []; //один массив всех ингридиентов

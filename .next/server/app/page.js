@@ -1203,7 +1203,7 @@ var MenuGroupsOpen_styles_module_default = /*#__PURE__*/__webpack_require__.n(Me
 
 
 
-function MenuGroupsOpen_MenuGroups() {
+function MenuGroupsOpen_MenuGroups(props) {
     const [ingredients, setIngredients] = (0,react_.useState)([]);
     const [label, setLabel] = (0,react_.useState)([]);
     const [image, setImage] = (0,react_.useState)([]);
@@ -1213,6 +1213,16 @@ function MenuGroupsOpen_MenuGroups() {
         setOpenMenu((prevValue)=>!prevValue);
     };
     const [menuUser, setMenuUser] = (0,react_.useState)([]);
+    (0,react_.useEffect)(()=>{
+        if (typeof menuUser[1] === "object") {
+            const arrForProps = [];
+            arrForProps.push(...menuUser.slice(1));
+            props.setSelectionUser2(arrForProps);
+            console.log(arrForProps);
+        }
+    }, [
+        menuUser
+    ]);
     console.log(menuUser);
     const allIngredients = [];
     let oneArrIngredients = []; //один массив всех ингридиентов
@@ -1365,10 +1375,9 @@ const identifiers = [
     "label7"
 ];
 function AllIngredients() {
+    const [buttonPressed, setButtonPressed] = (0,react_.useState)(false);
     const [printLabel, setPrintLabel] = (0,react_.useState)({});
     const [selectionUser, setSelectionUser] = (0,react_.useState)({});
-    //const [selectionUser, setSelectionUser] = useState<any[]>([]);
-    //console.log(selectionUser);
     (0,react_.useEffect)(()=>{
         //localStorage.setItem("ingredientHistory", JSON.stringify([]));
         console.log("checkTasks=", localStorage.getItem("ingredientHistory"));
@@ -1383,10 +1392,11 @@ function AllIngredients() {
             ...printLabel,
             [identifier]: value
         };
-        console.log("selectionUser=", selectionUser);
-        console.log("printLabel=", printLabel);
+        //console.log("selectionUser=", selectionUser);
+        //console.log("printLabel=", printLabel);
         console.log("newSelectionUser=", newSelectionUser);
         //setSelectionUser(newSelectionUser);
+        setButtonPressed(true);
         localStorage.setItem("ingredientHistory", JSON.stringify(newSelectionUser));
     }, [
         printLabel,
@@ -1424,13 +1434,79 @@ function AllIngredients() {
         setUserInput1(newInputs1);
         localStorage.setItem("userInputs1", JSON.stringify(userInput1));
     };
+    const [printLabel2, setPrintLabel2] = (0,react_.useState)({});
+    const [selectionUser2, setSelectionUser2] = (0,react_.useState)([]);
+    (0,react_.useEffect)(()=>{
+        //localStorage.setItem("ingredientHistory", JSON.stringify([]));
+        console.log("checkTasks2=", localStorage.getItem("ingredientHistory2"));
+        const savedIngredientHistory2 = localStorage.getItem("ingredientHistory2");
+        if (savedIngredientHistory2) {
+            const parsedIngredientHistory2 = JSON.parse(savedIngredientHistory2);
+            setPrintLabel2(parsedIngredientHistory2);
+        }
+    }, []);
+    const handleChange2 = (0,react_.useCallback)((newSelectionUser2)=>{
+        //console.log("selectionUser=", selectionUser);
+        //console.log("printLabel=", printLabel);
+        console.log("newSelectionUser=", newSelectionUser2);
+        setButtonPressed(true);
+        localStorage.setItem("ingredientHistory2", JSON.stringify(newSelectionUser2));
+    }, []);
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (styles_module_default()).container_text,
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_MenuGroups, {})
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_MenuGroups, {
+                                setSelectionUser2: setSelectionUser2
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                value: selectionUser2,
+                                onClick: ()=>handleChange2(selectionUser2),
+                                style: {
+                                    color: buttonPressed ? "red" : "green"
+                                },
+                                children: "сохранить меню"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                children: printLabel2 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    children: [
+                                        Array.isArray(printLabel2) ? printLabel2.map((item, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                children: [
+                                                    item.image && item.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                        src: item.image[0],
+                                                        alt: "Image"
+                                                    }),
+                                                    item.label && item.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                        children: [
+                                                            item.numberHuman,
+                                                            item.label
+                                                        ]
+                                                    })
+                                                ]
+                                            }, index)) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: (styles_module_default()).container_storage,
+                                            children: [
+                                                printLabel2.image && printLabel2.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: printLabel2.image[0],
+                                                    alt: "Image"
+                                                }),
+                                                printLabel2.label && printLabel2.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    children: [
+                                                        printLabel2.numberHuman,
+                                                        printLabel2.label
+                                                    ]
+                                                })
+                                            ]
+                                        }),
+                                        "//",
+                                        " "
+                                    ]
+                                })
+                            })
+                        ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("input", {
                         className: (styles_module_default()).container_input,
@@ -1463,6 +1539,9 @@ function AllIngredients() {
                                 /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                     value: selectionUser[identifier],
                                     onClick: ()=>handleChange(identifier, selectionUser),
+                                    style: {
+                                        color: buttonPressed ? "red" : "green"
+                                    },
                                     children: "сохранить меню"
                                 })
                             ]
@@ -1554,7 +1633,6 @@ module.exports = {
 	"fontBarlow": "Barlow,sans-serif",
 	"colorRedLight": "#ef233c",
 	"colorRedDark": "#d90429",
-	"container_top": "styles_container_top__G5lGl",
 	"container_text": "styles_container_text__RHjYD",
 	"container_input": "styles_container_input__dluqy",
 	"container_popup": "styles_container_popup__iFRpF",

@@ -15,6 +15,7 @@ const identifiers = [
   "label7",
 ] as const;
 export default function AllIngredients() {
+  const [buttonPressed, setButtonPressed] = useState(false);
   const [printLabel, setPrintLabel] = useState<{ [key: string]: any }>({});
   const [selectionUser, setSelectionUser] = useState<{ [key: string]: any }>(
     {}
@@ -41,6 +42,7 @@ export default function AllIngredients() {
       //console.log("printLabel=", printLabel);
       console.log("newSelectionUser=", newSelectionUser);
       //setSelectionUser(newSelectionUser);
+      setButtonPressed(true);
       localStorage.setItem(
         "ingredientHistory",
         JSON.stringify(newSelectionUser)
@@ -48,6 +50,7 @@ export default function AllIngredients() {
     },
     [printLabel, selectionUser]
   );
+
   const [userInput, setUserInput] = useState<UserInput>({});
   useEffect(() => {
     const savedInputs: string | null = localStorage.getItem("userInputs");
@@ -84,11 +87,78 @@ export default function AllIngredients() {
     localStorage.setItem("userInputs1", JSON.stringify(userInput1));
   };
 
+  const [printLabel2, setPrintLabel2] = useState<{ [key: string]: any }>({});
+  const [selectionUser2, setSelectionUser2] = useState<any[]>([]);
+  useEffect(() => {
+    //localStorage.setItem("ingredientHistory", JSON.stringify([]));
+    console.log("checkTasks2=", localStorage.getItem("ingredientHistory2"));
+    const savedIngredientHistory2: string | null =
+      localStorage.getItem("ingredientHistory2");
+    if (savedIngredientHistory2) {
+      const parsedIngredientHistory2 = JSON.parse(savedIngredientHistory2);
+      setPrintLabel2(parsedIngredientHistory2);
+    }
+  }, []);
+  const handleChange2 = useCallback(
+    (newSelectionUser2: { [key: string]: any }) => {
+      //console.log("selectionUser=", selectionUser);
+      //console.log("printLabel=", printLabel);
+      console.log("newSelectionUser=", newSelectionUser2);
+      setButtonPressed(true);
+      localStorage.setItem(
+        "ingredientHistory2",
+        JSON.stringify(newSelectionUser2)
+      );
+    },
+    []
+  );
+
   return (
     <>
       <div className={styles.container_text}>
         <div>
-          <MenuGroupsOpen />
+          <MenuGroupsOpen setSelectionUser2={setSelectionUser2} />
+          <button
+            value={selectionUser2}
+            onClick={() => handleChange2(selectionUser2)}
+            style={{ color: buttonPressed ? "red" : "green" }}
+          >
+            сохранить меню
+          </button>
+          <div>
+            {printLabel2 && (
+              <div>
+                {Array.isArray(printLabel2) ? (
+                  printLabel2.map((item: any, index: number) => (
+                    <div key={index}>
+                      {item.image && item.image.length > 0 && (
+                        <img src={item.image[0]} alt="Image" />
+                      )}
+                      {item.label && item.label.length > 0 && (
+                        <div>
+                          {item.numberHuman}
+                          {item.label}
+                        </div>
+                      )}
+                    </div>
+                  ))
+                ) : (
+                  <div className={styles.container_storage}>
+                    {printLabel2.image && printLabel2.image.length > 0 && (
+                      <img src={printLabel2.image[0]} alt="Image" />
+                    )}
+                    {printLabel2.label && printLabel2.label.length > 0 && (
+                      <div>
+                        {printLabel2.numberHuman}
+                        {printLabel2.label}
+                      </div>
+                    )}
+                  </div>
+                )}
+                //{" "}
+              </div>
+            )}
+          </div>
         </div>
         <input
           className={styles.container_input}
@@ -115,6 +185,7 @@ export default function AllIngredients() {
             <button
               value={selectionUser[identifier]}
               onClick={() => handleChange(identifier, selectionUser)}
+              style={{ color: buttonPressed ? "red" : "green" }}
             >
               сохранить меню
             </button>

@@ -2,12 +2,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
 import BuyForDay from "@/components/BuyForDay";
-import Dinner from "@/components/Dinner";
+import Soup from "@/components/Soup";
 import Starters from "@/components/Starters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faCopy } from "@fortawesome/free-solid-svg-icons";
 
-export default function MenuGroups() {
+export default function MenuGroups(props: any) {
   const [ingredients, setIngredients] = useState<any[]>([]);
   const [label, setLabel] = useState<any[]>([]);
   const [image, setImage] = useState<any[]>([]);
@@ -18,10 +18,14 @@ export default function MenuGroups() {
   };
 
   const [menuUser, setMenuUser] = useState<any[]>([]);
-  //useEffect(() => {
-  //props.setSelectionUser(menuUser);
-  //}, [props]);
-  console.log(menuUser);
+  useEffect(() => {
+    if (typeof menuUser[1] === "object") {
+      const arrForProps = [];
+      arrForProps.push(...menuUser.slice(1));
+      props.setSelectionUser(arrForProps);
+      console.log(arrForProps);
+    }
+  }, [menuUser]);
   const allIngredients: any[] = [];
   let oneArrIngredients: any[] = []; //один массив всех ингридиентов
   const sumArrPrint: any[] = []; //массив с суммированными значениями
@@ -89,12 +93,11 @@ export default function MenuGroups() {
         </button>
         {openMenu && (
           <div className={styles.container_popup}>
+            <Soup setIngredients={setIngredients} setLabel={setLabel} />
             <Starters setIngredients={setIngredients} setLabel={setLabel} />
             <Starters setIngredients={setIngredients} setLabel={setLabel} />
             <Starters setIngredients={setIngredients} setLabel={setLabel} />
             <Starters setIngredients={setIngredients} setLabel={setLabel} />
-            <Starters setIngredients={setIngredients} setLabel={setLabel} />
-            {/* <Dinner setIngredients={setIngredients} /> */}
           </div>
         )}
       </div>

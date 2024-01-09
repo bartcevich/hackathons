@@ -245,11 +245,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4324))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4066))
 
 /***/ }),
 
-/***/ 4324:
+/***/ 4066:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -407,11 +407,27 @@ const BuyForDay = (props)=>{
 };
 /* harmony default export */ const components_BuyForDay = (BuyForDay);
 
-// EXTERNAL MODULE: ./src/components/Starters/styles.module.scss
-var Starters_styles_module = __webpack_require__(9466);
-var Starters_styles_module_default = /*#__PURE__*/__webpack_require__.n(Starters_styles_module);
+// EXTERNAL MODULE: ./src/components/Soup/styles.module.scss
+var Soup_styles_module = __webpack_require__(1191);
+var Soup_styles_module_default = /*#__PURE__*/__webpack_require__.n(Soup_styles_module);
 ;// CONCATENATED MODULE: ./src/services/getData.ts
-const DATA_BREAKFAST = [
+const SIDE_DISH = [
+    {
+        "label": "Бендерики",
+        "value": {
+            "Куриное филе гр": 100,
+            "Чеснок гр": 3,
+            "Лук репчатый гр": 25,
+            "Мука пшеничная гр": 37,
+            "Яйца куриные шт": 0.7,
+            "Молоко гр": 10,
+            "Подсолнечное масло гр": 10,
+            "Соль гр": 5,
+            "Сахар гр": 5,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
     {
         "label": "Блины бахиры",
         "value": {
@@ -438,51 +454,6 @@ const DATA_BREAKFAST = [
             "Дрожжи сухие гр": 1.3,
             "Сахар ванильный гр": 2,
             "Соль гр": 1
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Ленивый фаршированный перец",
-        "value": {
-            "Свинина гр": 100,
-            "Перец сладкий гр": 75,
-            "Морковь гр": 38,
-            "Лук репчатый гр": 50,
-            "Белый рис гр": 25,
-            "Яйца куриные шт": 0.3,
-            "Соус томатный гр": 13,
-            "Майонез гр": 13,
-            "Подсолнечное масло гр": 7.5,
-            "Специи": 1,
-            "Соль гр": 1
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Суп пюре из тыквы",
-        "value": {
-            "Куриное филе гр": 60,
-            "Тыква гр": 120,
-            "Морковь гр": 40,
-            "Лук репчатый гр": 40,
-            "Картофель гр": 40,
-            "Батон гр": 30
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Пшенная каша",
-        "value": {
-            "Пшено гр": 45,
-            "Масло сливочное гр": 10
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Манная каша",
-        "value": {
-            "Манка гр": 40,
-            "Молоко гр": 200
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -535,63 +506,61 @@ const DATA_BREAKFAST = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Суп с фрикадельками и булгуром",
+        "label": "Капуста тушеная с мясом.",
         "value": {
-            "Свиной фарш гр": 75,
+            "Свинина гр": 65,
+            "Капуста белокачанная гр": 125,
             "Морковь гр": 40,
-            "Картофель гр": 80,
-            "Помидоры гр": 50,
-            "Лук репчатый гр": 35,
-            "Булгур гр": 15,
-            "Специи": 1,
-            "Соль гр": 1,
-            "Подсолнечное масло гр": 15
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Щи из свежей капусты",
-        "value": {
-            "Говядина гр": 100,
-            "Капуста белокачанная гр": 100,
-            "Лук репчатый гр": 33,
-            "Морковь гр": 25,
-            "Помидоры гр": 50,
-            "Картофель гр": 60,
-            "Чеснок гр": 3,
-            "Подсолнечное масло гр": 10,
-            "Специи": 1,
-            "Соль гр": 1
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Бендерики",
-        "value": {
-            "Куриное филе гр": 100,
-            "Чеснок гр": 3,
-            "Лук репчатый гр": 25,
-            "Мука пшеничная гр": 37,
-            "Яйца куриные шт": 0.7,
-            "Молоко гр": 10,
-            "Подсолнечное масло гр": 10,
-            "Соль гр": 5,
-            "Сахар гр": 5,
+            "Лук репчатый гр": 40,
+            "Соус томатный гр": 10,
             "Специи": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Пшенный суп сяйцом",
+        "label": "Карри с курицей",
         "value": {
-            "Лук репчатый гр": 35,
-            "Картофель гр": 60,
-            "Морковь гр": 40,
-            "Яйца куриные шт": 0.5,
-            "Пшено гр": 15,
-            "Подсолнечное масло гр": 10,
+            "Курица гр": 170,
+            "Лук репчатый гр": 40,
+            "Помидоры гр": 70,
+            "Чеснок гр": 3,
+            "Имбирь гр": 5,
+            "Соль гр": 1,
+            "Специи": 1,
+            "Кари гр": 7
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Ленивый фаршированный перец",
+        "value": {
+            "Свинина гр": 100,
+            "Перец сладкий гр": 75,
+            "Морковь гр": 38,
+            "Лук репчатый гр": 50,
+            "Белый рис гр": 25,
+            "Яйца куриные шт": 0.3,
+            "Соус томатный гр": 13,
+            "Майонез гр": 13,
+            "Подсолнечное масло гр": 7.5,
             "Специи": 1,
             "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Манная каша",
+        "value": {
+            "Манка гр": 40,
+            "Молоко гр": 200
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пшенная каша",
+        "value": {
+            "Пшено гр": 45,
+            "Масло сливочное гр": 10
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -625,68 +594,312 @@ const DATA_BREAKFAST = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Карри с курицей",
+        "label": "Шакшука.",
         "value": {
-            "Курица гр": 170,
-            "Лук репчатый гр": 40,
-            "Помидоры гр": 70,
-            "Чеснок гр": 3,
-            "Имбирь гр": 5,
-            "Соль гр": 1,
-            "Специи": 1,
-            "Кари гр": 7
+            "Свиной фарш гр": 100,
+            "Перец сладкий гр": 25,
+            "Лук репчатый гр": 25,
+            "Помидоры гр": 35,
+            "Чеснок гр": 5,
+            "Яйца куриные шт": 1,
+            "Подсолнечное масло гр": 20,
+            "Специи": 2
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     }
 ];
-const DATA_LUNCH = [
+const CHOOSE_SOUP = [
     {
-        "label": "Карри с курицей",
+        "label": "Борщ.",
         "value": {
-            "Курица гр": 170,
-            "Лук репчатый гр": 40,
-            "Помидоры гр": 70,
-            "Чеснок гр": 3,
-            "Имбирь гр": 5,
-            "Соль гр": 1,
+            "Курица гр": 100,
+            "Сметана гр": 20,
+            "Картофель гр": 100,
+            "Капуста белокачанная гр": 30,
+            "Свёкла гр": 50,
+            "Морковь гр": 20,
+            "Соус томатный гр": 3,
+            "Подсолнечное масло гр": 3,
+            "Специи": 3
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Куриный суп с яичной лапшой.",
+        "value": {
+            "Курица гр": 100,
+            "Лук репчатый гр": 35,
+            "Морковь гр": 13,
             "Специи": 1,
-            "Кари гр": 7
+            "Мука пшеничная гр": 40,
+            "Яйца куриные шт": 0.3
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Овощной суп.",
+        "value": {
+            "Курица гр": 100,
+            "Морковь гр": 25,
+            "Перец сладкий гр": 25,
+            "Лук-порей гр": 17,
+            "Картофель гр": 50,
+            "Петрушка гр": 1,
+            "Укроп гр": 1,
+            "Консервированный горошек гр": 27,
+            "Консервированная фосоль гр": 27,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Овощной суп с пельменями.",
+        "value": {
+            "Пельмени гр": 50,
+            "Ассорти овощное замороженное гр": 75,
+            "Укроп гр": 1,
+            "Лук зелёный гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пшенный суп сяйцом",
+        "value": {
+            "Лук репчатый гр": 35,
+            "Картофель гр": 60,
+            "Морковь гр": 40,
+            "Яйца куриные шт": 0.5,
+            "Пшено гр": 15,
+            "Подсолнечное масло гр": 10,
+            "Специи": 1,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Рассольник.",
+        "value": {
+            "Свиные ребра гр": 80,
+            "Морковь гр": 20,
+            "Лук репчатый гр": 20,
+            "Картофель гр": 60,
+            "Перловка гр": 12,
+            "Соус томатный гр": 10,
+            "Специи": 1,
+            "Огурец соленый гр": 40
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Суп пюре из тыквы",
+        "value": {
+            "Куриное филе гр": 60,
+            "Тыква гр": 120,
+            "Морковь гр": 40,
+            "Лук репчатый гр": 40,
+            "Картофель гр": 40,
+            "Батон гр": 30
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Суп с фрикадельками и булгуром",
+        "value": {
+            "Свиной фарш гр": 75,
+            "Морковь гр": 40,
+            "Картофель гр": 80,
+            "Помидоры гр": 50,
+            "Лук репчатый гр": 35,
+            "Булгур гр": 15,
+            "Специи": 1,
+            "Соль гр": 1,
+            "Подсолнечное масло гр": 15
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Холодник.",
+        "value": {
+            "Свёкла гр": 75,
+            "Огурец гр": 45,
+            "Лук зелёный гр": 13,
+            "Укроп гр": 4,
+            "Сметана гр": 20,
+            "Яйца куриные шт": 0.8
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Щи из свежей капусты",
+        "value": {
+            "Говядина гр": 100,
+            "Капуста белокачанная гр": 100,
+            "Лук репчатый гр": 33,
+            "Морковь гр": 25,
+            "Помидоры гр": 50,
+            "Картофель гр": 60,
+            "Чеснок гр": 3,
+            "Подсолнечное масло гр": 10,
+            "Специи": 1,
+            "Соль гр": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     }
 ];
 const DATA_DINNER = [
     {
-        "label": "Карри с курицей",
+        "label": "Шакшука.",
         "value": {
-            "Курица гр": 170,
-            "Лук репчатый гр": 40,
-            "Помидоры гр": 70,
-            "Чеснок гр": 3,
-            "Имбирь гр": 5,
-            "Соль гр": 1,
-            "Специи": 1,
-            "Кари гр": 7
+            "Пшено гр": 45,
+            "Масло сливочное гр": 10
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     }
 ];
 function getBreakfastData() {
-    return DATA_BREAKFAST;
+    return SIDE_DISH;
 }
 function getLunchData() {
-    return DATA_LUNCH;
+    return CHOOSE_SOUP;
 }
 function getDinnerData() {
     return DATA_DINNER;
 }
 
-;// CONCATENATED MODULE: ./src/components/Starters/index.tsx
+;// CONCATENATED MODULE: ./src/components/Soup/index.tsx
 /* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
 
 const Monday = (props)=>{
+    const First_courses_soup = getLunchData();
+    const [sunday, setSunday] = (0,react_.useState)("");
+    const [sundayValue, setSundayValue] = (0,react_.useState)([]);
+    const [sundayImage, setSundayImage] = (0,react_.useState)("");
+    const [sundayLabel, setSundayLabel] = (0,react_.useState)("");
+    const [count, setCount] = (0,react_.useState)(1);
+    const [prevCount, setPrevCount] = (0,react_.useState)(0);
+    const [prevLabel, setPrevLabel] = (0,react_.useState)("");
+    const handleSelectChange = (event)=>{
+        const selectedLabel = event.target.value;
+        const selectedOption = First_courses_soup.find((option)=>option.label === selectedLabel);
+        if (selectedOption) {
+            setSunday(selectedLabel);
+            setSundayImage(selectedOption.Image);
+            setSundayLabel(selectedOption.label);
+            setSundayValue(Object.entries(selectedOption.value));
+        }
+    };
+    (0,react_.useEffect)(()=>{
+        if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
+            setPrevLabel(sundayLabel);
+            setPrevCount(count);
+            let sundayLabelArr = [];
+            sundayLabelArr.push(sundayLabel);
+            let sundayImageArr = [];
+            sundayImageArr.push(sundayImage);
+            let countIngredients = [];
+            for(let i = 0; i < sundayValue.length; i++){
+                countIngredients.push(sundayValue[i][0]);
+                countIngredients.push(sundayValue[i][1] * count);
+            }
+            if (count === 1) {
+                sundayLabelArr.push(`Для ${count} человека.`);
+            } else if (count > 1) {
+                sundayLabelArr.push(`Для ${count} человек.`);
+            }
+            sundayLabelArr.push(sundayImageArr);
+            props.setLabel(sundayLabelArr);
+            props.setIngredients(countIngredients);
+        }
+    }, [
+        sunday,
+        count,
+        sundayImage,
+        sundayLabel,
+        sundayValue,
+        props,
+        prevLabel,
+        prevCount
+    ]);
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (Soup_styles_module_default()).container_top,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (Soup_styles_module_default()).image,
+                        children: sundayImage !== "" && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                            src: sundayImage,
+                            alt: "Image"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (Soup_styles_module_default()).container,
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                                    onChange: handleSelectChange,
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                            value: "",
+                                            children: "Супы"
+                                        }),
+                                        First_courses_soup.map((option, index)=>/*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: option.label,
+                                                children: option.label
+                                            }, index))
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (Soup_styles_module_default()).container_button,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Soup_styles_module_default()).container_text,
+                                        children: "количество порций"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Soup_styles_module_default()).button,
+                                        onClick: ()=>setCount(count < 2 ? 1 : count - 1),
+                                        children: "-"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Soup_styles_module_default()).button2,
+                                        children: count
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Soup_styles_module_default()).button,
+                                        onClick: ()=>setCount(count > 99 ? 100 : count + 1),
+                                        children: "+"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (Soup_styles_module_default()).container_ingredients,
+                children: sundayValue.map(([key, value], index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: `${key}: ${value * count}`
+                    }, index))
+            })
+        ]
+    });
+};
+/* harmony default export */ const Soup = (Monday);
+
+// EXTERNAL MODULE: ./src/components/Starters/styles.module.scss
+var Starters_styles_module = __webpack_require__(9466);
+var Starters_styles_module_default = /*#__PURE__*/__webpack_require__.n(Starters_styles_module);
+;// CONCATENATED MODULE: ./src/components/Starters/index.tsx
+/* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+const Starters_Monday = (props)=>{
     const Starters_dessert = getBreakfastData();
     //const first_courses_soup: MealData[] = getLunchData();
     //const Main_courses: MealData[] = getDinnerData();
@@ -807,7 +1020,7 @@ const Monday = (props)=>{
         ]
     });
 };
-/* harmony default export */ const Starters = (Monday);
+/* harmony default export */ const Starters = (Starters_Monday);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.js
 var react_fontawesome = __webpack_require__(8195);
@@ -821,7 +1034,8 @@ var free_solid_svg_icons = __webpack_require__(7877);
 
 
 
-function MenuGroups() {
+
+function MenuGroups(props) {
     const [ingredients, setIngredients] = (0,react_.useState)([]);
     const [label, setLabel] = (0,react_.useState)([]);
     const [image, setImage] = (0,react_.useState)([]);
@@ -831,10 +1045,16 @@ function MenuGroups() {
         setOpenMenu((prevValue)=>!prevValue);
     };
     const [menuUser, setMenuUser] = (0,react_.useState)([]);
-    //useEffect(() => {
-    //props.setSelectionUser(menuUser);
-    //}, [props]);
-    console.log(menuUser);
+    (0,react_.useEffect)(()=>{
+        if (typeof menuUser[1] === "object") {
+            const arrForProps = [];
+            arrForProps.push(...menuUser.slice(1));
+            props.setSelectionUser(arrForProps);
+            console.log(arrForProps);
+        }
+    }, [
+        menuUser
+    ]);
     const allIngredients = [];
     let oneArrIngredients = []; //один массив всех ингридиентов
     const sumArrPrint = []; //массив с суммированными значениями
@@ -895,7 +1115,7 @@ function MenuGroups() {
                     openMenu && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (MenuGroups_styles_module_default()).container_popup,
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Soup, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
@@ -982,6 +1202,7 @@ var MenuGroupsOpen_styles_module_default = /*#__PURE__*/__webpack_require__.n(Me
 
 
 
+
 function MenuGroupsOpen_MenuGroups() {
     const [ingredients, setIngredients] = (0,react_.useState)([]);
     const [label, setLabel] = (0,react_.useState)([]);
@@ -1053,7 +1274,7 @@ function MenuGroupsOpen_MenuGroups() {
                     openMenu && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (MenuGroupsOpen_styles_module_default()).container_popup,
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Soup, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
@@ -1135,86 +1356,152 @@ function MenuGroupsOpen_MenuGroups() {
 
 
 
-const inputIdentifiers = [
-    "input2",
-    "input3",
-    "input4",
-    "input5",
-    "input6",
-    "input7"
+const identifiers = [
+    "label2",
+    "label3",
+    "label4",
+    "label5",
+    "label6",
+    "label7"
 ];
 function AllIngredients() {
+    const [printLabel, setPrintLabel] = (0,react_.useState)({});
+    const [selectionUser, setSelectionUser] = (0,react_.useState)({});
+    //const [selectionUser, setSelectionUser] = useState<any[]>([]);
+    //console.log(selectionUser);
+    (0,react_.useEffect)(()=>{
+        //localStorage.setItem("ingredientHistory", JSON.stringify([]));
+        console.log("checkTasks=", localStorage.getItem("ingredientHistory"));
+        const savedIngredientHistory = localStorage.getItem("ingredientHistory");
+        if (savedIngredientHistory) {
+            const parsedIngredientHistory = JSON.parse(savedIngredientHistory);
+            setPrintLabel(parsedIngredientHistory);
+        }
+    }, []);
+    const handleChange = (0,react_.useCallback)((identifier, value)=>{
+        const newSelectionUser = {
+            ...printLabel,
+            [identifier]: value
+        };
+        console.log("selectionUser=", selectionUser);
+        console.log("printLabel=", printLabel);
+        console.log("newSelectionUser=", newSelectionUser);
+        //setSelectionUser(newSelectionUser);
+        localStorage.setItem("ingredientHistory", JSON.stringify(newSelectionUser));
+    }, [
+        printLabel,
+        selectionUser
+    ]);
     const [userInput, setUserInput] = (0,react_.useState)({});
-    const [userInput1, setUserInput1] = (0,react_.useState)({});
     (0,react_.useEffect)(()=>{
         const savedInputs = localStorage.getItem("userInputs");
         if (savedInputs) {
             const parsedInputs = JSON.parse(savedInputs);
             setUserInput(parsedInputs);
         }
-        const savedInput1 = localStorage.getItem("userInputs");
-        if (savedInput1) {
-            const parsedInput1 = JSON.parse(savedInput1);
-            setUserInput1(parsedInput1);
-        }
     }, []);
     const handleInputChange = (e, identifier)=>{
-        if (identifier === "input1") {
-            const newInputs1 = {
-                ...userInput,
-                input1: e.target.value
-            };
-            setUserInput1(newInputs1);
-            localStorage.setItem("userInputs", JSON.stringify(newInputs1));
-        } else {
-            const newInputs = {
-                ...userInput,
-                [identifier]: e.target.value
-            };
-            setUserInput(newInputs);
-            localStorage.setItem("userInputs", JSON.stringify(userInput));
-        }
+        const newInputs = {
+            ...userInput,
+            [identifier]: e.target.value
+        };
+        setUserInput(newInputs);
+        localStorage.setItem("userInputs", JSON.stringify(userInput));
     };
-    //const [selectionUser, setSelectionUser] = useState<any[]>([]);
-    //console.log(selectionUser);
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-            className: (styles_module_default()).container_top,
-            children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+    const [userInput1, setUserInput1] = (0,react_.useState)({});
+    (0,react_.useEffect)(()=>{
+        const savedInputs1 = localStorage.getItem("userInputs1");
+        if (savedInputs1) {
+            const parsedInputs1 = JSON.parse(savedInputs1);
+            setUserInput1(parsedInputs1);
+        }
+    }, []);
+    const handleInputChange1 = (e)=>{
+        const newInputs1 = {
+            ...userInput1
+        };
+        newInputs1[e.target.name] = e.target.value;
+        setUserInput1(newInputs1);
+        localStorage.setItem("userInputs1", JSON.stringify(userInput1));
+    };
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (styles_module_default()).container_text,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_MenuGroups, {})
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                        className: (styles_module_default()).container_input,
+                        type: "text",
+                        name: "menuText",
+                        value: userInput1.menuText || "",
+                        maxLength: 27,
+                        onChange: handleInputChange1,
+                        placeholder: "Меню для..."
+                    })
+                ]
+            }),
+            identifiers.map((identifier)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: (styles_module_default()).container_text,
                     children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_MenuGroups, {})
-                        }),
                         /*#__PURE__*/ jsx_runtime_.jsx("input", {
                             className: (styles_module_default()).container_input,
                             type: "text",
-                            value: userInput1["input1"] || "",
+                            value: userInput[identifier] || "",
                             maxLength: 27,
-                            onChange: (e)=>handleInputChange(e, "input1"),
+                            onChange: (e)=>handleInputChange(e, identifier),
                             placeholder: "Меню для..."
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (styles_module_default()).component_button,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx(MenuGroups, {
+                                    setSelectionUser: setSelectionUser
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                    value: selectionUser[identifier],
+                                    onClick: ()=>handleChange(identifier, selectionUser),
+                                    children: "сохранить меню"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            children: printLabel[identifier] && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                children: Array.isArray(printLabel[identifier]) ? printLabel[identifier].map((item, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        children: [
+                                            item.image && item.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: item.image[0],
+                                                alt: "Image"
+                                            }),
+                                            item.label && item.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                children: [
+                                                    item.numberHuman,
+                                                    item.label
+                                                ]
+                                            })
+                                        ]
+                                    }, index)) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (styles_module_default()).container_storage,
+                                    children: [
+                                        printLabel[identifier].image && printLabel[identifier].image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: printLabel[identifier].image[0],
+                                            alt: "Image"
+                                        }),
+                                        printLabel[identifier].label && printLabel[identifier].label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            children: [
+                                                printLabel[identifier].numberHuman,
+                                                printLabel[identifier].label
+                                            ]
+                                        })
+                                    ]
+                                })
+                            }, identifier)
                         })
                     ]
-                }),
-                inputIdentifiers.map((identifier)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (styles_module_default()).container_text,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(MenuGroups, {})
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                                className: (styles_module_default()).container_input,
-                                type: "text",
-                                value: userInput[identifier] || "",
-                                maxLength: 27,
-                                onChange: (e)=>handleInputChange(e, identifier),
-                                placeholder: "Меню для..."
-                            })
-                        ]
-                    }, identifier))
-            ]
-        })
+                }, identifier))
+        ]
     });
 }
 
@@ -1338,6 +1625,29 @@ module.exports = {
 	"handleIngredients": "styles_handleIngredients__8kZ4n",
 	"handleCopy": "styles_handleCopy__Qio6C",
 	"tooltip": "styles_tooltip__QA83h"
+};
+
+
+/***/ }),
+
+/***/ 1191:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"fontHelveticaNeueCyr": "HelveticaNeueCyr,sans-serif",
+	"fontBarlow": "Barlow,sans-serif",
+	"colorRedLight": "#ef233c",
+	"colorRedDark": "#d90429",
+	"container_top": "styles_container_top__7OFyz",
+	"container": "styles_container__gBl_n",
+	"container_button": "styles_container_button__9Jkqm",
+	"button": "styles_button__IMy0I",
+	"button2": "styles_button2__ax9mk",
+	"container_text": "styles_container_text__UCMOZ",
+	"container_ingredients": "styles_container_ingredients__JxrpR",
+	"container_popup": "styles_container_popup__woY6G",
+	"container_Summarized": "styles_container_Summarized__nNm3V"
 };
 
 

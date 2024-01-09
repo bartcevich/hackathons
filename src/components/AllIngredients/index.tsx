@@ -19,8 +19,6 @@ export default function AllIngredients() {
   const [selectionUser, setSelectionUser] = useState<{ [key: string]: any }>(
     {}
   );
-  //const [selectionUser, setSelectionUser] = useState<any[]>([]);
-  //console.log(selectionUser);
 
   useEffect(() => {
     //localStorage.setItem("ingredientHistory", JSON.stringify([]));
@@ -39,8 +37,8 @@ export default function AllIngredients() {
         ...printLabel,
         [identifier]: value,
       };
-      console.log("selectionUser=", selectionUser);
-      console.log("printLabel=", printLabel);
+      //console.log("selectionUser=", selectionUser);
+      //console.log("printLabel=", printLabel);
       console.log("newSelectionUser=", newSelectionUser);
       //setSelectionUser(newSelectionUser);
       localStorage.setItem(
@@ -77,10 +75,7 @@ export default function AllIngredients() {
       setUserInput1(parsedInputs1);
     }
   }, []);
-  const handleInputChange1 = (
-    e: React.ChangeEvent<HTMLInputElement>
-    //identifier: (typeof identifiers)[number]
-  ) => {
+  const handleInputChange1 = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newInputs1: UserInput1 = {
       ...userInput1,
     };

@@ -47,7 +47,6 @@ const Monday: React.FC<MondayProps> = (props) => {
   };
 
   useEffect(() => {
-    //как применить здесь useContext
     if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
       setPrevLabel(sundayLabel);
       setPrevCount(count);
@@ -85,7 +84,10 @@ const Monday: React.FC<MondayProps> = (props) => {
     <>
       <div className={styles.container_top}>
         <div className={styles.image}>
-          {sundayImage !== "" && <img src={sundayImage} alt="Image" />}
+          {/* {sundayImage !== "" && <img src={sundayImage} alt="Image" />} */}
+          {/* {sundayImage && <img src={sundayImage} alt="Image" />} */}
+          {!!sundayImage && <img src={sundayImage} alt="Image" />}
+          {/* // булевый ответ дают !! */}
         </div>
         <div>
           <div className={styles.container}>

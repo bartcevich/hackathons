@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
 import BuyForDay from "@/components/BuyForDay";
 import Soup from "@/components/Soup";
+import Salad from "@/components/Salad";
+import Desserts from "@/components/Desserts";
 import Starters from "@/components/Starters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faCopy } from "@fortawesome/free-solid-svg-icons";
@@ -94,12 +96,11 @@ export default function MenuGroups(props: any) {
         </button>
         {openMenu && (
           <div className={styles.container_popup}>
+            <Starters setIngredients={setIngredients} setLabel={setLabel} />
+            <Starters setIngredients={setIngredients} setLabel={setLabel} />
             <Soup setIngredients={setIngredients} setLabel={setLabel} />
-            <Starters setIngredients={setIngredients} setLabel={setLabel} />
-            <Starters setIngredients={setIngredients} setLabel={setLabel} />
-            <Starters setIngredients={setIngredients} setLabel={setLabel} />
-            <Starters setIngredients={setIngredients} setLabel={setLabel} />
-            {/* <Dinner setIngredients={setIngredients} /> */}
+            <Salad setIngredients={setIngredients} setLabel={setLabel} />
+            <Desserts setIngredients={setIngredients} setLabel={setLabel} />
           </div>
         )}
       </div>

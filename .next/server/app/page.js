@@ -245,11 +245,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4066))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4946))
 
 /***/ }),
 
-/***/ 4066:
+/***/ 4946:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -442,6 +442,18 @@ const SIDE_DISH = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Блины тонкие.",
+        "value": {
+            "Молоко гр": 133,
+            "Мука пшеничная гр": 73,
+            "Яйца куриные шт": 0.7,
+            "Подсолнечное масло гр": 8,
+            "Соль гр": 1,
+            "Сахар гр": 6
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Ватрушка с творогом",
         "value": {
             "Творог гр": 50,
@@ -454,6 +466,17 @@ const SIDE_DISH = [
             "Дрожжи сухие гр": 1.3,
             "Сахар ванильный гр": 2,
             "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Гренки.",
+        "value": {
+            "Батон гр": 85,
+            "Яйца куриные шт": 0.8,
+            "Сахар гр": 25,
+            "Подсолнечное масло гр": 25,
+            "Молоко гр": 13
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -557,10 +580,52 @@ const SIDE_DISH = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Оладьи на кефире.",
+        "value": {
+            "Кефир гр": 125,
+            "Мука пшеничная гр": 105,
+            "Яйца куриные шт": 0.3,
+            "Сахар гр": 6,
+            "Подсолнечное масло гр": 25,
+            "Сода гр": 1,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Плов.",
+        "value": {
+            "Свинина гр": 100,
+            "Лук репчатый гр": 70,
+            "Морковь гр": 84,
+            "Изюм гр": 25,
+            "Чеснок гр": 10,
+            "Белый рис гр": 50,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Пшенная каша",
         "value": {
             "Пшено гр": 45,
             "Масло сливочное гр": 10
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Рубленные котлеты.",
+        "value": {
+            "Куриное филе гр": 100,
+            "Сало гр": 30,
+            "Чеснок гр": 5,
+            "Яйца куриные шт": 0.3,
+            "Майонез гр": 10,
+            "Крахмал гр": 6,
+            "Подсолнечное масло гр": 20,
+            "Соль гр": 1,
+            "Специи": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -747,6 +812,291 @@ const CHOOSE_SOUP = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     }
 ];
+const HEARTY_SALAD = [
+    {
+        "label": "Винегрет.",
+        "value": {
+            "Свёкла гр": 75,
+            "Картофель гр": 50,
+            "Морковь гр": 35,
+            "Огурец соленый гр": 50,
+            "Лук репчатый гр": 20,
+            "Консервированный горошек гр": 25,
+            "Подсолнечное масло гр": 30,
+            "Уксус гр": 10,
+            "Сахар гр": 1,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Морковь по-корейски.",
+        "value": {
+            "Морковь гр": 170,
+            "Чеснок гр": 5,
+            "Перец горький гр": 1,
+            "Уксус гр": 20,
+            "Сахар гр": 10,
+            "Подсолнечное масло гр": 17,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Селедка под шубой.",
+        "value": {
+            "Картофель гр": 34,
+            "Морковь гр": 13,
+            "Лук репчатый гр": 8,
+            "Майонез гр": 16,
+            "Соль гр": 1,
+            "Специи": 1,
+            "Селедка соленая гр": 19
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат из белокочанной капусты с яблоком.",
+        "value": {
+            "Капуста белокачанная гр": 60,
+            "Морковь гр": 10,
+            "Яблоки гр": 20,
+            "Подсолнечное масло гр": 6,
+            "Уксус гр": 6,
+            "Сахар гр": 6,
+            "Соль гр": 2
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат из свеклы с чесноком.",
+        "value": {
+            "Свёкла гр": 100,
+            "Грецкий орех гр": 10,
+            "Чеснок гр": 5,
+            "Изюм гр": 10,
+            "Майонез гр": 20,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат из моркови с изюмом.",
+        "value": {
+            "Морковь гр": 75,
+            "Изюм гр": 12,
+            "Лимон гр": 5,
+            "Сахар гр": 6,
+            "Подсолнечное масло гр": 7
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат из помидоров и огурцов со сметаной.",
+        "value": {
+            "Огурец гр": 75,
+            "Помидоры гр": 75,
+            "Укроп гр": 10,
+            "Лук репчатый гр": 10,
+            "Сметана гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат из помидоров и огурцов с маслом.",
+        "value": {
+            "Огурец гр": 75,
+            "Помидоры гр": 75,
+            "Укроп гр": 10,
+            "Лук репчатый гр": 10,
+            "Подсолнечное масло гр": 20,
+            "Соль гр": 2
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат из свежих помидоров со сладким перцем.",
+        "value": {
+            "Помидоры гр": 100,
+            "Лук репчатый гр": 15,
+            "Перец сладкий гр": 34,
+            "Подсолнечное масло гр": 9,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат с курицей и яичными блинами.",
+        "value": {
+            "Куриное филе гр": 83,
+            "Лук репчатый гр": 10,
+            "Яйца куриные шт": 1.2,
+            "Консервированная кукуруза гр": 57,
+            "Майонез гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат с морской капустой.",
+        "value": {
+            "Морская капуста гр": 80,
+            "Крабовые палочки гр": 50,
+            "Яйца куриные шт": 0.6,
+            "Консервированная кукуруза гр": 70,
+            "Майонез гр": 20,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Салат с сельдереем, яблоком и морковью.",
+        "value": {
+            "Морковь гр": 50,
+            "Сельдирей корневой гр": 100,
+            "Яблоки гр": 100,
+            "Изюм гр": 15,
+            "Уксус гр": 10,
+            "Соевый соус гр": 10,
+            "Подсолнечное масло гр": 15,
+            "Специи": 1,
+            "Мёд гр": 5
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    }
+];
+const PASTRIES_DESSERTS = [
+    {
+        "label": "Пирог из кабачков.",
+        "value": {
+            "Кабачки гр": 20,
+            "Изюм гр": 13,
+            "Грецкий орех гр": 7,
+            "Мука пшеничная гр": 20,
+            "Разрыхлитель гр": 1,
+            "Сода гр": 1,
+            "Корица гр": 1,
+            "Сахар гр": 20,
+            "Сахар ванильный гр": 1,
+            "Яйца куриные шт": 0.2
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Лимонный бисквит.",
+        "value": {
+            "Лимон гр": 20,
+            "Молоко гр": 26,
+            "Яйца куриные шт": 0.125,
+            "Сахар гр": 19,
+            "Подсолнечное масло гр": 13,
+            "Мука пшеничная гр": 33,
+            "Разрыхлитель гр": 2
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Шоколадный бисквит.",
+        "value": {
+            "Молоко гр": 15,
+            "Сахар гр": 25,
+            "Яйца куриные шт": 0.125,
+            "Подсолнечное масло гр": 8,
+            "Сода гр": 1,
+            "Разрыхлитель гр": 1,
+            "Какао гр": 8,
+            "Сахар ванильный гр": 1,
+            "Мука пшеничная гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Морковный пирог.",
+        "value": {
+            "Морковь гр": 35,
+            "Грецкий орех гр": 3,
+            "Яйца куриные шт": 0.2,
+            "Подсолнечное масло гр": 15,
+            "Сахар гр": 19,
+            "Мука пшеничная гр": 30,
+            "Сахар ванильный гр": 1,
+            "Сода гр": 1,
+            "Разрыхлитель гр": 1,
+            "Корица гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог с кокосовой стружкой.",
+        "value": {
+            "Сметана гр": 16,
+            "Кефир гр": 16,
+            "Яйца куриные шт": 0.25,
+            "Сахар гр": 25,
+            "Мука пшеничная гр": 30,
+            "Разрыхлитель гр": 2,
+            "Кокосовая стружка гр": 10
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог сэндвич.",
+        "value": {
+            "Молоко гр": 15,
+            "Маргарин гр": 30,
+            "Яйца куриные шт": 0.25,
+            "Сахар гр": 25,
+            "Соль гр": 1,
+            "Майонез гр": 8,
+            "Мука пшеничная гр": 50,
+            "Консервированное варенье гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог зебра.",
+        "value": {
+            "Сметана гр": 25,
+            "Маргарин гр": 6,
+            "Яйца куриные шт": 0.4,
+            "Сахар гр": 40,
+            "Соль гр": 1,
+            "Какао гр": 3,
+            "Сода гр": 1,
+            "Крахмал гр": 1,
+            "Мука пшеничная гр": 35
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог из яблок на кефире.",
+        "value": {
+            "Кефир гр": 31,
+            "Яблоки гр": 75,
+            "Яйца куриные шт": 0.25,
+            "Сахар гр": 25,
+            "Сода гр": 1,
+            "Мука пшеничная гр": 30,
+            "Разрыхлитель гр": 2
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог с геркулесом.",
+        "value": {
+            "Маргарин гр": 15,
+            "Сметана гр": 2,
+            "Масло сливочное гр": 6,
+            "Яйца куриные шт": 0.2,
+            "Сахар гр": 19,
+            "Сода гр": 1,
+            "Мука пшеничная гр": 40,
+            "Овсяные хлопья гр": 11,
+            "Консервированное варенье гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    }
+];
 const DATA_DINNER = [
     {
         "label": "Шакшука.",
@@ -757,6 +1107,12 @@ const DATA_DINNER = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     }
 ];
+function getPastriesDesserts() {
+    return PASTRIES_DESSERTS;
+}
+function getSalad() {
+    return HEARTY_SALAD;
+}
 function getBreakfastData() {
     return SIDE_DISH;
 }
@@ -891,6 +1247,261 @@ const Monday = (props)=>{
 };
 /* harmony default export */ const Soup = (Monday);
 
+// EXTERNAL MODULE: ./src/components/Salad/styles.module.scss
+var Salad_styles_module = __webpack_require__(1608);
+var Salad_styles_module_default = /*#__PURE__*/__webpack_require__.n(Salad_styles_module);
+;// CONCATENATED MODULE: ./src/components/Salad/index.tsx
+/* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+const Salad_Monday = (props)=>{
+    const Salad_courses = getSalad();
+    const [sunday, setSunday] = (0,react_.useState)("");
+    const [sundayValue, setSundayValue] = (0,react_.useState)([]);
+    const [sundayImage, setSundayImage] = (0,react_.useState)("");
+    const [sundayLabel, setSundayLabel] = (0,react_.useState)("");
+    const [count, setCount] = (0,react_.useState)(1);
+    const [prevCount, setPrevCount] = (0,react_.useState)(0);
+    const [prevLabel, setPrevLabel] = (0,react_.useState)("");
+    const handleSelectChange = (event)=>{
+        const selectedLabel = event.target.value;
+        const selectedOption = Salad_courses.find((option)=>option.label === selectedLabel);
+        if (selectedOption) {
+            setSunday(selectedLabel);
+            setSundayImage(selectedOption.Image);
+            setSundayLabel(selectedOption.label);
+            setSundayValue(Object.entries(selectedOption.value));
+        //props.setIngredients(Object.entries(selectedOption.value));
+        }
+    };
+    (0,react_.useEffect)(()=>{
+        if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
+            setPrevLabel(sundayLabel);
+            setPrevCount(count);
+            let sundayLabelArr = [];
+            sundayLabelArr.push(sundayLabel);
+            let sundayImageArr = [];
+            sundayImageArr.push(sundayImage);
+            let countIngredients = [];
+            for(let i = 0; i < sundayValue.length; i++){
+                countIngredients.push(sundayValue[i][0]);
+                countIngredients.push(sundayValue[i][1] * count);
+            }
+            if (count === 1) {
+                sundayLabelArr.push(`Для ${count} человека.`); //222
+            } else if (count > 1) {
+                sundayLabelArr.push(`Для ${count} человек.`);
+            }
+            sundayLabelArr.push(sundayImageArr); //333
+            props.setLabel(sundayLabelArr);
+            props.setIngredients(countIngredients);
+        }
+    }, [
+        sunday,
+        count,
+        sundayImage,
+        sundayLabel,
+        sundayValue,
+        props,
+        prevLabel,
+        prevCount
+    ]);
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (Salad_styles_module_default()).container_top,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (Salad_styles_module_default()).image,
+                        children: !!sundayImage && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                            src: sundayImage,
+                            alt: "Image"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (Salad_styles_module_default()).container,
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                                    onChange: handleSelectChange,
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                            value: "",
+                                            children: "Салаты"
+                                        }),
+                                        Salad_courses.map((option, index)=>/*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: option.label,
+                                                children: option.label
+                                            }, index))
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (Salad_styles_module_default()).container_button,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Salad_styles_module_default()).container_text,
+                                        children: "количество порций"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Salad_styles_module_default()).button,
+                                        onClick: ()=>setCount(count < 2 ? 1 : count - 1),
+                                        children: "-"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Salad_styles_module_default()).button2,
+                                        children: count
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Salad_styles_module_default()).button,
+                                        onClick: ()=>setCount(count > 99 ? 100 : count + 1),
+                                        children: "+"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (Salad_styles_module_default()).container_ingredients,
+                children: sundayValue.map(([key, value], index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: `${key}: ${value * count}`
+                    }, index))
+            })
+        ]
+    });
+};
+/* harmony default export */ const Salad = (Salad_Monday);
+
+// EXTERNAL MODULE: ./src/components/Desserts/styles.module.scss
+var Desserts_styles_module = __webpack_require__(8034);
+var Desserts_styles_module_default = /*#__PURE__*/__webpack_require__.n(Desserts_styles_module);
+;// CONCATENATED MODULE: ./src/components/Desserts/index.tsx
+/* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+const Desserts_Monday = (props)=>{
+    const PastriesDesserts = getPastriesDesserts();
+    const [sunday, setSunday] = (0,react_.useState)("");
+    const [sundayValue, setSundayValue] = (0,react_.useState)([]);
+    const [sundayImage, setSundayImage] = (0,react_.useState)("");
+    const [sundayLabel, setSundayLabel] = (0,react_.useState)("");
+    const [count, setCount] = (0,react_.useState)(1);
+    const [prevCount, setPrevCount] = (0,react_.useState)(0);
+    const [prevLabel, setPrevLabel] = (0,react_.useState)("");
+    const handleSelectChange = (event)=>{
+        const selectedLabel = event.target.value;
+        const selectedOption = PastriesDesserts.find((option)=>option.label === selectedLabel);
+        if (selectedOption) {
+            setSunday(selectedLabel);
+            setSundayImage(selectedOption.Image);
+            setSundayLabel(selectedOption.label);
+            setSundayValue(Object.entries(selectedOption.value));
+        }
+    };
+    (0,react_.useEffect)(()=>{
+        if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
+            setPrevLabel(sundayLabel);
+            setPrevCount(count);
+            let sundayLabelArr = [];
+            sundayLabelArr.push(sundayLabel);
+            let sundayImageArr = [];
+            sundayImageArr.push(sundayImage);
+            let countIngredients = [];
+            for(let i = 0; i < sundayValue.length; i++){
+                countIngredients.push(sundayValue[i][0]);
+                countIngredients.push(sundayValue[i][1] * count);
+            }
+            if (count === 1) {
+                sundayLabelArr.push(`Для ${count} человека.`);
+            } else if (count > 1) {
+                sundayLabelArr.push(`Для ${count} человек.`);
+            }
+            sundayLabelArr.push(sundayImageArr);
+            props.setLabel(sundayLabelArr);
+            props.setIngredients(countIngredients);
+        }
+    }, [
+        sunday,
+        count,
+        sundayImage,
+        sundayLabel,
+        sundayValue,
+        props,
+        prevLabel,
+        prevCount
+    ]);
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (Desserts_styles_module_default()).container_top,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (Desserts_styles_module_default()).image,
+                        children: !!sundayImage && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                            src: sundayImage,
+                            alt: "Image"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (Desserts_styles_module_default()).container,
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                                    onChange: handleSelectChange,
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                            value: "",
+                                            children: "Выпечка и десерты"
+                                        }),
+                                        PastriesDesserts.map((option, index)=>/*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: option.label,
+                                                children: option.label
+                                            }, index))
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (Desserts_styles_module_default()).container_button,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Desserts_styles_module_default()).container_text,
+                                        children: "количество порций"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Desserts_styles_module_default()).button,
+                                        onClick: ()=>setCount(count < 2 ? 1 : count - 1),
+                                        children: "-"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Desserts_styles_module_default()).button2,
+                                        children: count
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (Desserts_styles_module_default()).button,
+                                        onClick: ()=>setCount(count > 99 ? 100 : count + 1),
+                                        children: "+"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (Desserts_styles_module_default()).container_ingredients,
+                children: sundayValue.map(([key, value], index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: `${key}: ${value * count}`
+                    }, index))
+            })
+        ]
+    });
+};
+/* harmony default export */ const Desserts = (Desserts_Monday);
+
 // EXTERNAL MODULE: ./src/components/Starters/styles.module.scss
 var Starters_styles_module = __webpack_require__(9466);
 var Starters_styles_module_default = /*#__PURE__*/__webpack_require__.n(Starters_styles_module);
@@ -922,7 +1533,6 @@ const Starters_Monday = (props)=>{
         }
     };
     (0,react_.useEffect)(()=>{
-        //как применить здесь useContext
         if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
             setPrevLabel(sundayLabel);
             setPrevCount(count);
@@ -961,7 +1571,7 @@ const Starters_Monday = (props)=>{
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (Starters_styles_module_default()).image,
-                        children: sundayImage !== "" && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                        children: !!sundayImage && /*#__PURE__*/ jsx_runtime_.jsx("img", {
                             src: sundayImage,
                             alt: "Image"
                         })
@@ -1028,6 +1638,8 @@ var react_fontawesome = __webpack_require__(8195);
 var free_solid_svg_icons = __webpack_require__(7877);
 ;// CONCATENATED MODULE: ./src/components/MenuGroups/index.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
 
 
 
@@ -1115,23 +1727,23 @@ function MenuGroups(props) {
                     openMenu && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (MenuGroups_styles_module_default()).container_popup,
                         children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                                setIngredients: setIngredients,
+                                setLabel: setLabel
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                                setIngredients: setIngredients,
+                                setLabel: setLabel
+                            }),
                             /*#__PURE__*/ jsx_runtime_.jsx(Soup, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Salad, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
-                                setIngredients: setIngredients,
-                                setLabel: setLabel
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
-                                setIngredients: setIngredients,
-                                setLabel: setLabel
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Desserts, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             })
@@ -1196,6 +1808,8 @@ var MenuGroupsOpen_styles_module = __webpack_require__(8043);
 var MenuGroupsOpen_styles_module_default = /*#__PURE__*/__webpack_require__.n(MenuGroupsOpen_styles_module);
 ;// CONCATENATED MODULE: ./src/components/MenuGroupsOpen/index.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
 
 
 
@@ -1284,23 +1898,23 @@ function MenuGroupsOpen_MenuGroups(props) {
                     openMenu && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (MenuGroupsOpen_styles_module_default()).container_popup,
                         children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                                setIngredients: setIngredients,
+                                setLabel: setLabel
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                                setIngredients: setIngredients,
+                                setLabel: setLabel
+                            }),
                             /*#__PURE__*/ jsx_runtime_.jsx(Soup, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Salad, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
-                                setIngredients: setIngredients,
-                                setLabel: setLabel
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
-                                setIngredients: setIngredients,
-                                setLabel: setLabel
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Desserts, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             })
@@ -1666,6 +2280,29 @@ module.exports = {
 
 /***/ }),
 
+/***/ 8034:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"fontHelveticaNeueCyr": "HelveticaNeueCyr,sans-serif",
+	"fontBarlow": "Barlow,sans-serif",
+	"colorRedLight": "#ef233c",
+	"colorRedDark": "#d90429",
+	"container_top": "styles_container_top__Fupg_",
+	"container": "styles_container__qXbul",
+	"container_button": "styles_container_button__Y2M_s",
+	"button": "styles_button__08hd5",
+	"button2": "styles_button2__9UvyH",
+	"container_text": "styles_container_text__AUfA_",
+	"container_ingredients": "styles_container_ingredients__RstTp",
+	"container_popup": "styles_container_popup__hX5bV",
+	"container_Summarized": "styles_container_Summarized__7JT5I"
+};
+
+
+/***/ }),
+
 /***/ 8043:
 /***/ ((module) => {
 
@@ -1703,6 +2340,29 @@ module.exports = {
 	"handleIngredients": "styles_handleIngredients__8kZ4n",
 	"handleCopy": "styles_handleCopy__Qio6C",
 	"tooltip": "styles_tooltip__QA83h"
+};
+
+
+/***/ }),
+
+/***/ 1608:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"fontHelveticaNeueCyr": "HelveticaNeueCyr,sans-serif",
+	"fontBarlow": "Barlow,sans-serif",
+	"colorRedLight": "#ef233c",
+	"colorRedDark": "#d90429",
+	"container_top": "styles_container_top____arV",
+	"container": "styles_container__ASVGI",
+	"container_button": "styles_container_button__nbL5h",
+	"button": "styles_button__8mbzK",
+	"button2": "styles_button2__XHv4s",
+	"container_text": "styles_container_text__wnJx0",
+	"container_ingredients": "styles_container_ingredients__gHke_",
+	"container_popup": "styles_container_popup__EN_l2",
+	"container_Summarized": "styles_container_Summarized__ZKSpM"
 };
 
 

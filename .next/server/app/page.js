@@ -245,11 +245,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4946))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8727))
 
 /***/ }),
 
-/***/ 4946:
+/***/ 8727:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -411,7 +411,7 @@ const BuyForDay = (props)=>{
 var Soup_styles_module = __webpack_require__(1191);
 var Soup_styles_module_default = /*#__PURE__*/__webpack_require__.n(Soup_styles_module);
 ;// CONCATENATED MODULE: ./src/services/getData.ts
-const SIDE_DISH = [
+const DATA_DINNER = [
     {
         "label": "Бендерики",
         "value": {
@@ -454,18 +454,17 @@ const SIDE_DISH = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Ватрушка с творогом",
+        "label": "Голубцы.",
         "value": {
-            "Творог гр": 50,
-            "Молоко гр": 30,
-            "Масло сливочное гр": 10,
-            "Сметана гр": 9,
-            "Мука пшеничная гр": 50,
-            "Сахар гр": 10,
-            "Яйца куриные шт": 0.4,
-            "Дрожжи сухие гр": 1.3,
-            "Сахар ванильный гр": 2,
-            "Соль гр": 1
+            "Капуста белокачанная гр": 100,
+            "Морковь гр": 25,
+            "Лук репчатый гр": 30,
+            "Свиной фарш гр": 65,
+            "Соус томатный гр": 15,
+            "Подсолнечное масло гр": 5,
+            "Белый рис гр": 15,
+            "Соль гр": 1,
+            "Специи": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -555,6 +554,58 @@ const SIDE_DISH = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Картофельная бабка.",
+        "value": {
+            "Свинина гр": 50,
+            "Молоко гр": 40,
+            "Сметана гр": 50,
+            "Картофель гр": 400,
+            "Лук репчатый гр": 50,
+            "Подсолнечное масло гр": 20,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Картофельные драники.",
+        "value": {
+            "Картофель гр": 300,
+            "Лук репчатый гр": 50,
+            "Соль гр": 1,
+            "Подсолнечное масло гр": 20,
+            "Яйца куриные шт": 0.3,
+            "Мука пшеничная гр": 8,
+            "Сметана гр": 45
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Картофельные колдуны с мясом.",
+        "value": {
+            "Картофель гр": 80,
+            "Лук репчатый гр": 20,
+            "Свинина гр": 40,
+            "Яйца куриные шт": 0.1,
+            "Мука пшеничная гр": 7,
+            "Подсолнечное масло гр": 10,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Картофельная запеканка.",
+        "value": {
+            "Картофель гр": 175,
+            "Лук репчатый гр": 20,
+            "Свиной фарш гр": 80,
+            "Яйца куриные шт": 0.2,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Ленивый фаршированный перец",
         "value": {
             "Свинина гр": 100,
@@ -572,10 +623,16 @@ const SIDE_DISH = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Манная каша",
+        "label": "Макароны по-флотски.",
         "value": {
-            "Манка гр": 40,
-            "Молоко гр": 200
+            "Свиной фарш гр": 75,
+            "Лук репчатый гр": 40,
+            "Чеснок гр": 5,
+            "Макароны гр": 50,
+            "Соус томатный гр": 7,
+            "Подсолнечное масло гр": 10,
+            "Соль гр": 1,
+            "Специи": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -607,14 +664,6 @@ const SIDE_DISH = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Пшенная каша",
-        "value": {
-            "Пшено гр": 45,
-            "Масло сливочное гр": 10
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
         "label": "Рубленные котлеты.",
         "value": {
             "Куриное филе гр": 100,
@@ -626,35 +675,6 @@ const SIDE_DISH = [
             "Подсолнечное масло гр": 20,
             "Соль гр": 1,
             "Специи": 1
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Салат из пекинской капусты с крабовыми палочками",
-        "value": {
-            "Капуста пекинская гр": 50,
-            "Лук зелёный гр": 8,
-            "Крабовые палочки гр": 50,
-            "Консервированная кукуруза гр": 30,
-            "Яйца куриные шт": 0.4,
-            "Уксус гр": 2,
-            "Йогурт гр": 30,
-            "Горчица гр": 2
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Торфяной пирог",
-        "value": {
-            "Маргарин гр": 30,
-            "Творог гр": 100,
-            "Масло сливочное гр": 10,
-            "Мука пшеничная гр": 54,
-            "Какао гр": 6,
-            "Сахар гр": 44,
-            "Яйца куриные шт": 0.6,
-            "Разрыхлитель гр": 1,
-            "Сахар ванильный гр": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -673,6 +693,180 @@ const SIDE_DISH = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     }
 ];
+const SIDE_DISH = [
+    {
+        "label": "Булгур.",
+        "value": {
+            "Булгур гр": 60,
+            "Соль гр": 1,
+            "Масло сливочное гр": 20
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Гречневая каша.",
+        "value": {
+            "Гречка гр": 50,
+            "Соль гр": 1,
+            "Масло сливочное гр": 20
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Кабачек тушеный.",
+        "value": {
+            "Кабачки гр": 200,
+            "Морковь гр": 100,
+            "Чеснок гр": 5,
+            "Подсолнечное масло гр": 20,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Капуста тушеная с кабачком.",
+        "value": {
+            "Капуста белокачанная гр": 135,
+            "Кабачки гр": 83,
+            "Лук репчатый гр": 40,
+            "Морковь гр": 35,
+            "Соус томатный гр": 20,
+            "Подсолнечное масло гр": 8,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Картофельное пюре.",
+        "value": {
+            "Картофель гр": 115,
+            "Молоко гр": 20,
+            "Масло сливочное гр": 5,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Картофель жареный.",
+        "value": {
+            "Картофель гр": 200,
+            "Лук репчатый гр": 50,
+            "Подсолнечное масло гр": 30,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Картофель тушеный в молоке.",
+        "value": {
+            "Картофель гр": 200,
+            "Лук репчатый гр": 50,
+            "Морковь гр": 45,
+            "Чеснок гр": 5,
+            "Молоко гр": 70,
+            "Подсолнечное масло гр": 10,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Картофель запеченный в сметане.",
+        "value": {
+            "Картофель гр": 185,
+            "Масло сливочное гр": 4,
+            "Сметана гр": 17,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Макароны отварные.",
+        "value": {
+            "Макароны гр": 100,
+            "Подсолнечное масло гр": 20,
+            "Соль гр": 1,
+            "Масло сливочное гр": 20
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Манная каша",
+        "value": {
+            "Манка гр": 40,
+            "Молоко гр": 200
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Овощи тушеные.",
+        "value": {
+            "Кабачки гр": 90,
+            "Картофель гр": 90,
+            "Перец сладкий гр": 45,
+            "Капуста белокачанная гр": 33,
+            "Морковь гр": 25,
+            "Лук репчатый гр": 30,
+            "Помидоры гр": 40,
+            "Соль гр": 1,
+            "Специи": 1,
+            "Подсолнечное масло гр": 7
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Перловая каша.",
+        "value": {
+            "Перловка гр": 50,
+            "Соль гр": 2,
+            "Масло сливочное гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пшенная каша",
+        "value": {
+            "Пшено гр": 45,
+            "Масло сливочное гр": 10
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Рассыпчатый рис басмати.",
+        "value": {
+            "Белый рис гр": 100,
+            "Соль гр": 1,
+            "Масло сливочное гр": 20
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Спагетти.",
+        "value": {
+            "Спагетти гр": 100,
+            "Подсолнечное масло гр": 20,
+            "Соль гр": 1,
+            "Масло сливочное гр": 20
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Фасоль стручковая со сметаной.",
+        "value": {
+            "Фасоль гр": 75,
+            "Лук репчатый гр": 35,
+            "Чеснок гр": 5,
+            "Сметана гр": 25,
+            "Подсолнечное масло гр": 10,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    }
+];
 const CHOOSE_SOUP = [
     {
         "label": "Борщ.",
@@ -686,6 +880,21 @@ const CHOOSE_SOUP = [
             "Соус томатный гр": 3,
             "Подсолнечное масло гр": 3,
             "Специи": 3
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Гороховый суп с грудинкой.",
+        "value": {
+            "Грудинка гр": 35,
+            "Лук репчатый гр": 13,
+            "Морковь гр": 17,
+            "Чеснок гр": 5,
+            "Картофель гр": 50,
+            "Горох гр": 33,
+            "Подсолнечное масло гр": 7,
+            "Соль гр": 1,
+            "Специи": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -769,7 +978,7 @@ const CHOOSE_SOUP = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Суп с фрикадельками и булгуром",
+        "label": "Суп с фрикадельками и булгуром.",
         "value": {
             "Свиной фарш гр": 75,
             "Морковь гр": 40,
@@ -784,6 +993,34 @@ const CHOOSE_SOUP = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Суп харчо.",
+        "value": {
+            "Говядина гр": 125,
+            "Лук репчатый гр": 30,
+            "Помидоры гр": 30,
+            "Чеснок гр": 5,
+            "Петрушка гр": 2,
+            "Белый рис гр": 20,
+            "Соус томатный гр": 2,
+            "Соль гр": 2,
+            "Специи": 2
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Уха.",
+        "value": {
+            "Рыба гр": 100,
+            "Картофель гр": 50,
+            "Морковь гр": 50,
+            "Лук репчатый гр": 50,
+            "Овсяные хлопья гр": 15,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Холодник.",
         "value": {
             "Свёкла гр": 75,
@@ -792,6 +1029,22 @@ const CHOOSE_SOUP = [
             "Укроп гр": 4,
             "Сметана гр": 20,
             "Яйца куриные шт": 0.8
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Фасолевый суп.",
+        "value": {
+            "Грудинка гр": 60,
+            "Фасоль гр": 18,
+            "Картофель гр": 80,
+            "Морковь гр": 50,
+            "Лук репчатый гр": 30,
+            "Чеснок гр": 5,
+            "Подсолнечное масло гр": 20,
+            "Соус томатный гр": 10,
+            "Соль гр": 1,
+            "Специи": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -903,6 +1156,20 @@ const HEARTY_SALAD = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Салат из пекинской капусты с крабовыми палочками",
+        "value": {
+            "Капуста пекинская гр": 50,
+            "Лук зелёный гр": 8,
+            "Крабовые палочки гр": 50,
+            "Консервированная кукуруза гр": 30,
+            "Яйца куриные шт": 0.4,
+            "Уксус гр": 2,
+            "Йогурт гр": 30,
+            "Горчица гр": 2
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Салат из помидоров и огурцов с маслом.",
         "value": {
             "Огурец гр": 75,
@@ -966,6 +1233,22 @@ const HEARTY_SALAD = [
     }
 ];
 const PASTRIES_DESSERTS = [
+    {
+        "label": "Ватрушка с творогом",
+        "value": {
+            "Творог гр": 50,
+            "Молоко гр": 30,
+            "Масло сливочное гр": 10,
+            "Сметана гр": 9,
+            "Мука пшеничная гр": 50,
+            "Сахар гр": 10,
+            "Яйца куриные шт": 0.4,
+            "Дрожжи сухие гр": 1.3,
+            "Сахар ванильный гр": 2,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
     {
         "label": "Пирог из кабачков.",
         "value": {
@@ -1095,23 +1378,25 @@ const PASTRIES_DESSERTS = [
             "Консервированное варенье гр": 25
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    }
-];
-const DATA_DINNER = [
+    },
     {
-        "label": "Шакшука.",
+        "label": "Торфяной пирог",
         "value": {
-            "Пшено гр": 45,
-            "Масло сливочное гр": 10
+            "Маргарин гр": 30,
+            "Творог гр": 100,
+            "Масло сливочное гр": 10,
+            "Мука пшеничная гр": 54,
+            "Какао гр": 6,
+            "Сахар гр": 44,
+            "Яйца куриные шт": 0.6,
+            "Разрыхлитель гр": 1,
+            "Сахар ванильный гр": 1
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     }
 ];
-function getPastriesDesserts() {
-    return PASTRIES_DESSERTS;
-}
-function getSalad() {
-    return HEARTY_SALAD;
+function getDinnerData() {
+    return DATA_DINNER;
 }
 function getBreakfastData() {
     return SIDE_DISH;
@@ -1119,8 +1404,11 @@ function getBreakfastData() {
 function getLunchData() {
     return CHOOSE_SOUP;
 }
-function getDinnerData() {
-    return DATA_DINNER;
+function getSalad() {
+    return HEARTY_SALAD;
+}
+function getPastriesDesserts() {
+    return PASTRIES_DESSERTS;
 }
 
 ;// CONCATENATED MODULE: ./src/components/Soup/index.tsx
@@ -1511,7 +1799,7 @@ var Starters_styles_module_default = /*#__PURE__*/__webpack_require__.n(Starters
 
 
 const Starters_Monday = (props)=>{
-    const Starters_dessert = getBreakfastData();
+    const Starters_dessert = getDinnerData();
     //const first_courses_soup: MealData[] = getLunchData();
     //const Main_courses: MealData[] = getDinnerData();
     const [sunday, setSunday] = (0,react_.useState)("");
@@ -1632,12 +1920,140 @@ const Starters_Monday = (props)=>{
 };
 /* harmony default export */ const Starters = (Starters_Monday);
 
+// EXTERNAL MODULE: ./src/components/SideDish/styles.module.scss
+var SideDish_styles_module = __webpack_require__(4154);
+var SideDish_styles_module_default = /*#__PURE__*/__webpack_require__.n(SideDish_styles_module);
+;// CONCATENATED MODULE: ./src/components/SideDish/index.tsx
+/* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+const SideDish_Monday = (props)=>{
+    const Starters_dessert = getBreakfastData();
+    const [sunday, setSunday] = (0,react_.useState)("");
+    const [sundayValue, setSundayValue] = (0,react_.useState)([]);
+    const [sundayImage, setSundayImage] = (0,react_.useState)("");
+    const [sundayLabel, setSundayLabel] = (0,react_.useState)("");
+    const [count, setCount] = (0,react_.useState)(1);
+    const [prevCount, setPrevCount] = (0,react_.useState)(0);
+    const [prevLabel, setPrevLabel] = (0,react_.useState)("");
+    const handleSelectChange = (event)=>{
+        const selectedLabel = event.target.value;
+        const selectedOption = Starters_dessert.find((option)=>option.label === selectedLabel);
+        if (selectedOption) {
+            setSunday(selectedLabel);
+            setSundayImage(selectedOption.Image);
+            setSundayLabel(selectedOption.label);
+            setSundayValue(Object.entries(selectedOption.value));
+        }
+    };
+    (0,react_.useEffect)(()=>{
+        if (sunday !== "" && (prevLabel !== sundayLabel || prevCount !== count)) {
+            setPrevLabel(sundayLabel);
+            setPrevCount(count);
+            let sundayLabelArr = [];
+            sundayLabelArr.push(sundayLabel);
+            let sundayImageArr = [];
+            sundayImageArr.push(sundayImage);
+            let countIngredients = [];
+            for(let i = 0; i < sundayValue.length; i++){
+                countIngredients.push(sundayValue[i][0]);
+                countIngredients.push(sundayValue[i][1] * count);
+            }
+            if (count === 1) {
+                sundayLabelArr.push(`Для ${count} человека.`);
+            } else if (count > 1) {
+                sundayLabelArr.push(`Для ${count} человек.`);
+            }
+            sundayLabelArr.push(sundayImageArr);
+            props.setLabel(sundayLabelArr);
+            props.setIngredients(countIngredients);
+        }
+    }, [
+        sunday,
+        count,
+        sundayImage,
+        sundayLabel,
+        sundayValue,
+        props,
+        prevLabel,
+        prevCount
+    ]);
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (SideDish_styles_module_default()).container_top,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (SideDish_styles_module_default()).image,
+                        children: !!sundayImage && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                            src: sundayImage,
+                            alt: "Image"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (SideDish_styles_module_default()).container,
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                                    onChange: handleSelectChange,
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                            value: "",
+                                            children: "Гарниры"
+                                        }),
+                                        Starters_dessert.map((option, index)=>/*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: option.label,
+                                                children: option.label
+                                            }, index))
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (SideDish_styles_module_default()).container_button,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (SideDish_styles_module_default()).container_text,
+                                        children: "количество порций"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (SideDish_styles_module_default()).button,
+                                        onClick: ()=>setCount(count < 2 ? 1 : count - 1),
+                                        children: "-"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (SideDish_styles_module_default()).button2,
+                                        children: count
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (SideDish_styles_module_default()).button,
+                                        onClick: ()=>setCount(count > 99 ? 100 : count + 1),
+                                        children: "+"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (SideDish_styles_module_default()).container_ingredients,
+                children: sundayValue.map(([key, value], index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: `${key}: ${value * count}`
+                    }, index))
+            })
+        ]
+    });
+};
+/* harmony default export */ const SideDish = (SideDish_Monday);
+
 // EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.js
 var react_fontawesome = __webpack_require__(8195);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
 var free_solid_svg_icons = __webpack_require__(7877);
 ;// CONCATENATED MODULE: ./src/components/MenuGroups/index.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -1731,7 +2147,7 @@ function MenuGroups(props) {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(SideDish, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
@@ -1808,6 +2224,7 @@ var MenuGroupsOpen_styles_module = __webpack_require__(8043);
 var MenuGroupsOpen_styles_module_default = /*#__PURE__*/__webpack_require__.n(MenuGroupsOpen_styles_module);
 ;// CONCATENATED MODULE: ./src/components/MenuGroupsOpen/index.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -1902,7 +2319,7 @@ function MenuGroupsOpen_MenuGroups(props) {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Starters, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(SideDish, {
                                 setIngredients: setIngredients,
                                 setLabel: setLabel
                             }),
@@ -2363,6 +2780,29 @@ module.exports = {
 	"container_ingredients": "styles_container_ingredients__gHke_",
 	"container_popup": "styles_container_popup__EN_l2",
 	"container_Summarized": "styles_container_Summarized__ZKSpM"
+};
+
+
+/***/ }),
+
+/***/ 4154:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"fontHelveticaNeueCyr": "HelveticaNeueCyr,sans-serif",
+	"fontBarlow": "Barlow,sans-serif",
+	"colorRedLight": "#ef233c",
+	"colorRedDark": "#d90429",
+	"container_top": "styles_container_top__9rQpk",
+	"container": "styles_container__VJOdl",
+	"container_button": "styles_container_button__dITGn",
+	"button": "styles_button__eFyiv",
+	"button2": "styles_button2__qhhM4",
+	"container_text": "styles_container_text__3ebQc",
+	"container_ingredients": "styles_container_ingredients__z1Rv5",
+	"container_popup": "styles_container_popup__KtLYA",
+	"container_Summarized": "styles_container_Summarized__xysh8"
 };
 
 

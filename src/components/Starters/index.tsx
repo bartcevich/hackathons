@@ -20,7 +20,7 @@ interface MealData {
 }
 
 const Monday: React.FC<MondayProps> = (props) => {
-  const Starters_dessert: MealData[] = getBreakfastData();
+  const Starters_dessert: MealData[] = getDinnerData();
   //const first_courses_soup: MealData[] = getLunchData();
   //const Main_courses: MealData[] = getDinnerData();
   const [sunday, setSunday] = useState("");

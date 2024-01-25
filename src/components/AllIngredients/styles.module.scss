@@ -1,23 +1,31 @@
 @import '@/app/variables.scss';//стиль текста пророс на все надписи
 .container_text{
-     display: flex;
-    @include font(#212121, Inter, 25px, normal, 400, 25px, 0);
+     //display: flex;
+    @include font(#E47611, Inter, 25px, normal, 400, 25px, 0);
     font-size: clamp(12px, 3vw, 20px);
     margin-top: 15px;
     input:focus{
-    outline: 3px solid #1805a4;
+    outline: 3px solid #E47611;
     border-radius: 10px;
 }
 }
-
 .container_input{
         position: absolute;
         width: 230px;
         height: 30px;
         left: 140px;
+        background-color: transparent;
+        @include font(#E47611, Inter, 15px, normal, 400, 15px, 0);
     }
 .container_input{
     display: flex;
+}
+.button_save{
+    font-size: 18px;
+}
+.storage_text{
+    @include font(#E47611, Inter, 20px, normal, 400, 25px, 0);
+    font-size: clamp(15px, 3vw, 20px);
 }
 .container_popup{
     
@@ -32,10 +40,4 @@
 }
 .container_popup2{
     top: 170px;
-}
-.container_Summarized{
-    max-width: 700px;
-    width: 100%;
-    @include font(#212121, Inter, 25px, normal, 400, 30px, 0);
-    font-size: clamp(15px, 3vw, 25px);
 }

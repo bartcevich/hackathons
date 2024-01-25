@@ -6,30 +6,36 @@
 .menuGroup{
     width: 130px;
         height: 30px;
-        border: 2px solid #1805a4;
+        border: 2px solid #E47611;
         border-radius: 10px;
-        @include font(#212121, Inter, 15px, normal, 400, 15px, 0);
+        @include font(#E47611, Inter, 15px, normal, 400, 15px, 0);
 }
 .container_popup{
     position: relative;
-    width: 300px;
-    min-height: 400px;
-    border: 2px solid #1805a4;
+    width: 270px;
+    min-height: 300px;
+    border: 2px solid #E47611;
     border-radius: 10px;
-    background: #99b5bf;
+    background-color: rgba(153, 181, 191, 0.5);
     padding: 5px;
     left: 20px;
     top: 15px;
+    margin-bottom: 15px;
 }
 .container_popup2{
     top: 170px;
 }
+.buyForDay{
+    //color: #E47611;
+    @include font(#E47611, Inter, 20px, normal, 400, 20px, 0);
+    font-size: clamp(15px, 3vw, 20px);
+}
 .handleIngredients{
     margin: 0 10px;
-    color: #0421fd;
+    color: #E47611;
 }
 .handleCopy{
-    color: #0421fd;
+    color: #E47611;
 }
 .tooltip {
     position: absolute;
@@ -37,7 +43,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: #333;
-    color: #fff;
+    color: #E47611;
     padding: 4px 8px;
     border-radius: 4px;
   }

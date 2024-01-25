@@ -116,9 +116,19 @@ export default function AllIngredients() {
   return (
     <>
       <div className={styles.container_text}>
+        <input
+          className={styles.container_input}
+          type="text"
+          name="menuText"
+          value={userInput1.menuText || ""}
+          maxLength={27}
+          onChange={handleInputChange1}
+          placeholder="Меню для..."
+        />
         <div>
           <MenuGroupsOpen setSelectionUser2={setSelectionUser2} />
           <button
+            className={styles.button_save}
             value={selectionUser2}
             onClick={() => handleChange2(selectionUser2)}
             style={{ color: buttonPressed ? "red" : "green" }}
@@ -135,7 +145,7 @@ export default function AllIngredients() {
                         <img src={item.image[0]} alt="Image" />
                       )}
                       {item.label && item.label.length > 0 && (
-                        <div>
+                        <div className={styles.storage_text}>
                           {item.numberHuman}
                           {item.label}
                         </div>
@@ -148,27 +158,17 @@ export default function AllIngredients() {
                       <img src={printLabel2.image[0]} alt="Image" />
                     )}
                     {printLabel2.label && printLabel2.label.length > 0 && (
-                      <div>
+                      <div className={styles.storage_text}>
                         {printLabel2.numberHuman}
                         {printLabel2.label}
                       </div>
                     )}
                   </div>
                 )}
-                //{" "}
               </div>
             )}
           </div>
         </div>
-        <input
-          className={styles.container_input}
-          type="text"
-          name="menuText"
-          value={userInput1.menuText || ""}
-          maxLength={27}
-          onChange={handleInputChange1}
-          placeholder="Меню для..."
-        />
       </div>
       {identifiers.map((identifier) => (
         <div key={identifier} className={styles.container_text}>
@@ -183,6 +183,7 @@ export default function AllIngredients() {
           <div className={styles.component_button}>
             <MenuGroups setSelectionUser={setSelectionUser} />
             <button
+              className={styles.button_save}
               value={selectionUser[identifier]}
               onClick={() => handleChange(identifier, selectionUser)}
               style={{ color: buttonPressed ? "red" : "green" }}
@@ -200,7 +201,7 @@ export default function AllIngredients() {
                         <img src={item.image[0]} alt="Image" />
                       )}
                       {item.label && item.label.length > 0 && (
-                        <div>
+                        <div className={styles.storage_text}>
                           {item.numberHuman}
                           {item.label}
                         </div>
@@ -218,7 +219,7 @@ export default function AllIngredients() {
                       )}
                     {printLabel[identifier].label &&
                       printLabel[identifier].label.length > 0 && (
-                        <div>
+                        <div className={styles.storage_text}>
                           {printLabel[identifier].numberHuman}
                           {printLabel[identifier].label}
                         </div>

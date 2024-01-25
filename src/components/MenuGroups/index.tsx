@@ -116,7 +116,7 @@ export default function MenuGroups(props: any) {
       </div>
       <div>
         {sumIngredients && (
-          <div>
+          <div className={styles.buyForDay}>
             {sumArrPrint.join(",  ")}
             <textarea
               ref={textareaRef}

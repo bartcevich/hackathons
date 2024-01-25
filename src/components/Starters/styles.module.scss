@@ -11,6 +11,11 @@
     }
     
 }
+.container_select{
+    background-color: transparent;
+    @include font(#212121, Inter, 20px, normal, 600, 25px, 0);
+    font-size: clamp(15px, 3vw, 20px);
+}
 .container_button{
     display: flex;
 }
@@ -32,7 +37,7 @@
     // font-size: clamp(15px, 3vw, 25px);
 }
 .container_ingredients{
-    @include font(#212121, Inter, 20px, oblique, 400, 20px, 0);
+    @include font(#FFFDD0, Inter, 20px, oblique, 400, 18px, 2px);
     font-size: clamp(15px, 3vw, 20px);
 }
 .container_popup{

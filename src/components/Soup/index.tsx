@@ -80,7 +80,10 @@ const Monday: React.FC<MondayProps> = (props) => {
         </div>
         <div>
           <div className={styles.container}>
-            <select onChange={handleSelectChange}>
+            <select
+              onChange={handleSelectChange}
+              className={styles.container_select}
+            >
               <option value="">Супы</option>
               {/* {Starters_dessert.map((option, index) => ( */}
               {First_courses_soup.map((option, index) => (

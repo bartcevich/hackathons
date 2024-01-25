@@ -205,7 +205,7 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2429)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9848)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2819))).default(props))],
     apple: [],
@@ -241,11 +241,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 4794:
+/***/ 6188:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8727))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8727));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7868))
 
 /***/ }),
 
@@ -1620,6 +1621,7 @@ const Monday = (props)=>{
                                 className: (Soup_styles_module_default()).container,
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
                                     onChange: handleSelectChange,
+                                    className: (Soup_styles_module_default()).container_select,
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("option", {
                                             value: "",
@@ -1748,6 +1750,7 @@ const Salad_Monday = (props)=>{
                                 className: (Salad_styles_module_default()).container,
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
                                     onChange: handleSelectChange,
+                                    className: (Salad_styles_module_default()).container_select,
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("option", {
                                             value: "",
@@ -1875,6 +1878,7 @@ const Desserts_Monday = (props)=>{
                                 className: (Desserts_styles_module_default()).container,
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
                                     onChange: handleSelectChange,
+                                    className: (Desserts_styles_module_default()).container_select,
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("option", {
                                             value: "",
@@ -2005,6 +2009,7 @@ const Starters_Monday = (props)=>{
                                 className: (Starters_styles_module_default()).container,
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
                                     onChange: handleSelectChange,
+                                    className: (Starters_styles_module_default()).container_select,
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("option", {
                                             value: "",
@@ -2132,6 +2137,7 @@ const SideDish_Monday = (props)=>{
                                 className: (SideDish_styles_module_default()).container,
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
                                     onChange: handleSelectChange,
+                                    className: (SideDish_styles_module_default()).container_select,
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("option", {
                                             value: "",
@@ -2315,6 +2321,7 @@ function MenuGroups(props) {
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 children: [
                     sumIngredients && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (MenuGroups_styles_module_default()).buyForDay,
                         children: [
                             sumArrPrint.join(",  "),
                             /*#__PURE__*/ jsx_runtime_.jsx("textarea", {
@@ -2487,6 +2494,7 @@ function MenuGroupsOpen_MenuGroups(props) {
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 children: [
                     sumIngredients && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (MenuGroupsOpen_styles_module_default()).buyForDay,
                         children: [
                             sumArrPrint.join(",  "),
                             /*#__PURE__*/ jsx_runtime_.jsx("textarea", {
@@ -2623,57 +2631,6 @@ function AllIngredients() {
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (styles_module_default()).container_text,
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_MenuGroups, {
-                                setSelectionUser2: setSelectionUser2
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                value: selectionUser2,
-                                onClick: ()=>handleChange2(selectionUser2),
-                                style: {
-                                    color: buttonPressed ? "red" : "green"
-                                },
-                                children: "сохранить меню"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: printLabel2 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    children: [
-                                        Array.isArray(printLabel2) ? printLabel2.map((item, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                children: [
-                                                    item.image && item.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                        src: item.image[0],
-                                                        alt: "Image"
-                                                    }),
-                                                    item.label && item.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                        children: [
-                                                            item.numberHuman,
-                                                            item.label
-                                                        ]
-                                                    })
-                                                ]
-                                            }, index)) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: (styles_module_default()).container_storage,
-                                            children: [
-                                                printLabel2.image && printLabel2.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                    src: printLabel2.image[0],
-                                                    alt: "Image"
-                                                }),
-                                                printLabel2.label && printLabel2.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    children: [
-                                                        printLabel2.numberHuman,
-                                                        printLabel2.label
-                                                    ]
-                                                })
-                                            ]
-                                        }),
-                                        "//",
-                                        " "
-                                    ]
-                                })
-                            })
-                        ]
-                    }),
                     /*#__PURE__*/ jsx_runtime_.jsx("input", {
                         className: (styles_module_default()).container_input,
                         type: "text",
@@ -2682,6 +2639,56 @@ function AllIngredients() {
                         maxLength: 27,
                         onChange: handleInputChange1,
                         placeholder: "Меню для..."
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(MenuGroupsOpen_MenuGroups, {
+                                setSelectionUser2: setSelectionUser2
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                className: (styles_module_default()).button_save,
+                                value: selectionUser2,
+                                onClick: ()=>handleChange2(selectionUser2),
+                                style: {
+                                    color: buttonPressed ? "red" : "green"
+                                },
+                                children: "сохранить меню"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                children: printLabel2 && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    children: Array.isArray(printLabel2) ? printLabel2.map((item, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            children: [
+                                                item.image && item.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: item.image[0],
+                                                    alt: "Image"
+                                                }),
+                                                item.label && item.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: (styles_module_default()).storage_text,
+                                                    children: [
+                                                        item.numberHuman,
+                                                        item.label
+                                                    ]
+                                                })
+                                            ]
+                                        }, index)) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (styles_module_default()).container_storage,
+                                        children: [
+                                            printLabel2.image && printLabel2.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: printLabel2.image[0],
+                                                alt: "Image"
+                                            }),
+                                            printLabel2.label && printLabel2.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (styles_module_default()).storage_text,
+                                                children: [
+                                                    printLabel2.numberHuman,
+                                                    printLabel2.label
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                })
+                            })
+                        ]
                     })
                 ]
             }),
@@ -2703,6 +2710,7 @@ function AllIngredients() {
                                     setSelectionUser: setSelectionUser
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                    className: (styles_module_default()).button_save,
                                     value: selectionUser[identifier],
                                     onClick: ()=>handleChange(identifier, selectionUser),
                                     style: {
@@ -2721,6 +2729,7 @@ function AllIngredients() {
                                                 alt: "Image"
                                             }),
                                             item.label && item.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (styles_module_default()).storage_text,
                                                 children: [
                                                     item.numberHuman,
                                                     item.label
@@ -2735,6 +2744,7 @@ function AllIngredients() {
                                             alt: "Image"
                                         }),
                                         printLabel[identifier].label && printLabel[identifier].label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: (styles_module_default()).storage_text,
                                             children: [
                                                 printLabel[identifier].numberHuman,
                                                 printLabel[identifier].label
@@ -2801,9 +2811,10 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_text": "styles_container_text__RHjYD",
 	"container_input": "styles_container_input__dluqy",
+	"button_save": "styles_button_save__gJsAs",
+	"storage_text": "styles_storage_text__QRlZl",
 	"container_popup": "styles_container_popup__iFRpF",
-	"container_popup2": "styles_container_popup2__Idqii",
-	"container_Summarized": "styles_container_Summarized__UblH4"
+	"container_popup2": "styles_container_popup2__Idqii"
 };
 
 
@@ -2843,6 +2854,7 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_top": "styles_container_top__Fupg_",
 	"container": "styles_container__qXbul",
+	"container_select": "styles_container_select__jqwuE",
 	"container_button": "styles_container_button__Y2M_s",
 	"button": "styles_button__08hd5",
 	"button2": "styles_button2__9UvyH",
@@ -2868,6 +2880,7 @@ module.exports = {
 	"menuGroup": "styles_menuGroup__LJkb9",
 	"container_popup": "styles_container_popup__yS0Da",
 	"container_popup2": "styles_container_popup2__HdBzi",
+	"buyForDay": "styles_buyForDay__ZfzTB",
 	"handleIngredients": "styles_handleIngredients__VXhXi",
 	"handleCopy": "styles_handleCopy__E4QiS",
 	"tooltip": "styles_tooltip__z2IP3"
@@ -2889,6 +2902,7 @@ module.exports = {
 	"menuGroup": "styles_menuGroup__LS7t7",
 	"container_popup": "styles_container_popup__jLfpf",
 	"container_popup2": "styles_container_popup2__StMe3",
+	"buyForDay": "styles_buyForDay__utxQx",
 	"handleIngredients": "styles_handleIngredients__8kZ4n",
 	"handleCopy": "styles_handleCopy__Qio6C",
 	"tooltip": "styles_tooltip__QA83h"
@@ -2908,6 +2922,7 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_top": "styles_container_top____arV",
 	"container": "styles_container__ASVGI",
+	"container_select": "styles_container_select__RD8DG",
 	"container_button": "styles_container_button__nbL5h",
 	"button": "styles_button__8mbzK",
 	"button2": "styles_button2__XHv4s",
@@ -2931,6 +2946,7 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_top": "styles_container_top__9rQpk",
 	"container": "styles_container__VJOdl",
+	"container_select": "styles_container_select__Nzyrb",
 	"container_button": "styles_container_button__dITGn",
 	"button": "styles_button__eFyiv",
 	"button2": "styles_button2__qhhM4",
@@ -2954,6 +2970,7 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_top": "styles_container_top__7OFyz",
 	"container": "styles_container__gBl_n",
+	"container_select": "styles_container_select__4tZjM",
 	"container_button": "styles_container_button__9Jkqm",
 	"button": "styles_button__IMy0I",
 	"button2": "styles_button2__ax9mk",
@@ -2977,6 +2994,7 @@ module.exports = {
 	"colorRedDark": "#d90429",
 	"container_top": "styles_container_top__9VNu_",
 	"container": "styles_container__fosxZ",
+	"container_select": "styles_container_select__RMtbO",
 	"container_button": "styles_container_button__UqaQK",
 	"button": "styles_button__nZrRs",
 	"button2": "styles_button2__zV16J",
@@ -2989,7 +3007,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2429:
+/***/ 9848:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3035,18 +3053,42 @@ const e0 = IngredientsContext_proxy["IngredientsContext"];
 
 const e1 = IngredientsContext_proxy["MenuProvider"];
 
+;// CONCATENATED MODULE: ./src/assets/images/background3.jpg
+/* harmony default export */ const background3 = ({"src":"/_next/static/media/background3.9cfb429a.jpg","height":1027,"width":1027,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAgACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAAigf/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADEhUh/9oACAEBAAE/ANhQ9OBUDk//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/AH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/AH//2Q==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./src/app/page.tsx
 //'use client';
 
 
 
 
+
 function Home() {
     return /*#__PURE__*/ jsx_runtime_.jsx(e1, {
-        children: /*#__PURE__*/ jsx_runtime_.jsx(AllIngredients, {})
+        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            style: {
+                backgroundImage: `url(${background3.src})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed",
+                minHeight: "100vh"
+            },
+            children: /*#__PURE__*/ jsx_runtime_.jsx(AllIngredients, {})
+        })
     });
 }
 
+
+/***/ }),
+
+/***/ 7868:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/background3.9cfb429a.jpg","height":1027,"width":1027,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAgACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAAigf/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADEhUh/9oACAEBAAE/ANhQ9OBUDk//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/AH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/AH//2Q==","blurWidth":8,"blurHeight":8});
 
 /***/ })
 

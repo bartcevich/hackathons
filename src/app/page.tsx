@@ -1,7 +1,7 @@
 //'use client';
 import React, { useState, useEffect } from "react";
 import AllIngredients from "@/components/AllIngredients";
-//import Dinner from '@/components/Dinner';
+import Authentication from "@/components/Authentication";
 import MenuGroups from "@/components/MenuGroups";
 import MenuGroupsOpen from "@/components/MenuGroupsOpen";
 import { MenuProvider } from "@/context/IngredientsContext";
@@ -20,7 +20,7 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        <AllIngredients />
+        <Authentication />
       </div>
       {/* <MenuGroupsOpen /> */}
       {/* <MenuGroups /> */}

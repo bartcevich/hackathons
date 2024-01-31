@@ -60,6 +60,14 @@ module.exports = require("next/dist/shared/lib/app-router-context");
 
 /***/ }),
 
+/***/ 1830:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/get-img-props");
+
+/***/ }),
+
 /***/ 199:
 /***/ ((module) => {
 
@@ -68,11 +76,35 @@ module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
+/***/ 6864:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head");
+
+/***/ }),
+
 /***/ 9569:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/hooks-client-context");
+
+/***/ }),
+
+/***/ 2210:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config");
+
+/***/ }),
+
+/***/ 5359:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
@@ -164,6 +196,14 @@ module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
+/***/ 8658:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/utils/warn-once");
+
+/***/ }),
+
 /***/ 1017:
 /***/ ((module) => {
 
@@ -205,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9848)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8350)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2819))).default(props))],
     apple: [],
@@ -241,16 +281,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 6188:
+/***/ 9466:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8727));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7868))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 125, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6249, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7844, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 8782, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1522, 23))
 
 /***/ }),
 
-/***/ 8727:
+/***/ 5052:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7868));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6480))
+
+/***/ }),
+
+/***/ 6480:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -259,16 +310,25 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ AllIngredients)
+  "default": () => (/* binding */ Authentication)
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(6786);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
 var react_ = __webpack_require__(8038);
-// EXTERNAL MODULE: ./src/components/AllIngredients/styles.module.scss
-var styles_module = __webpack_require__(9776);
+// EXTERNAL MODULE: ./src/components/Authentication/styles.module.scss
+var styles_module = __webpack_require__(1284);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
+// EXTERNAL MODULE: ./node_modules/react-intersection-observer/index.mjs
+var react_intersection_observer = __webpack_require__(1257);
+// EXTERNAL MODULE: ./node_modules/framer-motion/dist/es/render/dom/motion.mjs + 206 modules
+var motion = __webpack_require__(4963);
+// EXTERNAL MODULE: ./node_modules/email-validator/index.js
+var email_validator = __webpack_require__(5020);
+// EXTERNAL MODULE: ./src/components/AllIngredients/styles.module.scss
+var AllIngredients_styles_module = __webpack_require__(9776);
+var AllIngredients_styles_module_default = /*#__PURE__*/__webpack_require__.n(AllIngredients_styles_module);
 // EXTERNAL MODULE: ./src/components/MenuGroups/styles.module.scss
 var MenuGroups_styles_module = __webpack_require__(331);
 var MenuGroups_styles_module_default = /*#__PURE__*/__webpack_require__.n(MenuGroups_styles_module);
@@ -427,7 +487,7 @@ const DATA_DINNER = [
             "Сахар гр": 5,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
     },
     {
         "label": "Блины бахиры",
@@ -440,7 +500,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Подсолнечное масло гр": 0.8
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
     },
     {
         "label": "Блины тонкие.",
@@ -452,7 +512,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Сахар гр": 6
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
     },
     {
         "label": "Голубцы.",
@@ -467,7 +527,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
     },
     {
         "label": "Гренки.",
@@ -529,6 +589,20 @@ const DATA_DINNER = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Гуляш.",
+        "value": {
+            "Курица гр": 167,
+            "Молоко гр": 133,
+            "Лук репчатый гр": 36,
+            "Соус томатный гр": 10,
+            "Мука пшеничная гр": 8,
+            "Подсолнечное масло гр": 10,
+            "Соль гр": 1,
+            "Специи": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Ёжики.",
         "value": {
             "Свиной фарш гр": 113,
@@ -540,6 +614,22 @@ const DATA_DINNER = [
             "Мука пшеничная гр": 6,
             "Соль гр": 1,
             "Сахар гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Жаренный рис.",
+        "value": {
+            "Куриное филе гр": 133,
+            "Лук репчатый гр": 35,
+            "Лук зелёный гр": 5,
+            "Чеснок гр": 3,
+            "Белый рис гр": 50,
+            "Консервированная кукуруза гр": 50,
+            "Подсолнечное масло гр": 10,
+            "Соль гр": 1,
+            "Яйца куриные шт": 0.5,
+            "Соевый соус гр": 5
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -637,6 +727,18 @@ const DATA_DINNER = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Картошка с колбасой и зеленью.",
+        "value": {
+            "Сосиски гр": 100,
+            "Картофель гр": 150,
+            "Лук зелёный гр": 5,
+            "Укроп гр": 5,
+            "Майонез гр": 20,
+            "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Котлеты.",
         "value": {
             "Свиной фарш гр": 125,
@@ -722,6 +824,20 @@ const DATA_DINNER = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
+        "label": "Омлет.",
+        "value": {
+            "Молоко гр": 25,
+            "Сыры гр": 20,
+            "Сосиски гр": 50,
+            "Яйца куриные шт": 1.5,
+            "Подсолнечное масло гр": 10,
+            "Помидоры гр": 50,
+            "Лук репчатый гр": 50,
+            "Лук зелёный гр": 5
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
         "label": "Отбивные.",
         "value": {
             "Свинина гр": 200,
@@ -794,6 +910,21 @@ const DATA_DINNER = [
             "Мука пшеничная гр": 68,
             "Яйца куриные шт": 0.3,
             "Соль гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Сырники.",
+        "value": {
+            "Творог гр": 180,
+            "Сметана гр": 45,
+            "Изюм гр": 15,
+            "Мука пшеничная гр": 25,
+            "Манка гр": 8,
+            "Сахар гр": 10,
+            "Яйца куриные шт": 0.5,
+            "Соль гр": 1,
+            "Подсолнечное масло гр": 20
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -1386,18 +1517,19 @@ const PASTRIES_DESSERTS = [
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
     {
-        "label": "Пирог из кабачков.",
+        "label": "Запеканка творожная королевская.",
         "value": {
-            "Кабачки гр": 20,
-            "Изюм гр": 13,
-            "Грецкий орех гр": 7,
-            "Мука пшеничная гр": 20,
-            "Разрыхлитель гр": 1,
-            "Сода гр": 1,
-            "Корица гр": 1,
-            "Сахар гр": 20,
-            "Сахар ванильный гр": 1,
-            "Яйца куриные шт": 0.2
+            "Творог гр": 100,
+            "Сметана гр": 50,
+            "Кефир гр": 50,
+            "Миндаль гр": 3,
+            "Изюм гр": 20,
+            "Яйца куриные шт": 1,
+            "Сахар гр": 40,
+            "Манка гр": 20,
+            "Соль гр": 1,
+            "Разрыхлитель гр": 2,
+            "Сахар ванильный гр": 2
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -1442,6 +1574,22 @@ const PASTRIES_DESSERTS = [
             "Сода гр": 1,
             "Разрыхлитель гр": 1,
             "Корица гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог из кабачков.",
+        "value": {
+            "Кабачки гр": 20,
+            "Изюм гр": 13,
+            "Грецкий орех гр": 7,
+            "Мука пшеничная гр": 20,
+            "Разрыхлитель гр": 1,
+            "Сода гр": 1,
+            "Корица гр": 1,
+            "Сахар гр": 20,
+            "Сахар ванильный гр": 1,
+            "Яйца куриные шт": 0.2
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -1512,6 +1660,46 @@ const PASTRIES_DESSERTS = [
             "Мука пшеничная гр": 40,
             "Овсяные хлопья гр": 11,
             "Консервированное варенье гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог слезы ангела.",
+        "value": {
+            "Творог гр": 100,
+            "Сметана гр": 20,
+            "Маргарин гр": 20,
+            "Яйца куриные шт": 0.6,
+            "Манка гр": 5,
+            "Сахар гр": 50,
+            "Мука пшеничная гр": 60,
+            "Разрыхлитель гр": 1
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Пирог штрейзель с творогом.",
+        "value": {
+            "Маргарин гр": 25,
+            "Творог гр": 63,
+            "Сметана гр": 13,
+            "Мука пшеничная гр": 53,
+            "Сахар ванильный гр": 2,
+            "Яйца куриные шт": 0.3,
+            "Разрыхлитель гр": 1.3,
+            "Сахар гр": 44
+        },
+        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+    },
+    {
+        "label": "Творожные пончики.",
+        "value": {
+            "Творог гр": 125,
+            "Сахар гр": 30,
+            "Яйца куриные шт": 0.5,
+            "Мука пшеничная гр": 25,
+            "Разрыхлитель гр": 5,
+            "Подсолнечное масло гр": 500
         },
         "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
     },
@@ -1930,7 +2118,7 @@ const Desserts_Monday = (props)=>{
 /* harmony default export */ const Desserts = (Desserts_Monday);
 
 // EXTERNAL MODULE: ./src/components/Starters/styles.module.scss
-var Starters_styles_module = __webpack_require__(9466);
+var Starters_styles_module = __webpack_require__(787);
 var Starters_styles_module_default = /*#__PURE__*/__webpack_require__.n(Starters_styles_module);
 ;// CONCATENATED MODULE: ./src/components/Starters/index.tsx
 /* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
@@ -2629,10 +2817,10 @@ function AllIngredients() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: (styles_module_default()).container_text,
+                className: (AllIngredients_styles_module_default()).container_text,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                        className: (styles_module_default()).container_input,
+                        className: (AllIngredients_styles_module_default()).container_input,
                         type: "text",
                         name: "menuText",
                         value: userInput1.menuText || "",
@@ -2646,7 +2834,7 @@ function AllIngredients() {
                                 setSelectionUser2: setSelectionUser2
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                className: (styles_module_default()).button_save,
+                                className: (AllIngredients_styles_module_default()).button_save,
                                 value: selectionUser2,
                                 onClick: ()=>handleChange2(selectionUser2),
                                 style: {
@@ -2663,7 +2851,7 @@ function AllIngredients() {
                                                     alt: "Image"
                                                 }),
                                                 item.label && item.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: (styles_module_default()).storage_text,
+                                                    className: (AllIngredients_styles_module_default()).storage_text,
                                                     children: [
                                                         item.numberHuman,
                                                         item.label
@@ -2671,14 +2859,14 @@ function AllIngredients() {
                                                 })
                                             ]
                                         }, index)) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (styles_module_default()).container_storage,
+                                        className: (AllIngredients_styles_module_default()).container_storage,
                                         children: [
                                             printLabel2.image && printLabel2.image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                 src: printLabel2.image[0],
                                                 alt: "Image"
                                             }),
                                             printLabel2.label && printLabel2.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: (styles_module_default()).storage_text,
+                                                className: (AllIngredients_styles_module_default()).storage_text,
                                                 children: [
                                                     printLabel2.numberHuman,
                                                     printLabel2.label
@@ -2693,10 +2881,10 @@ function AllIngredients() {
                 ]
             }),
             identifiers.map((identifier)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (styles_module_default()).container_text,
+                    className: (AllIngredients_styles_module_default()).container_text,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                            className: (styles_module_default()).container_input,
+                            className: (AllIngredients_styles_module_default()).container_input,
                             type: "text",
                             value: userInput[identifier] || "",
                             maxLength: 27,
@@ -2704,13 +2892,13 @@ function AllIngredients() {
                             placeholder: "Меню для..."
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (styles_module_default()).component_button,
+                            className: (AllIngredients_styles_module_default()).component_button,
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx(MenuGroups, {
                                     setSelectionUser: setSelectionUser
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                    className: (styles_module_default()).button_save,
+                                    className: (AllIngredients_styles_module_default()).button_save,
                                     value: selectionUser[identifier],
                                     onClick: ()=>handleChange(identifier, selectionUser),
                                     style: {
@@ -2729,7 +2917,7 @@ function AllIngredients() {
                                                 alt: "Image"
                                             }),
                                             item.label && item.label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: (styles_module_default()).storage_text,
+                                                className: (AllIngredients_styles_module_default()).storage_text,
                                                 children: [
                                                     item.numberHuman,
                                                     item.label
@@ -2737,14 +2925,14 @@ function AllIngredients() {
                                             })
                                         ]
                                     }, index)) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: (styles_module_default()).container_storage,
+                                    className: (AllIngredients_styles_module_default()).container_storage,
                                     children: [
                                         printLabel[identifier].image && printLabel[identifier].image.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                             src: printLabel[identifier].image[0],
                                             alt: "Image"
                                         }),
                                         printLabel[identifier].label && printLabel[identifier].label.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: (styles_module_default()).storage_text,
+                                            className: (AllIngredients_styles_module_default()).storage_text,
                                             children: [
                                                 printLabel[identifier].numberHuman,
                                                 printLabel[identifier].label
@@ -2759,6 +2947,257 @@ function AllIngredients() {
         ]
     });
 }
+
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(8421);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+;// CONCATENATED MODULE: ./src/assets/images/test.jpg
+/* harmony default export */ const test = ({"src":"/_next/static/media/test.55747cbe.jpg","height":158,"width":309,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAQACAMBIgACEQEDEQH/xAAoAAEBAAAAAAAAAAAAAAAAAAAABwEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAKuCv//EABwQAAICAgMAAAAAAAAAAAAAAAEDAhEAEiJxof/aAAgBAQABPwCCTuwlzTzEqvzrP//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oACAECAQE/AI//xAAWEQADAAAAAAAAAAAAAAAAAAAAAjL/2gAIAQMBAT8Aaj//2Q==","blurWidth":8,"blurHeight":4});
+;// CONCATENATED MODULE: ./src/components/Authentication/index.tsx
+/* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+
+
+
+
+
+const RIGHT_ANSWER = [
+    {
+        value: "",
+        label: ""
+    },
+    {
+        value: "голубь",
+        label: "голубь"
+    },
+    {
+        value: "сорока",
+        label: "сорока"
+    },
+    {
+        value: "ворона",
+        label: "ворона"
+    }
+];
+const Form = ()=>{
+    const [ref, inView] = (0,react_intersection_observer/* useInView */.YD)({
+        threshold: 0,
+        triggerOnce: true
+    });
+    const [today, setToday] = (0,react_.useState)(new Date().toDateString());
+    const [show, setShow] = (0,react_.useState)(false);
+    const [success, setSuccess] = (0,react_.useState)(false);
+    const [sending, setSending] = (0,react_.useState)(false);
+    const [failed, setFailed] = (0,react_.useState)(false);
+    const [emailError, setEmailError] = (0,react_.useState)(false);
+    const [password, setPassword] = (0,react_.useState)(false);
+    const [answer, setAnswer] = (0,react_.useState)(false);
+    const [formData, setFormData] = (0,react_.useState)({
+        email: "",
+        key: "",
+        answer: "",
+        access_key: "",
+        today: ""
+    });
+    (0,react_.useEffect)(()=>{
+        //localStorage.setItem("formData", JSON.stringify([]));
+        //console.log("DataAuthentication=", localStorage.getItem("formData"));
+        const savedFormData = localStorage.getItem("formData");
+        if (savedFormData) {
+            const parsedFormData = JSON.parse(savedFormData);
+            setFormData(parsedFormData);
+            setShow(parsedFormData.today === today);
+        }
+    }, [
+        today
+    ]);
+    const handleChange = (e)=>{
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+    const handleInputFocus = (errorStateSetter)=>{
+        errorStateSetter(false);
+    };
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        formData.key === "" ? setPassword(true) : setPassword(false);
+        formData.email === "" || !email_validator.validate(formData.email) ? setEmailError(true) : setEmailError(false);
+        if (answer || password || emailError || !email_validator.validate(formData.email) || formData.email === "" || formData.key === "" || formData.answer === "") {
+            setFormData({
+                ...formData,
+                email: ""
+            });
+            setSending(false);
+            setFailed(true);
+            return;
+        }
+        if (formData.answer === "голубь" || formData.answer === "ворона" || formData.answer === "") {
+            setAnswer(true);
+            return;
+        } else {
+            setShow(true);
+        }
+        setSending(true);
+        formData["today"] = today;
+        formData["access_key"] = "60829245-4068-4083-bc62-2704f53261e7";
+        localStorage.setItem("formData", JSON.stringify(formData));
+        const data = JSON.stringify(formData);
+        //console.log("data=", JSON.stringify(formData), data);
+        fetch("https://api.web3forms.com/submit", {
+            //fetch("", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: data
+        }).then((res)=>res.json()).then((data)=>{
+            console.log("promise=", data);
+            setSending(false);
+            setSuccess(true);
+            setFailed(false);
+            setFormData({
+                ...formData,
+                email: "",
+                key: "",
+                answer: ""
+            });
+            setTimeout(()=>{
+                setSuccess(false);
+            }, 3000);
+        }).catch((err)=>{
+            console.log(err);
+            setSending(false);
+            setFailed(true);
+        });
+    };
+    const handleButtonText = ()=>{
+        if (sending) {
+            return "Пожалуйста подождите";
+        } else if (success) {
+            return "Сообщение отправлено";
+        } else if (failed || emailError || password || answer) {
+            return "Пробовать снова";
+        } else {
+            return "Войти";
+        }
+    };
+    //console.log(show);
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            !show && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (styles_module_default()).containerFormMap,
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(motion/* motion */.E.form, {
+                    action: "",
+                    ref: ref,
+                    className: (styles_module_default()).containerInForm,
+                    initial: {
+                        x: "-10vw",
+                        opacity: 0
+                    },
+                    animate: inView ? {
+                        x: 0,
+                        opacity: 1
+                    } : {
+                        x: "-10vw",
+                        opacity: 0
+                    },
+                    transition: {
+                        duration: 0.3,
+                        ease: "easeInOut"
+                    },
+                    onSubmit: handleSubmit,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                            children: "Регистрация."
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                            children: "Введите адрес вашей электронной почты"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                            type: "text",
+                            className: `formControl ${emailError ? "formError" : ""}`,
+                            onFocus: ()=>{
+                                handleInputFocus(setEmailError);
+                            },
+                            onChange: handleChange,
+                            value: formData.email,
+                            id: "contactEmail",
+                            name: "email",
+                            placeholder: `${emailError ? "Enter a valid email address" : "Email"}`
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                            children: "Введите ваш пароль"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                            type: "password",
+                            className: `formControl ${password ? "formError" : ""}`,
+                            onFocus: ()=>{
+                                handleInputFocus(setPassword);
+                            },
+                            onChange: handleChange,
+                            value: formData.key,
+                            id: "contactKey",
+                            name: "key",
+                            placeholder: `${password ? "Enter your password" : "password"}`
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                            children: "Выберите правильный ответ"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (styles_module_default()).imageTest,
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                src: test,
+                                alt: "image"
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("select", {
+                            className: `formControl ${answer ? "formError" : ""}`,
+                            onFocus: ()=>{
+                                handleInputFocus(setAnswer);
+                            },
+                            onChange: handleChange,
+                            value: formData.answer,
+                            id: "contactAnswer",
+                            name: "answer",
+                            placeholder: `${answer ? "Enter your answer" : "answer"}`,
+                            children: RIGHT_ANSWER.map((option)=>/*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: option.value,
+                                    children: option.label
+                                }, option.value))
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "col-12 formGroup formSubmit",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(motion/* motion */.E.button, {
+                                whileHover: {
+                                    scale: 1.03
+                                },
+                                whileTap: {
+                                    scale: 0.98
+                                },
+                                disabled: emailError || password || answer || sending || success,
+                                className: "btn",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (styles_module_default()).button,
+                                    children: handleButtonText()
+                                })
+                            })
+                        })
+                    ]
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: `${(styles_module_default()).componentShow} ${show ? (styles_module_default())["image-appear"] : ""}`,
+                children: show && /*#__PURE__*/ jsx_runtime_.jsx(AllIngredients, {})
+            })
+        ]
+    });
+};
+/* harmony default export */ const Authentication = (Form);
 
 
 /***/ }),
@@ -2815,6 +3254,25 @@ module.exports = {
 	"storage_text": "styles_storage_text__QRlZl",
 	"container_popup": "styles_container_popup__iFRpF",
 	"container_popup2": "styles_container_popup2__Idqii"
+};
+
+
+/***/ }),
+
+/***/ 1284:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"fontHelveticaNeueCyr": "HelveticaNeueCyr,sans-serif",
+	"fontBarlow": "Barlow,sans-serif",
+	"colorRedLight": "#ef233c",
+	"colorRedDark": "#d90429",
+	"containerFormMap": "styles_containerFormMap__QKcud",
+	"containerInForm": "styles_containerInForm__MvQkI",
+	"imageTest": "styles_imageTest__ZUAvn",
+	"componentShow": "styles_componentShow__39E96",
+	"image-appear": "styles_image-appear__cQn64"
 };
 
 
@@ -2983,7 +3441,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9466:
+/***/ 787:
 /***/ ((module) => {
 
 // Exports
@@ -3007,7 +3465,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9848:
+/***/ 8350:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3025,9 +3483,9 @@ var jsx_runtime_ = __webpack_require__(6786);
 var react_shared_subset = __webpack_require__(7887);
 // EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
 var module_proxy = __webpack_require__(1313);
-;// CONCATENATED MODULE: ./src/components/AllIngredients/index.tsx
+;// CONCATENATED MODULE: ./src/components/Authentication/index.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`D:\andrei\work\codewars\shoppingCart\hackathons\src\components\AllIngredients\index.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`D:\andrei\work\codewars\shoppingCart\hackathons\src\components\Authentication\index.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -3037,7 +3495,7 @@ const { __esModule, $$typeof } = proxy;
 const __default__ = proxy.default;
 
 
-/* harmony default export */ const AllIngredients = (__default__);
+/* harmony default export */ const Authentication = (__default__);
 ;// CONCATENATED MODULE: ./src/context/IngredientsContext.tsx
 
 const IngredientsContext_proxy = (0,module_proxy.createProxy)(String.raw`D:\andrei\work\codewars\shoppingCart\hackathons\src\context\IngredientsContext.tsx`)
@@ -3072,7 +3530,7 @@ function Home() {
                 backgroundAttachment: "fixed",
                 minHeight: "100vh"
             },
-            children: /*#__PURE__*/ jsx_runtime_.jsx(AllIngredients, {})
+            children: /*#__PURE__*/ jsx_runtime_.jsx(Authentication, {})
         })
     });
 }
@@ -3099,7 +3557,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [763,951,877,526], () => (__webpack_exec__(464)));
+var __webpack_exports__ = __webpack_require__.X(0, [763,951,215,682], () => (__webpack_exec__(464)));
 module.exports = __webpack_exports__;
 
 })();

@@ -281,23 +281,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 9466:
+/***/ 2355:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 125, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6249, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7844, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 8782, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1522, 23))
-
-/***/ }),
-
-/***/ 5052:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6480));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7868));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6480))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700))
 
 /***/ }),
 
@@ -487,7 +476,7 @@ const DATA_DINNER = [
             "Сахар гр": 5,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg"
     },
     {
         "label": "Блины бахиры",
@@ -500,7 +489,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Подсолнечное масло гр": 0.8
         },
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg"
     },
     {
         "label": "Блины тонкие.",
@@ -512,7 +501,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Сахар гр": 6
         },
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg"
     },
     {
         "label": "Голубцы.",
@@ -527,7 +516,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg"
     },
     {
         "label": "Гренки.",
@@ -550,7 +539,7 @@ const DATA_DINNER = [
             "Подсолнечное масло гр": 7.5,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Гречневая каша со свининой",
@@ -562,7 +551,7 @@ const DATA_DINNER = [
             "Подсолнечное масло гр": 7.5,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Гречневая каша с говядиной",
@@ -574,7 +563,7 @@ const DATA_DINNER = [
             "Подсолнечное масло гр": 7.5,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Гречневая каша с фаршем",
@@ -586,7 +575,7 @@ const DATA_DINNER = [
             "Подсолнечное масло гр": 7.5,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Гуляш.",
@@ -631,7 +620,7 @@ const DATA_DINNER = [
             "Яйца куриные шт": 0.5,
             "Соевый соус гр": 5
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Запечённая курица.",
@@ -835,7 +824,7 @@ const DATA_DINNER = [
             "Лук репчатый гр": 50,
             "Лук зелёный гр": 5
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg"
     },
     {
         "label": "Отбивные.",
@@ -864,7 +853,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Плов.",
@@ -878,7 +867,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Рубленные котлеты.",
@@ -968,7 +957,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Гречневая каша.",
@@ -977,7 +966,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Кабачек тушеный.",
@@ -1091,7 +1080,7 @@ const SIDE_DISH = [
             "Соль гр": 2,
             "Масло сливочное гр": 25
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Пшенная каша",
@@ -1108,7 +1097,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
     },
     {
         "label": "Спагетти.",
@@ -1148,7 +1137,7 @@ const CHOOSE_SOUP = [
             "Подсолнечное масло гр": 3,
             "Специи": 3
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/beetroot_hot.png"
     },
     {
         "label": "Гороховый суп с грудинкой.",
@@ -1191,7 +1180,7 @@ const CHOOSE_SOUP = [
             "Консервированная фосоль гр": 27,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png"
     },
     {
         "label": "Овощной суп с пельменями.",
@@ -1202,7 +1191,7 @@ const CHOOSE_SOUP = [
             "Лук зелёный гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png"
     },
     {
         "label": "Пшенный суп сяйцом",
@@ -1242,7 +1231,7 @@ const CHOOSE_SOUP = [
             "Картофель гр": 40,
             "Батон гр": 30
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/pumpkin_soup.png"
     },
     {
         "label": "Суп с фрикадельками и булгуром.",
@@ -1257,7 +1246,7 @@ const CHOOSE_SOUP = [
             "Соль гр": 1,
             "Подсолнечное масло гр": 15
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png"
     },
     {
         "label": "Суп харчо.",
@@ -1297,7 +1286,7 @@ const CHOOSE_SOUP = [
             "Сметана гр": 20,
             "Яйца куриные шт": 0.8
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/beetroot_hot.png"
     },
     {
         "label": "Фасолевый суп.",
@@ -2118,7 +2107,7 @@ const Desserts_Monday = (props)=>{
 /* harmony default export */ const Desserts = (Desserts_Monday);
 
 // EXTERNAL MODULE: ./src/components/Starters/styles.module.scss
-var Starters_styles_module = __webpack_require__(787);
+var Starters_styles_module = __webpack_require__(9466);
 var Starters_styles_module_default = /*#__PURE__*/__webpack_require__.n(Starters_styles_module);
 ;// CONCATENATED MODULE: ./src/components/Starters/index.tsx
 /* eslint-disable @next/next/no-img-element */ /* __next_internal_client_entry_do_not_use__ default auto */ 
@@ -3441,7 +3430,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 787:
+/***/ 9466:
 /***/ ((module) => {
 
 // Exports
@@ -3557,7 +3546,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [763,951,215,682], () => (__webpack_exec__(464)));
+var __webpack_exports__ = __webpack_require__.X(0, [763,610,402,135], () => (__webpack_exec__(464)));
 module.exports = __webpack_exports__;
 
 })();

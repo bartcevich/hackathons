@@ -1,51 +1,132 @@
-'use client';
-import { Container, Dropdown, DropdownButton, Nav, NavDropdown, Navbar } from 'react-bootstrap';
-import styles from './styles.module.scss';
-import Link from 'next/link';
-import Image from 'next/image';
-import logoImage from '../../assets/images/promobot.png'
+"use client";
+import styles from "./styles.module.scss";
+import Link from "next/link";
+import Image from "next/image";
+import logoImage from "../../assets/images/logo.png";
+import React, { useState, useEffect } from "react";
+import logo from "@/assets/images/logo.png";
+import { px } from "framer-motion";
 
+const Navigation: React.FC = () => {
+  const [isTop, setIsTop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      //console.log("1=", lastScrollY, currentScrollY);
+      if (currentScrollY > lastScrollY) {
+        setIsTop(true);
+        //console.log("2=", isTop);
+      } else if (currentScrollY < lastScrollY) {
+        setIsTop(false);
+        //console.log("3=", isTop);
+      }
+      lastScrollY = currentScrollY;
+    };
 
-export default function Navigation() {
-    return (
-        <div className={styles.wrapper}>
-            <Navbar expand="sm" bg='transparent' data-bs-theme="bg='transparent'" className={styles.navbar}>
-            <Container className={styles.container}>
-                {/* <Navbar.Brand href='/' className={`${styles.logo} ${styles.logo2}`}
-                style={{ backgroundImage: `url(${logoImage.src})` }}></Navbar.Brand> */}
-                <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav' className={styles.menu_nav0}>
-                <Nav className='me-auto'>
-                    <Nav.Link href='/' className={styles.menu_nav1}>Главная</Nav.Link>
-                    <NavDropdown id='dropdown-basic-button' title='Написать обращение' className={styles.menu_nav}>
-                        <Dropdown.Item className={styles.menu_nav2}><Link href="/history">Министерство здравоохранения</Link></Dropdown.Item>
-                        <Dropdown.Item className={styles.menu_nav2}><Link href="/Test">Министерство образования</Link></Dropdown.Item>
-                    </NavDropdown>
-                    <Nav.Link href='/' className={styles.menu_nav1}>Ответы на обращения</Nav.Link>
-                    <NavDropdown id='dropdown-basic-button' title='Дополнительная информация' className={styles.menu_nav}>
-                        <Dropdown.Item className={styles.menu_nav2}><Link href="/kids">Подтверждение получения</Link></Dropdown.Item>
-                        <Dropdown.Item className={styles.menu_nav2}><Link href="/teenagers">...</Link></Dropdown.Item>
-                        <Dropdown.Item className={styles.menu_nav2}><Link href="/programs">...</Link></Dropdown.Item>
-                    </NavDropdown>
-                </Nav>
-                </Navbar.Collapse>
-            </Container>
-            </Navbar>
-            <div className={styles.sliderTitle}>
-            </div>
-            {/* ReactDOM.render( */}
-              {/* <Switch> */}
-                {/* <Route path="/" element={<Navigation />} /> */}
-                {/* Other components and routes */}
-              {/* </Switch> */}
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 700);
+    };
 
-              {/* <Router> */}
-                {/* <Routes> */}
-                   {/* <Route path="/history" element={<History />} /> */}
-                {/* </Routes> */}
-             {/* </Router> */}
-            {/* //   document.getElementById(root) */}
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    handleScroll();
+    handleResize();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isTop]);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const [openMenu1, setOpenMenu1] = useState(false);
+  const handleClick1 = () => {
+    setOpenMenu1((prevValue) => !prevValue);
+  };
+  const [openMenu2, setOpenMenu2] = useState(false);
+  const handleClick2 = () => {
+    setOpenMenu2((prevValue) => !prevValue);
+  };
+
+  return (
+    <>
+      <nav
+        className={`${styles.siteNav} ${isTop ? styles.top : ""} ${
+          isMobile ? styles.mobile : ""
+        }`}
+      >
+        <div className={styles.logoContainer}>
+          <div className={styles.logo}>
+            <Image src={logo} alt="image" />
+          </div>
+          <a className={styles.siteName} href="/">
+            Список продуктов
+            <br />в пару кликов
+          </a>
         </div>
-    );
-}
+        {(!isMobile || isMenuOpen) && (
+          <div className={styles.mobileMenu}>
+            <Link className={styles.dropdownTitle} href="/kids">
+              О сайте
+            </Link>
+            <div className={styles.dropdown}>
+              <div className={styles.dropdownTitle} onClick={handleClick2}>
+                Советы нутрициолога:
+              </div>
+              {openMenu2 && (
+                <div
+                  className={
+                    !isMobile
+                      ? styles.dropdownContent
+                      : styles.dropdownContentMobile
+                  }
+                >
+                  <Link href="/programs">
+                    Витамины - какие, когда и сколько?
+                  </Link>
+                  <a href="/">О чём молчат анализы?</a>
+                  <a href="/">Диеты - мифы и реальность?</a>
+                </div>
+              )}
+            </div>
+            <div className={styles.dropdown}>
+              <div className={styles.dropdownTitle} onClick={handleClick1}>
+                Полезные статьи:
+              </div>
+              {openMenu1 && (
+                <div
+                  className={
+                    !isMobile
+                      ? styles.dropdownContent
+                      : styles.dropdownContentMobile
+                  }
+                >
+                  <Link href="/programs">правильное питание</Link>
+                  <a href="/">организация пространства на кухне</a>
+                  <a href="/">лайфхаки по хранению продуктов</a>
+                  <a href="/">советы по выбору продуктов</a>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+        <div
+          className={`${styles.burgerMenu} ${isMenuOpen ? styles.active : ""}
+        }`}
+          onClick={handleMenuToggle}
+        >
+          ☰
+        </div>
+      </nav>
+    </>
+  );
+};
+export default Navigation;

@@ -60,6 +60,14 @@ module.exports = require("next/dist/shared/lib/app-router-context");
 
 /***/ }),
 
+/***/ 1830:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/get-img-props");
+
+/***/ }),
+
 /***/ 199:
 /***/ ((module) => {
 
@@ -68,11 +76,35 @@ module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
+/***/ 6864:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head");
+
+/***/ }),
+
 /***/ 9569:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/hooks-client-context");
+
+/***/ }),
+
+/***/ 2210:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config");
+
+/***/ }),
+
+/***/ 5359:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
@@ -164,6 +196,14 @@ module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
+/***/ 8658:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/utils/warn-once");
+
+/***/ }),
+
 /***/ 1017:
 /***/ ((module) => {
 
@@ -247,17 +287,6 @@ __webpack_require__.r(__webpack_exports__);
 
     
   
-
-/***/ }),
-
-/***/ 5434:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1522, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 125, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6249, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7844, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 8782, 23))
 
 /***/ }),
 
@@ -350,7 +379,7 @@ function KidsPage() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [763,951,682], () => (__webpack_exec__(3598)));
+var __webpack_exports__ = __webpack_require__.X(0, [763,610,135], () => (__webpack_exec__(3598)));
 module.exports = __webpack_exports__;
 
 })();

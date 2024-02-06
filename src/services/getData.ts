@@ -11,7 +11,7 @@ const  DATA_DINNER = [
         "Соль гр": 5, 
         "Сахар гр": 5, 
         "Специи": 1,},
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg",
     },
     {
              "label": "Блины бахиры",
@@ -22,7 +22,7 @@ const  DATA_DINNER = [
              "Дрожжи сухие гр": 2, 
              "Соль гр": 1, 
              "Подсолнечное масло гр": 0.8,},
-             "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg",
+             "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg",
     },
     {
         "label": "Блины тонкие.",
@@ -32,7 +32,7 @@ const  DATA_DINNER = [
         "Подсолнечное масло гр": 8, 
         "Соль гр": 1, 
         "Сахар гр": 6,},
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg",
     },
     {
         "label": "Голубцы.",
@@ -45,7 +45,7 @@ const  DATA_DINNER = [
         "Белый рис гр": 15, 
         "Соль гр": 1, 
         "Специи": 1,},
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs2.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg",
     },
 {
     "label": "Гренки.",
@@ -64,7 +64,7 @@ const  DATA_DINNER = [
     "Масло сливочное гр": 10,
     "Подсолнечное масло гр": 7.5, 
     "Соль гр": 1,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Гречневая каша со свининой",
@@ -74,7 +74,7 @@ const  DATA_DINNER = [
     "Масло сливочное гр": 10,
     "Подсолнечное масло гр": 7.5, 
     "Соль гр": 1,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Гречневая каша с говядиной",
@@ -84,7 +84,7 @@ const  DATA_DINNER = [
     "Масло сливочное гр": 10,
     "Подсолнечное масло гр": 7.5, 
     "Соль гр": 1,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Гречневая каша с фаршем",
@@ -93,7 +93,7 @@ const  DATA_DINNER = [
     "Масло сливочное гр": 10,
     "Подсолнечное масло гр": 7.5, 
     "Соль гр": 1,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Гуляш.",
@@ -132,7 +132,7 @@ const  DATA_DINNER = [
     "Соль гр": 1, 
     "Яйца куриные шт": 0.5, 
     "Соевый соус гр": 5,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Запечённая курица.",
@@ -306,7 +306,7 @@ const  DATA_DINNER = [
     "Помидоры гр": 50, 
     "Лук репчатый гр": 50, 
     "Лук зелёный гр": 5,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg",
 },
 {
     "label": "Отбивные.",
@@ -331,7 +331,7 @@ const  DATA_DINNER = [
     "Соус томатный гр": 6, 
     "Соль гр": 1, 
     "Специи": 1,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Плов.",
@@ -343,7 +343,7 @@ const  DATA_DINNER = [
     "Белый рис гр": 50, 
     "Соль гр": 1, 
     "Специи": 1,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 }, 
 {
     "label": "Рубленные котлеты.",
@@ -421,14 +421,14 @@ const  SIDE_DISH = [
         "value":  {"Булгур гр": 60, 
         "Соль гр": 1,
         "Масло сливочное гр": 20,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://https://bartcevich.github.io/letter/image/pilaf_raisins.png",
     },
     {
         "label": "Гречневая каша.",
         "value":  {"Гречка гр": 50, 
         "Соль гр": 1,
         "Масло сливочное гр": 20,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://https://bartcevich.github.io/letter/image/pilaf_raisins.png",
     },
 {
     "label": "Кабачек тушеный.",
@@ -522,7 +522,7 @@ const  SIDE_DISH = [
     "value":  {"Перловка гр": 50, 
     "Соль гр": 2, 
     "Масло сливочное гр": 25,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Пшенная каша",
@@ -535,7 +535,7 @@ const  SIDE_DISH = [
     "value":  {"Белый рис гр": 100, 
     "Соль гр": 1,
     "Масло сливочное гр": 20,},
-    "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+    "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png",
 },
 {
     "label": "Спагетти.",
@@ -567,7 +567,7 @@ const CHOOSE_SOUP = [
         "Соус томатный гр": 3, 
         "Подсолнечное масло гр": 3, 
         "Специи": 3,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/beetroot_hot.png",
     },
     {
         "label": "Гороховый суп с грудинкой.",
@@ -604,7 +604,7 @@ const CHOOSE_SOUP = [
         "Консервированный горошек гр": 27, 
         "Консервированная фосоль гр": 27, 
         "Специи": 1,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png",
     },
     {
         "label": "Овощной суп с пельменями.",
@@ -612,7 +612,7 @@ const CHOOSE_SOUP = [
         "Ассорти овощное замороженное гр": 75, 
         "Укроп гр": 1, "Лук зелёный гр": 1,
         "Специи": 1,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png",
     },
     {
         "label": "Пшенный суп сяйцом",
@@ -646,7 +646,7 @@ const CHOOSE_SOUP = [
         "Лук репчатый гр": 40, 
         "Картофель гр": 40,
         "Батон гр": 30,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/pumpkin_soup.png",
     },
     {
         "label": "Суп с фрикадельками и булгуром.",
@@ -659,7 +659,7 @@ const CHOOSE_SOUP = [
         "Специи": 1, 
         "Соль гр": 1,
         "Подсолнечное масло гр": 15,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png",
     },
     {
         "label": "Суп харчо.",
@@ -693,7 +693,7 @@ const CHOOSE_SOUP = [
         "Укроп гр": 4,
         "Сметана гр": 20,
         "Яйца куриные шт": 0.8,},
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg",
+        "Image": "https://bartcevich.github.io/letter/image/beetroot_hot.png",
     },
     {
         "label": "Фасолевый суп.",

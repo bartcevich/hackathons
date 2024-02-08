@@ -1,28 +1,45 @@
 @import '../../app/variables.scss';
 .wrapper{
     display: flex;
+    flex-flow: column;
     justify-content: center;
-    padding: 5% 0 5% 0;
-    background: #99b5bf;
+    padding: 20px 0 20px 0;
+    background: #252525;
     text-align: center;
 }
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+    @include font(#fff, Inter, 20px, normal, 400, 25px, 0);
+    font-size: clamp(15px, 2vw, 20px);
+    margin-bottom: 30px;
+    p{
+        margin-bottom: 15px;
+    }
+}
+.text{
+    background-color: #E47611;
+    a{
+        margin-left: 30px;
+    }
+}
 .textH3{
-    @include font(#fff, Alegreya, 48px, italic, 400, 60px, -.025em);
-    font-size: clamp(25px, 6vw, 48px);
-    margin-bottom: 30px
-}
-.textH2{
-    @include font(#212121, Inter, 60px, normal, 400, 70px, 0);
-    font-size: clamp(20px, 6vw, 60px);
-    margin-bottom: 40px;
-    line-height: 1;
-}
-.textH4{
-    @include font(#525050, Inter, 25px, normal, 400, 30px, 0);
-    font-size: clamp(15px, 3vw, 25px);
+    @include font(#000, Inter, 20px, normal, 550, 25px, -.025em);
+    font-size: clamp(15px, 3vw, 20px);
+    margin-bottom: 10px
 }
 .icon{
-    a{
-        margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 550px){
+    .navigation{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px){
+    .icon{
+        display: block;
     }
 }

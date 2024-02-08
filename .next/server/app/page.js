@@ -489,7 +489,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Подсолнечное масло гр": 0.8
         },
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/honey_kefir.png"
     },
     {
         "label": "Блины тонкие.",
@@ -516,7 +516,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/fried_eggs.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/lazy _cabbage.png"
     },
     {
         "label": "Гренки.",
@@ -661,7 +661,7 @@ const DATA_DINNER = [
             "Специи": 1,
             "Кари гр": 7
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/curry_onions.png"
     },
     {
         "label": "Картофельная бабка.",
@@ -771,7 +771,7 @@ const DATA_DINNER = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/noodles_meat.png"
     },
     {
         "label": "Мясной хлеб.",
@@ -810,7 +810,7 @@ const DATA_DINNER = [
             "Сода гр": 1,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/honey_kefir.png"
     },
     {
         "label": "Омлет.",
@@ -1152,7 +1152,7 @@ const CHOOSE_SOUP = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/smoked_peas.png"
     },
     {
         "label": "Куриный суп с яичной лапшой.",
@@ -1503,7 +1503,7 @@ const PASTRIES_DESSERTS = [
             "Сахар ванильный гр": 2,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/currants_oatmeal.png"
     },
     {
         "label": "Запеканка творожная королевская.",
@@ -1520,7 +1520,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 2,
             "Сахар ванильный гр": 2
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/donut_coconut.png"
     },
     {
         "label": "Лимонный бисквит.",
@@ -1533,22 +1533,7 @@ const PASTRIES_DESSERTS = [
             "Мука пшеничная гр": 33,
             "Разрыхлитель гр": 2
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
-    },
-    {
-        "label": "Шоколадный бисквит.",
-        "value": {
-            "Молоко гр": 15,
-            "Сахар гр": 25,
-            "Яйца куриные шт": 0.125,
-            "Подсолнечное масло гр": 8,
-            "Сода гр": 1,
-            "Разрыхлитель гр": 1,
-            "Какао гр": 8,
-            "Сахар ванильный гр": 1,
-            "Мука пшеничная гр": 25
-        },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/sour_pie.png"
     },
     {
         "label": "Морковный пирог.",
@@ -1564,7 +1549,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 1,
             "Корица гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/carrot_bun.png"
     },
     {
         "label": "Пирог из кабачков.",
@@ -1580,7 +1565,7 @@ const PASTRIES_DESSERTS = [
             "Сахар ванильный гр": 1,
             "Яйца куриные шт": 0.2
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/carrot_bun.png"
     },
     {
         "label": "Пирог с кокосовой стружкой.",
@@ -1593,7 +1578,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 2,
             "Кокосовая стружка гр": 10
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/donut_coconut.png"
     },
     {
         "label": "Пирог сэндвич.",
@@ -1607,7 +1592,7 @@ const PASTRIES_DESSERTS = [
             "Мука пшеничная гр": 50,
             "Консервированное варенье гр": 25
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/plum_sandwich.png"
     },
     {
         "label": "Пирог зебра.",
@@ -1622,7 +1607,7 @@ const PASTRIES_DESSERTS = [
             "Крахмал гр": 1,
             "Мука пшеничная гр": 35
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/dough_cocoa.png"
     },
     {
         "label": "Пирог из яблок на кефире.",
@@ -1635,7 +1620,7 @@ const PASTRIES_DESSERTS = [
             "Мука пшеничная гр": 30,
             "Разрыхлитель гр": 2
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/plum_sandwich.png"
     },
     {
         "label": "Пирог с геркулесом.",
@@ -1650,7 +1635,7 @@ const PASTRIES_DESSERTS = [
             "Овсяные хлопья гр": 11,
             "Консервированное варенье гр": 25
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/currants_oatmeal.png"
     },
     {
         "label": "Пирог слезы ангела.",
@@ -1664,7 +1649,7 @@ const PASTRIES_DESSERTS = [
             "Мука пшеничная гр": 60,
             "Разрыхлитель гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/donut_coconut.png"
     },
     {
         "label": "Пирог штрейзель с творогом.",
@@ -1678,7 +1663,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 1.3,
             "Сахар гр": 44
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/currants_oatmeal.png"
     },
     {
         "label": "Творожные пончики.",
@@ -1705,7 +1690,22 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 1,
             "Сахар ванильный гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/currants_oatmeal.png"
+    },
+    {
+        "label": "Шоколадный бисквит.",
+        "value": {
+            "Молоко гр": 15,
+            "Сахар гр": 25,
+            "Яйца куриные шт": 0.125,
+            "Подсолнечное масло гр": 8,
+            "Сода гр": 1,
+            "Разрыхлитель гр": 1,
+            "Какао гр": 8,
+            "Сахар ванильный гр": 1,
+            "Мука пшеничная гр": 25
+        },
+        "Image": "https://bartcevich.github.io/letter/image/dough_cocoa.png"
     }
 ];
 function getDinnerData() {
@@ -3546,7 +3546,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [763,610,402,135], () => (__webpack_exec__(464)));
+var __webpack_exports__ = __webpack_require__.X(0, [763,610,402,526], () => (__webpack_exec__(464)));
 module.exports = __webpack_exports__;
 
 })();

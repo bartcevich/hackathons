@@ -421,14 +421,14 @@ const  SIDE_DISH = [
         "value":  {"Булгур гр": 60, 
         "Соль гр": 1,
         "Масло сливочное гр": 20,},
-        "Image": "https://https://bartcevich.github.io/letter/image_side_dish/bulgur.png",
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/bulgur.png",
     },
     {
         "label": "Гречневая каша.",
         "value":  {"Гречка гр": 50, 
         "Соль гр": 1,
         "Масло сливочное гр": 20,},
-        "Image": "https://https://bartcevich.github.io/letter/image_side_dish/buckwheat_porridge.png",
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/buckwheat_porridge.png",
     },
 {
     "label": "Кабачек тушеный.",
@@ -450,7 +450,7 @@ const  SIDE_DISH = [
         "Подсолнечное масло гр": 8, 
         "Соль гр": 1, 
         "Специи": 1,},
-        "Image": "https://bartcevich.github.io/letter/image_side_dish/stewed_cabbage.jpg",
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/stewed_cabbage.png",
     },
 {
     "label": "Картофельное пюре.",
@@ -458,7 +458,7 @@ const  SIDE_DISH = [
     "Молоко гр": 20, 
     "Масло сливочное гр": 5,
     "Соль гр": 1,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/mashed_potatoes.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/mashed_potatoes.png",
 },
 {
     "label": "Картофель жареный.",
@@ -467,7 +467,7 @@ const  SIDE_DISH = [
     "Подсолнечное масло гр": 30, 
     "Соль гр": 1, 
     "Специи": 1,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/fried_potatoes.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/fried_potatoes.png",
 },
 {
     "label": "Картофель тушеный в молоке.",
@@ -479,7 +479,7 @@ const  SIDE_DISH = [
     "Подсолнечное масло гр": 10, 
     "Соль гр": 1, 
     "Специи": 1,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/baked_milk.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/baked_milk.png",
 },
 {
     "label": "Картофель запеченный в сметане.",
@@ -487,7 +487,7 @@ const  SIDE_DISH = [
     "Масло сливочное гр": 4, 
     "Сметана гр": 17,
     "Соль гр": 1,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/baked_sour_cream.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/baked_sour_cream.png",
 },
 {
     "label": "Макароны отварные.",
@@ -495,13 +495,13 @@ const  SIDE_DISH = [
     "Подсолнечное масло гр": 20, 
     "Соль гр": 1,
     "Масло сливочное гр": 20,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/boiled_pasta.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/boiled_pasta.png",
 },
 {
     "label": "Манная каша",
     "value":  {"Манка гр": 40,
     "Молоко гр": 200,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/semolina_porridge.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/semolina_porridge.png",
 },
 {
     "label": "Овощи тушеные.",
@@ -515,7 +515,7 @@ const  SIDE_DISH = [
     "Соль гр": 1, 
     "Специи": 1, 
     "Подсолнечное масло гр": 7,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/stewed_vegetables.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/stewed_vegetables.png",
 },
 {
     "label": "Перловая каша.",
@@ -528,7 +528,7 @@ const  SIDE_DISH = [
     "label": "Пшенная каша",
     "value":  {"Пшено гр": 45,
     "Масло сливочное гр": 10,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/millet_porridge.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/millet_porridge.png",
 },
 {
     "label": "Рассыпчатый рис басмати.",
@@ -543,7 +543,7 @@ const  SIDE_DISH = [
     "Подсолнечное масло гр": 20, 
     "Соль гр": 1,
     "Масло сливочное гр": 20,},
-    "Image": "https://bartcevich.github.io/letter/image_side_dish/boiled_spaghetti.jpg",
+    "Image": "https://bartcevich.github.io/letter/image_side_dish/boiled_spaghetti.png",
 },
 {
     "label": "Фасоль стручковая со сметаной.",

@@ -38,7 +38,7 @@ const Form = () => {
   });
 
   useEffect(() => {
-    //localStorage.setItem("formData", JSON.stringify([]));
+    //localStorage.setItem("formData", JSON.stringify(formData));
     //console.log("DataAuthentication=", localStorage.getItem("formData"));
     const savedFormData = localStorage.getItem("formData");
     if (savedFormData) {

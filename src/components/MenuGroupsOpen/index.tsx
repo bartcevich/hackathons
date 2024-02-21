@@ -29,7 +29,7 @@ export default function MenuGroups(props: any) {
       console.log(arrForProps);
     }
   }, [menuUser]);
-  console.log(menuUser);
+  //console.log(menuUser);
   const allIngredients: any[] = [];
   let oneArrIngredients: any[] = []; //один массив всех ингридиентов
   const sumArrPrint: any[] = []; //массив с суммированными значениями

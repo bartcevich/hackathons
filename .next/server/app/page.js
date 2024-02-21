@@ -245,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8350)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2098)), "D:\\andrei\\work\\codewars\\shoppingCart\\hackathons\\src\\app\\page.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2819))).default(props))],
     apple: [],
@@ -281,12 +281,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2355:
+/***/ 2202:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6480));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7868));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4700));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9840));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6480))
 
 /***/ }),
 
@@ -957,7 +957,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://https://bartcevich.github.io/letter/image/pilaf_raisins.png"
+        "Image": "https://https://bartcevich.github.io/letter/image_side_dish/bulgur.png"
     },
     {
         "label": "Гречневая каша.",
@@ -966,7 +966,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://https://bartcevich.github.io/letter/image/pilaf_raisins.png"
+        "Image": "https://https://bartcevich.github.io/letter/image_side_dish/buckwheat_porridge.png"
     },
     {
         "label": "Кабачек тушеный.",
@@ -978,7 +978,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/stewed_zucchini.png"
     },
     {
         "label": "Капуста тушеная с кабачком.",
@@ -992,7 +992,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/stewed_cabbage.jpg"
     },
     {
         "label": "Картофельное пюре.",
@@ -1002,7 +1002,7 @@ const SIDE_DISH = [
             "Масло сливочное гр": 5,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/mashed_potatoes.jpg"
     },
     {
         "label": "Картофель жареный.",
@@ -1013,7 +1013,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/fried_potatoes.jpg"
     },
     {
         "label": "Картофель тушеный в молоке.",
@@ -1027,7 +1027,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/baked_milk.jpg"
     },
     {
         "label": "Картофель запеченный в сметане.",
@@ -1037,7 +1037,7 @@ const SIDE_DISH = [
             "Сметана гр": 17,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/baked_sour_cream.jpg"
     },
     {
         "label": "Макароны отварные.",
@@ -1047,7 +1047,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/boiled_pasta.jpg"
     },
     {
         "label": "Манная каша",
@@ -1055,7 +1055,7 @@ const SIDE_DISH = [
             "Манка гр": 40,
             "Молоко гр": 200
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/semolina_porridge.jpg"
     },
     {
         "label": "Овощи тушеные.",
@@ -1071,7 +1071,7 @@ const SIDE_DISH = [
             "Специи": 1,
             "Подсолнечное масло гр": 7
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/stewed_vegetables.jpg"
     },
     {
         "label": "Перловая каша.",
@@ -1080,7 +1080,7 @@ const SIDE_DISH = [
             "Соль гр": 2,
             "Масло сливочное гр": 25
         },
-        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/pearl_porridge.png"
     },
     {
         "label": "Пшенная каша",
@@ -1088,7 +1088,7 @@ const SIDE_DISH = [
             "Пшено гр": 45,
             "Масло сливочное гр": 10
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/millet_porridge.jpg"
     },
     {
         "label": "Рассыпчатый рис басмати.",
@@ -1097,7 +1097,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://bartcevich.github.io/letter/image/pilaf_raisins.png"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/crumbly_rice.png"
     },
     {
         "label": "Спагетти.",
@@ -1107,7 +1107,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Масло сливочное гр": 20
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/boiled_spaghetti.jpg"
     },
     {
         "label": "Фасоль стручковая со сметаной.",
@@ -1120,7 +1120,7 @@ const SIDE_DISH = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_side_dish/тыквенные_блины.jpg"
     }
 ];
 const CHOOSE_SOUP = [
@@ -1137,7 +1137,7 @@ const CHOOSE_SOUP = [
             "Подсолнечное масло гр": 3,
             "Специи": 3
         },
-        "Image": "https://bartcevich.github.io/letter/image/beetroot_hot.png"
+        "Image": "https://bartcevich.github.io/letter/image_soup/beetroot_hot.png"
     },
     {
         "label": "Гороховый суп с грудинкой.",
@@ -1152,7 +1152,7 @@ const CHOOSE_SOUP = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/smoked_peas.png"
+        "Image": "https://bartcevich.github.io/letter/image_soup/smoked_peas.jpg"
     },
     {
         "label": "Куриный суп с яичной лапшой.",
@@ -1164,7 +1164,7 @@ const CHOOSE_SOUP = [
             "Мука пшеничная гр": 40,
             "Яйца куриные шт": 0.3
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_soup/egg_noodles.png"
     },
     {
         "label": "Овощной суп.",
@@ -1180,7 +1180,7 @@ const CHOOSE_SOUP = [
             "Консервированная фосоль гр": 27,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png"
+        "Image": "https://bartcevich.github.io/letter/image_soup/vegetable_soup.png"
     },
     {
         "label": "Овощной суп с пельменями.",
@@ -1191,7 +1191,7 @@ const CHOOSE_SOUP = [
             "Лук зелёный гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png"
+        "Image": "https://bartcevich.github.io/letter/image_soup/vegetable_dumplings.png"
     },
     {
         "label": "Пшенный суп сяйцом",
@@ -1205,7 +1205,7 @@ const CHOOSE_SOUP = [
             "Специи": 1,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_soup/millet_soup.png"
     },
     {
         "label": "Рассольник.",
@@ -1219,7 +1219,7 @@ const CHOOSE_SOUP = [
             "Специи": 1,
             "Огурец соленый гр": 40
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_soup/pickl_bean.png"
     },
     {
         "label": "Суп пюре из тыквы",
@@ -1231,7 +1231,7 @@ const CHOOSE_SOUP = [
             "Картофель гр": 40,
             "Батон гр": 30
         },
-        "Image": "https://bartcevich.github.io/letter/image/pumpkin_soup.png"
+        "Image": "https://bartcevich.github.io/letter/image_soup/pumpkin_soup.png"
     },
     {
         "label": "Суп с фрикадельками и булгуром.",
@@ -1246,7 +1246,7 @@ const CHOOSE_SOUP = [
             "Соль гр": 1,
             "Подсолнечное масло гр": 15
         },
-        "Image": "https://bartcevich.github.io/letter/image/vegetable_dumplings.png"
+        "Image": "https://bartcevich.github.io/letter/image_soup/meatballs_bulgur.png"
     },
     {
         "label": "Суп харчо.",
@@ -1261,7 +1261,7 @@ const CHOOSE_SOUP = [
             "Соль гр": 2,
             "Специи": 2
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_soup/georgian_soup.png"
     },
     {
         "label": "Уха.",
@@ -1274,7 +1274,7 @@ const CHOOSE_SOUP = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_soup/fisherman_chowder.png"
     },
     {
         "label": "Холодник.",
@@ -1286,7 +1286,7 @@ const CHOOSE_SOUP = [
             "Сметана гр": 20,
             "Яйца куриные шт": 0.8
         },
-        "Image": "https://bartcevich.github.io/letter/image/beetroot_hot.png"
+        "Image": "https://bartcevich.github.io/letter/image_soup/cold_beetroot.png"
     },
     {
         "label": "Фасолевый суп.",
@@ -1302,7 +1302,7 @@ const CHOOSE_SOUP = [
             "Соль гр": 1,
             "Специи": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_soup/bean_soup.png"
     },
     {
         "label": "Щи из свежей капусты",
@@ -1318,7 +1318,7 @@ const CHOOSE_SOUP = [
             "Специи": 1,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image_soup/cabbage_soup.png"
     }
 ];
 const HEARTY_SALAD = [
@@ -1503,7 +1503,7 @@ const PASTRIES_DESSERTS = [
             "Сахар ванильный гр": 2,
             "Соль гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/currants_oatmeal.png"
+        "Image": "https://bartcevich.github.io/letter/image/bun_cottage_cheese.png"
     },
     {
         "label": "Запеканка творожная королевская.",
@@ -1520,7 +1520,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 2,
             "Сахар ванильный гр": 2
         },
-        "Image": "https://bartcevich.github.io/letter/image/donut_coconut.png"
+        "Image": "https://bartcevich.github.io/letter/image/lush_cottage_cheese.png"
     },
     {
         "label": "Лимонный бисквит.",
@@ -1565,7 +1565,7 @@ const PASTRIES_DESSERTS = [
             "Сахар ванильный гр": 1,
             "Яйца куриные шт": 0.2
         },
-        "Image": "https://bartcevich.github.io/letter/image/carrot_bun.png"
+        "Image": "https://bartcevich.github.io/letter/image/zucchini_pie.png"
     },
     {
         "label": "Пирог с кокосовой стружкой.",
@@ -1607,7 +1607,7 @@ const PASTRIES_DESSERTS = [
             "Крахмал гр": 1,
             "Мука пшеничная гр": 35
         },
-        "Image": "https://bartcevich.github.io/letter/image/dough_cocoa.png"
+        "Image": "https://bartcevich.github.io/letter/image/zebra_pie.png"
     },
     {
         "label": "Пирог из яблок на кефире.",
@@ -1620,7 +1620,7 @@ const PASTRIES_DESSERTS = [
             "Мука пшеничная гр": 30,
             "Разрыхлитель гр": 2
         },
-        "Image": "https://bartcevich.github.io/letter/image/plum_sandwich.png"
+        "Image": "https://bartcevich.github.io/letter/image/apples_dough.png"
     },
     {
         "label": "Пирог с геркулесом.",
@@ -1649,7 +1649,7 @@ const PASTRIES_DESSERTS = [
             "Мука пшеничная гр": 60,
             "Разрыхлитель гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/donut_coconut.png"
+        "Image": "https://bartcevich.github.io/letter/image/tears_angel.png"
     },
     {
         "label": "Пирог штрейзель с творогом.",
@@ -1663,7 +1663,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 1.3,
             "Сахар гр": 44
         },
-        "Image": "https://bartcevich.github.io/letter/image/currants_oatmeal.png"
+        "Image": "https://bartcevich.github.io/letter/image/cottage_cheese_white.png"
     },
     {
         "label": "Творожные пончики.",
@@ -1675,7 +1675,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 5,
             "Подсолнечное масло гр": 500
         },
-        "Image": "https://bartcevich.github.io/letter/image/тыквенные_блины.jpg"
+        "Image": "https://bartcevich.github.io/letter/image/cottage_cheese_donuts.png"
     },
     {
         "label": "Торфяной пирог",
@@ -1690,7 +1690,7 @@ const PASTRIES_DESSERTS = [
             "Разрыхлитель гр": 1,
             "Сахар ванильный гр": 1
         },
-        "Image": "https://bartcevich.github.io/letter/image/currants_oatmeal.png"
+        "Image": "https://bartcevich.github.io/letter/image/cottage_cheese_black.png"
     },
     {
         "label": "Шоколадный бисквит.",
@@ -2573,7 +2573,7 @@ function MenuGroupsOpen_MenuGroups(props) {
     }, [
         menuUser
     ]);
-    console.log(menuUser);
+    //console.log(menuUser);
     const allIngredients = [];
     let oneArrIngredients = []; //один массив всех ингридиентов
     const sumArrPrint = []; //массив с суммированными значениями
@@ -2731,7 +2731,7 @@ function AllIngredients() {
     const [selectionUser, setSelectionUser] = (0,react_.useState)({});
     (0,react_.useEffect)(()=>{
         //localStorage.setItem("ingredientHistory", JSON.stringify([]));
-        console.log("checkTasks=", localStorage.getItem("ingredientHistory"));
+        //console.log("checkTasks=", localStorage.getItem("ingredientHistory"));
         const savedIngredientHistory = localStorage.getItem("ingredientHistory");
         if (savedIngredientHistory) {
             const parsedIngredientHistory = JSON.parse(savedIngredientHistory);
@@ -2745,7 +2745,7 @@ function AllIngredients() {
         };
         //console.log("selectionUser=", selectionUser);
         //console.log("printLabel=", printLabel);
-        console.log("newSelectionUser=", newSelectionUser);
+        //console.log("newSelectionUser=", newSelectionUser);
         //setSelectionUser(newSelectionUser);
         setButtonPressed(true);
         localStorage.setItem("ingredientHistory", JSON.stringify(newSelectionUser));
@@ -2789,7 +2789,7 @@ function AllIngredients() {
     const [selectionUser2, setSelectionUser2] = (0,react_.useState)([]);
     (0,react_.useEffect)(()=>{
         //localStorage.setItem("ingredientHistory", JSON.stringify([]));
-        console.log("checkTasks2=", localStorage.getItem("ingredientHistory2"));
+        //console.log("checkTasks2=", localStorage.getItem("ingredientHistory2"));
         const savedIngredientHistory2 = localStorage.getItem("ingredientHistory2");
         if (savedIngredientHistory2) {
             const parsedIngredientHistory2 = JSON.parse(savedIngredientHistory2);
@@ -2799,7 +2799,7 @@ function AllIngredients() {
     const handleChange2 = (0,react_.useCallback)((newSelectionUser2)=>{
         //console.log("selectionUser=", selectionUser);
         //console.log("printLabel=", printLabel);
-        console.log("newSelectionUser=", newSelectionUser2);
+        //console.log("newSelectionUser=", newSelectionUser2);
         setButtonPressed(true);
         localStorage.setItem("ingredientHistory2", JSON.stringify(newSelectionUser2));
     }, []);
@@ -2991,7 +2991,7 @@ const Form = ()=>{
         today: ""
     });
     (0,react_.useEffect)(()=>{
-        //localStorage.setItem("formData", JSON.stringify([]));
+        //localStorage.setItem("formData", JSON.stringify(formData));
         //console.log("DataAuthentication=", localStorage.getItem("formData"));
         const savedFormData = localStorage.getItem("formData");
         if (savedFormData) {
@@ -3277,6 +3277,7 @@ module.exports = {
 	"colorRedLight": "#ef233c",
 	"colorRedDark": "#d90429",
 	"container": "styles_container__nrnA9",
+	"image": "styles_image__ooME5",
 	"label": "styles_label__dgu8L",
 	"dropdownIcon": "styles_dropdownIcon__aAZ6E",
 	"button": "styles_button__JWP3b",
@@ -3454,7 +3455,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8350:
+/***/ 2098:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3500,8 +3501,8 @@ const e0 = IngredientsContext_proxy["IngredientsContext"];
 
 const e1 = IngredientsContext_proxy["MenuProvider"];
 
-;// CONCATENATED MODULE: ./src/assets/images/background3.jpg
-/* harmony default export */ const background3 = ({"src":"/_next/static/media/background3.9cfb429a.jpg","height":1027,"width":1027,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAgACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAAigf/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADEhUh/9oACAEBAAE/ANhQ9OBUDk//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/AH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/AH//2Q==","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./src/assets/images/background.png
+/* harmony default export */ const background = ({"src":"/_next/static/media/background.21449a94.png","height":1028,"width":1028,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAnUlEQVR42h1P2wrFIAyLzt0d6P7/C89eBhNFRT3GQKG0SZoKY0zdtk3s+w6tNc7zxH3fyDkjhNBUB5ZlQSfhOA5Ya2GMhXMO0zRBzfOMdV0Hib2UEtelUUqBEICstY4hQQKLM56jOzeDTbTWhpP3oZPoIKCoJpNKqpjj+74RMsYIRRVBUkqJyxHueX7w3kN1+8aGb77vy+JHdGCW9gcnlU0o+RpQQwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./src/app/page.tsx
 //'use client';
 
@@ -3513,7 +3514,7 @@ function Home() {
     return /*#__PURE__*/ jsx_runtime_.jsx(e1, {
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
             style: {
-                backgroundImage: `url(${background3.src})`,
+                backgroundImage: `url(${background.src})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundAttachment: "fixed",
@@ -3527,7 +3528,7 @@ function Home() {
 
 /***/ }),
 
-/***/ 7868:
+/***/ 9840:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3535,7 +3536,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/background3.9cfb429a.jpg","height":1027,"width":1027,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAgACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAAigf/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADEhUh/9oACAEBAAE/ANhQ9OBUDk//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/AH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/AH//2Q==","blurWidth":8,"blurHeight":8});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/background.21449a94.png","height":1028,"width":1028,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAnUlEQVR42h1P2wrFIAyLzt0d6P7/C89eBhNFRT3GQKG0SZoKY0zdtk3s+w6tNc7zxH3fyDkjhNBUB5ZlQSfhOA5Ya2GMhXMO0zRBzfOMdV0Hib2UEtelUUqBEICstY4hQQKLM56jOzeDTbTWhpP3oZPoIKCoJpNKqpjj+74RMsYIRRVBUkqJyxHueX7w3kN1+8aGb77vy+JHdGCW9gcnlU0o+RpQQwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ })
 

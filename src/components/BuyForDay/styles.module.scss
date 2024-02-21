@@ -2,10 +2,13 @@
 .container{
     display: flex;
 }
+.image{
+    width: 100px;
+}
 .label{
     max-width: 250px;
     @include font(#E47611, Inter, 20px, normal, 400, 20px, 0);
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 .dropdownIcon{
     position: absolute;

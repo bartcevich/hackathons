@@ -23,7 +23,7 @@ export default function AllIngredients() {
 
   useEffect(() => {
     //localStorage.setItem("ingredientHistory", JSON.stringify([]));
-    console.log("checkTasks=", localStorage.getItem("ingredientHistory"));
+    //console.log("checkTasks=", localStorage.getItem("ingredientHistory"));
     const savedIngredientHistory: string | null =
       localStorage.getItem("ingredientHistory");
     if (savedIngredientHistory) {
@@ -40,7 +40,7 @@ export default function AllIngredients() {
       };
       //console.log("selectionUser=", selectionUser);
       //console.log("printLabel=", printLabel);
-      console.log("newSelectionUser=", newSelectionUser);
+      //console.log("newSelectionUser=", newSelectionUser);
       //setSelectionUser(newSelectionUser);
       setButtonPressed(true);
       localStorage.setItem(
@@ -91,7 +91,7 @@ export default function AllIngredients() {
   const [selectionUser2, setSelectionUser2] = useState<any[]>([]);
   useEffect(() => {
     //localStorage.setItem("ingredientHistory", JSON.stringify([]));
-    console.log("checkTasks2=", localStorage.getItem("ingredientHistory2"));
+    //console.log("checkTasks2=", localStorage.getItem("ingredientHistory2"));
     const savedIngredientHistory2: string | null =
       localStorage.getItem("ingredientHistory2");
     if (savedIngredientHistory2) {
@@ -103,7 +103,7 @@ export default function AllIngredients() {
     (newSelectionUser2: { [key: string]: any }) => {
       //console.log("selectionUser=", selectionUser);
       //console.log("printLabel=", printLabel);
-      console.log("newSelectionUser=", newSelectionUser2);
+      //console.log("newSelectionUser=", newSelectionUser2);
       setButtonPressed(true);
       localStorage.setItem(
         "ingredientHistory2",
